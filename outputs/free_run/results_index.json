@@ -1,0 +1,84 @@
+{
+ "dry_run": false,
+ "main_model": {
+  "provider": "gemini",
+  "model": "gemini-3.5-flash-lite",
+  "requested": "gemini-3.5-flash-lite",
+  "label": "main"
+ },
+ "tempcheck": {
+  "dir": "outputs/tempcheck/tempcheck_gemini_gemini-3.5-flash-lite_1793982520.json",
+  "complete": true,
+  "status": "done",
+  "provider": "gemini",
+  "model": "gemini-3.5-flash-lite",
+  "requested": "gemini-3.5-flash-lite",
+  "label": "main"
+ },
+ "spec": {
+  "dir": "outputs/nl_spec/gemini_gemini-3.5-flash-lite_20261106-215840",
+  "complete": true,
+  "status": "done",
+  "provider": "gemini",
+  "model": "gemini-3.5-flash-lite",
+  "requested": "gemini-3.5-flash-lite",
+  "label": "main"
+ },
+ "bengaluru": {
+  "dir": "outputs/raw/real_20261106-232030_ffbb13",
+  "complete": true,
+  "status": "done",
+  "provider": "gemini",
+  "model": "gemini-3.5-flash-lite",
+  "requested": "gemini-3.5-flash-lite",
+  "label": "main"
+ },
+ "dynamic": {
+  "dir": "outputs/raw/dyn-real_20261106-223312_3eda31",
+  "complete": true,
+  "status": "done",
+  "provider": "gemini",
+  "model": "gemini-3.5-flash-lite",
+  "requested": "gemini-3.5-flash-lite",
+  "label": "main"
+ },
+ "dynamic_synthetic": {
+  "dir": "outputs/raw/dyn-real_20261106-232701_338644",
+  "complete": true,
+  "status": "done",
+  "provider": "gemini",
+  "model": "gemini-3.5-flash-lite",
+  "requested": "gemini-3.5-flash-lite",
+  "label": "main"
+ },
+ "groq": null,
+ "spec_second": {
+  "dir": "outputs/nl_spec/groq_openai_gpt-oss-120b_20261107-104728",
+  "complete": true,
+  "status": "done",
+  "provider": "groq",
+  "model": "openai/gpt-oss-120b",
+  "requested": "openai/gpt-oss-120b",
+  "label": "gpt-oss-120b"
+ },
+ "second_models": [
+  {
+   "dir": "outputs/raw/real_20261106-232556_ad9a62",
+   "complete": false,
+   "status": "pending",
+   "provider": "gemini",
+   "model": "gemma-4-31b-it",
+   "requested": "auto-gemma",
+   "label": "open-weights model"
+  },
+  {
+   "dir": "outputs/raw/real_20261107-010257_268beb",
+   "complete": true,
+   "status": "done",
+   "provider": "groq",
+   "model": "openai/gpt-oss-120b",
+   "requested": "openai/gpt-oss-120b",
+   "label": "gpt-oss-120b"
+  }
+ ]
+}

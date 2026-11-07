@@ -1,0 +1,144 @@
+{
+ "scenario_id": "combo_alt-nfz-dist-ord-en_001",
+ "difficulty": "combo",
+ "base_seed": 2024,
+ "attempt": 0,
+ "mission": {
+  "mission_id": "combo_alt-nfz-dist-ord-en_001",
+  "description": "Route START(12.9,35.7) -> DEST(94.7,26.2) via A at (64.9, 66.6), B at (33.3, 46.1), C at (28.8, 84.0). Order: visit A before B; visit B before C. Altitude 41-67 m at all waypoints. No entry to or crossing of Z1, Z2, Z3 (obstacle). Total length <= 264 units. Battery: 318.7 energy units, where energy = route length + 1 x total climb (so low altitudes save battery).",
+  "start": [
+   12.9,
+   35.7
+  ],
+  "destination": [
+   94.7,
+   26.2
+  ],
+  "required_waypoints": [
+   {
+    "id": "A",
+    "x": 64.9,
+    "y": 66.6
+   },
+   {
+    "id": "B",
+    "x": 33.3,
+    "y": 46.1
+   },
+   {
+    "id": "C",
+    "x": 28.8,
+    "y": 84.0
+   }
+  ],
+  "min_altitude": 41.0,
+  "max_altitude": 67.0,
+  "max_distance": 264.0,
+  "no_fly_zones": [
+   {
+    "id": "Z1",
+    "kind": "circle",
+    "center": [
+     32.5,
+     59.1
+    ],
+    "radius": 8.7,
+    "vertices": null,
+    "description": "restricted area 1",
+    "category": "nfz"
+   },
+   {
+    "id": "Z2",
+    "kind": "circle",
+    "center": [
+     51.6,
+     60.9
+    ],
+    "radius": 7.3,
+    "vertices": null,
+    "description": "restricted area 2",
+    "category": "nfz"
+   },
+   {
+    "id": "Z3",
+    "kind": "polygon",
+    "center": null,
+    "radius": null,
+    "vertices": [
+     [
+      89.3,
+      45.86
+     ],
+     [
+      84.14,
+      51.15
+     ],
+     [
+      75.41,
+      51.14
+     ],
+     [
+      74.13,
+      38.51
+     ],
+     [
+      83.68,
+      36.59
+     ]
+    ],
+    "description": "radio tower",
+    "category": "obstacle"
+   }
+  ],
+  "ordering": [
+   [
+    "A",
+    "B"
+   ],
+   [
+    "B",
+    "C"
+   ]
+  ],
+  "position_tolerance": 1.0,
+  "start_altitude": 0.0,
+  "max_energy": 318.7,
+  "energy_k_v": 1.0,
+  "energy_k_wp": 0.0,
+  "speed_h": 10.0,
+  "speed_v": 2.0,
+  "active": [
+   "altitude",
+   "no_fly_zone",
+   "distance",
+   "ordering",
+   "energy"
+  ]
+ },
+ "metadata": {
+  "n_zones": 3,
+  "n_obstacles": 1,
+  "zone_density": 0.0569,
+  "distance_slack": 1.126,
+  "energy_slack": 1.157,
+  "altitude_band_width": 26.0,
+  "n_required": 3,
+  "feasibility": "FEASIBLE",
+  "witness_distance": 234.545,
+  "witness_energy": 275.545,
+  "lower_bound": 223.978,
+  "infeasible_kind": null,
+  "source": "synthetic",
+  "nl_style": "terse",
+  "n_polygon_zones": 1,
+  "active": [
+   "altitude",
+   "no_fly_zone",
+   "distance",
+   "ordering",
+   "energy"
+  ],
+  "n_active": 5,
+  "ordering_conflicts_with_route": true
+ }
+}

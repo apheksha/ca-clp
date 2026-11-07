@@ -1,0 +1,27 @@
+{
+ "n": 165,
+ "parsed": {
+  "k": 165,
+  "rate": 1.0,
+  "wilson_lo": 0.9772473134582946,
+  "wilson_hi": 1.0
+ },
+ "all_fields_correct": {
+  "k": 162,
+  "rate": 0.9818181818181818,
+  "wilson_lo": 0.9479133457362997,
+  "wilson_hi": 0.9937977017780569
+ },
+ "end_to_end_success": {
+  "k": 165,
+  "rate": 1.0,
+  "wilson_lo": 0.9772473134582946,
+  "wilson_hi": 1.0
+ },
+ "stopped_reason": null,
+ "stop": {
+  "kind": "none",
+  "message": null
+ },
+ "complete": true
+}

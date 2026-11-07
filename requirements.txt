@@ -1,0 +1,16 @@
+# Core (required; versions used for the recorded runs are in each run's manifest.json)
+numpy>=1.26
+pandas>=2.0
+scipy>=1.11
+matplotlib>=3.8
+PyYAML>=6.0
+jinja2>=3.0       # required by pandas DataFrame.to_latex (table_main.tex)
+# UI / extras (optional; not needed for src/, tests or experiments)
+streamlit>=1.30
+pytest>=7.4          # tests are plain unittest and also run under: python -m unittest discover -s tests -t .
+# Optional alternative geometry backends (NOT used: geometry is implemented in src/utils/geometry.py)
+# shapely>=2.0
+# pydantic>=2.0
+tabulate>=0.9   # optional: markdown tables in outputs
+# Optional (v10): PX4 SITL bridge (src/simulator/px4_sitl.py); NOT needed for anything else
+# pymavlink>=2.4

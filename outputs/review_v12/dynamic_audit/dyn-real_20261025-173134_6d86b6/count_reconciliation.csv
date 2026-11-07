@@ -1,0 +1,10 @@
+condition,records,cases_seed0,repeats_other_seeds,seeds_present,feasible_records,feasible_truly_affected,missing_units_vs_union
+A_llm_only,176,146,30,"[0, 1]",172,117,0
+C_full,176,146,30,"[0, 1]",172,117,0
+C_prescriptive,176,146,30,"[0, 1]",172,117,0
+D_resample,176,146,30,"[0, 1]",172,117,0
+E_classical,176,146,30,"[0, 1]",172,117,0
+F_astar,176,146,30,"[0, 1]",172,117,0
+X_binary_feedback,176,146,30,"[0, 1]",172,117,0
+X_binary_targeted,175,146,29,"[0, 1]",171,116,1
+X_evidence_regen,175,146,29,"[0, 1]",171,116,1

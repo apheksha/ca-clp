@@ -1,0 +1,72 @@
+{
+ "scenario_id": "combo_alt_000",
+ "difficulty": "combo",
+ "base_seed": 2024,
+ "attempt": 0,
+ "mission": {
+  "mission_id": "combo_alt_000",
+  "description": "Fly from the base at (10.3, 74.8) to the destination at (92.2, 70.9). The route must pass through the required points A at (56.1, 11.8), B at (41.3, 56.4), C at (34.7, 81.8). Maintain an altitude between 43 and 65 meters at every waypoint.",
+  "start": [
+   10.3,
+   74.8
+  ],
+  "destination": [
+   92.2,
+   70.9
+  ],
+  "required_waypoints": [
+   {
+    "id": "A",
+    "x": 56.1,
+    "y": 11.8
+   },
+   {
+    "id": "B",
+    "x": 41.3,
+    "y": 56.4
+   },
+   {
+    "id": "C",
+    "x": 34.7,
+    "y": 81.8
+   }
+  ],
+  "min_altitude": 43.0,
+  "max_altitude": 65.0,
+  "max_distance": 1000000000.0,
+  "no_fly_zones": [],
+  "ordering": [],
+  "position_tolerance": 1.0,
+  "start_altitude": 0.0,
+  "max_energy": null,
+  "energy_k_v": 1.0,
+  "energy_k_wp": 0.0,
+  "speed_h": 10.0,
+  "speed_v": 2.0,
+  "active": [
+   "altitude"
+  ]
+ },
+ "metadata": {
+  "n_zones": 0,
+  "n_obstacles": 0,
+  "zone_density": 0.0,
+  "distance_slack": null,
+  "energy_slack": null,
+  "altitude_band_width": 22.0,
+  "n_required": 3,
+  "feasibility": "FEASIBLE",
+  "witness_distance": 209.648,
+  "witness_energy": 252.648,
+  "lower_bound": 209.648,
+  "infeasible_kind": null,
+  "source": "synthetic",
+  "nl_style": "formal",
+  "n_polygon_zones": 0,
+  "active": [
+   "altitude"
+  ],
+  "n_active": 1,
+  "ordering_conflicts_with_route": false
+ }
+}

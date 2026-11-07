@@ -1,0 +1,111 @@
+{
+ "scenario_id": "real_sydney_00",
+ "difficulty": "real_easy",
+ "mission": {
+  "mission_id": "real_sydney_00",
+  "start": [
+   -5134.8,
+   6812.9
+  ],
+  "destination": [
+   -18277.6,
+   -10627.5
+  ],
+  "required_waypoints": [
+   {
+    "id": "A",
+    "x": -4614.1,
+    "y": 18526.7
+   },
+   {
+    "id": "B",
+    "x": -14830.0,
+    "y": 11148.1
+   }
+  ],
+  "min_altitude": 20.0,
+  "max_altitude": 120.0,
+  "max_distance": 66080.0,
+  "ordering": [
+   [
+    "A",
+    "B"
+   ]
+  ],
+  "start_altitude": 0.0,
+  "max_energy": null,
+  "energy_k_v": 0.5,
+  "energy_k_wp": 0.0,
+  "active": [
+   "altitude",
+   "no_fly_zone",
+   "distance",
+   "ordering",
+   "energy"
+  ],
+  "no_fly_zones": [
+   {
+    "id": "Z1",
+    "kind": "circle",
+    "center": [
+     2492.1,
+     -5125.9
+    ],
+    "radius": 8000.0,
+    "description": "Sydney Kingsford Smith International Airport (YSSY, large_airport) protection radius 8000 m",
+    "category": "nfz"
+   },
+   {
+    "id": "Z2",
+    "kind": "circle",
+    "center": [
+     -14693.8,
+     -2626.2
+    ],
+    "radius": 5000.0,
+    "description": "Sydney Bankstown Airport (YSBK, medium_airport) protection radius 5000 m",
+    "category": "nfz"
+   }
+  ],
+  "description": "Fly from the base at (-5135, 6813) to the destination at (-18278, -10628). The route must pass through the required points A (Sydney Adventist Hospital Helipad) at (-4614, 18527), B (Westmead CareFlight Base Heliport) at (-14830, 11148); visit A before B. Maintain an altitude between 20 and 120 meters at every waypoint. Avoid all restricted zones and obstacles (Z1 [Sydney Kingsford Smith International Airport (YSSY, large_airport) protection radius 8000 m], Z2 [Sydney Bankstown Airport (YSBK, medium_airport) protection radius 5000 m]), including the straight paths between waypoints. Keep the total horizontal route length at or below 66080 meters. (START is Concord Hospital Heliport; DEST is Holsworthy (Military) Airport.) Coordinates are meters east/north of the region center."
+ },
+ "metadata": {
+  "source": "ourairports",
+  "region": "sydney",
+  "region_center": [
+   -33.9,
+   151.15
+  ],
+  "airports_csv_sha256": "fe7f0d9dc2646e41b0cc520f1733d99b9c76a6b26a3e6a55f66fa89e62083ad5",
+  "n_zones": 2,
+  "zone_density": 0.0989,
+  "distance_slack": 1.4,
+  "altitude_band_width": 100.0,
+  "n_required": 2,
+  "feasibility": "FEASIBLE",
+  "witness_distance": 47200.2,
+  "lower_bound": 46374.1,
+  "infeasible_kind": null,
+  "n_polygon_zones": 0,
+  "active": [
+   "altitude",
+   "no_fly_zone",
+   "distance",
+   "ordering",
+   "energy"
+  ],
+  "n_active": 5,
+  "n_obstacles": 0,
+  "witness_energy": null,
+  "energy_slack": null,
+  "nl_style": "formal",
+  "site_names": {
+   "A": "Sydney Adventist Hospital Helipad",
+   "B": "Westmead CareFlight Base Heliport",
+   "START": "Concord Hospital Heliport",
+   "DEST": "Holsworthy (Military) Airport"
+  },
+  "n_blocked_legs": 1,
+  "assumptions": "zone radii by airport type, altitude band <=120 m AGL, equirectangular projection"
+ }
+}

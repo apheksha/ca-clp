@@ -1,0 +1,65 @@
+{
+ "scenario_id": "pilot_01_control",
+ "difficulty": "easy",
+ "base_seed": 0,
+ "attempt": 0,
+ "mission": {
+  "mission_id": "pilot_01_control",
+  "description": "Fly from the base at (10.0, 50.0) to the destination at (90.0, 50.0). The route must pass through the required points A at (50.0, 55.0). Maintain an altitude between 40 and 80 meters at every waypoint. Keep the total horizontal route length at or below 129 units.",
+  "start": [
+   10.0,
+   50.0
+  ],
+  "destination": [
+   90.0,
+   50.0
+  ],
+  "required_waypoints": [
+   {
+    "id": "A",
+    "x": 50.0,
+    "y": 55.0
+   }
+  ],
+  "min_altitude": 40.0,
+  "max_altitude": 80.0,
+  "max_distance": 129.0,
+  "no_fly_zones": [],
+  "ordering": [],
+  "position_tolerance": 1.0,
+  "start_altitude": 0.0,
+  "max_energy": null,
+  "energy_k_v": 1.0,
+  "energy_k_wp": 0.0,
+  "speed_h": 10.0,
+  "speed_v": 2.0,
+  "active": [
+   "altitude",
+   "distance"
+  ]
+ },
+ "metadata": {
+  "n_zones": 0,
+  "n_obstacles": 0,
+  "zone_density": 0.0,
+  "distance_slack": 1.6,
+  "energy_slack": null,
+  "altitude_band_width": 40.0,
+  "n_required": 1,
+  "feasibility": "FEASIBLE",
+  "witness_distance": 80.623,
+  "witness_energy": 120.623,
+  "lower_bound": 80.623,
+  "infeasible_kind": null,
+  "source": "pilot",
+  "nl_style": "formal",
+  "n_polygon_zones": 0,
+  "active": [
+   "altitude",
+   "distance"
+  ],
+  "n_active": 2,
+  "ordering_conflicts_with_route": false,
+  "purpose": "CONTROL: nothing hard. Every condition should succeed; if a model fails here, the model/format is the problem"
+ }
+}

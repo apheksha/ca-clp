@@ -1,0 +1,32 @@
+airspace: airspace_sample.geojson
+bbox_m:
+- -3200
+- -3200
+- 3200
+- 3200
+buildings: buildings_sample.osm.json
+destination:
+- 47.508993203637246
+- 8.537272550579377
+hgt:
+- N47E008.hgt
+max_agl: 120
+max_distance_m: 14000
+max_energy_wh: 150
+min_agl: 30
+mission_id: geo_sample
+origin:
+- 47.5
+- 8.5
+start:
+- 47.47481902981571
+- 8.462727449420623
+terrain_cell_m: 60
+vehicle: generic_quad_large
+waypoints:
+- id: W1
+  lat: 47.49820135927255
+  lon: 8.496006512437924
+wind:
+- 2.0
+- 1.0

@@ -1,0 +1,77 @@
+{
+ "scenario_id": "pilot_06_energy_alt",
+ "difficulty": "medium",
+ "base_seed": 0,
+ "attempt": 0,
+ "mission": {
+  "mission_id": "pilot_06_energy_alt",
+  "description": "The drone leaves its base at (10.0, 30.0) and has to end up at (90.0, 70.0). On the way it must stop at A at (45.0, 35.0), B at (70.0, 65.0); visit A before B. Keep it no lower than 30 m and no higher than 110 m. The battery only allows 135 energy units, where energy = route length + 1 x total climb (so low altitudes save battery).",
+  "start": [
+   10.0,
+   30.0
+  ],
+  "destination": [
+   90.0,
+   70.0
+  ],
+  "required_waypoints": [
+   {
+    "id": "A",
+    "x": 45.0,
+    "y": 35.0
+   },
+   {
+    "id": "B",
+    "x": 70.0,
+    "y": 65.0
+   }
+  ],
+  "min_altitude": 30.0,
+  "max_altitude": 110.0,
+  "max_distance": 1000000000.0,
+  "no_fly_zones": [],
+  "ordering": [
+   [
+    "A",
+    "B"
+   ]
+  ],
+  "position_tolerance": 1.0,
+  "start_altitude": 0.0,
+  "max_energy": 135.0,
+  "energy_k_v": 1.0,
+  "energy_k_wp": 0.0,
+  "speed_h": 10.0,
+  "speed_v": 2.0,
+  "active": [
+   "altitude",
+   "ordering",
+   "energy"
+  ]
+ },
+ "metadata": {
+  "n_zones": 0,
+  "n_obstacles": 0,
+  "zone_density": 0.0,
+  "distance_slack": null,
+  "energy_slack": 1.08,
+  "altitude_band_width": 80.0,
+  "n_required": 2,
+  "feasibility": "FEASIBLE",
+  "witness_distance": 95.022,
+  "witness_energy": 125.022,
+  "lower_bound": 95.022,
+  "infeasible_kind": null,
+  "source": "pilot",
+  "nl_style": "narrative",
+  "n_polygon_zones": 0,
+  "active": [
+   "altitude",
+   "ordering",
+   "energy"
+  ],
+  "n_active": 3,
+  "ordering_conflicts_with_route": false,
+  "purpose": "INTERACTION: wide altitude band but a tight battery: the plan must fly LOW (climb costs energy)"
+ }
+}

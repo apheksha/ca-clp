@@ -1,0 +1,59 @@
+# DETECTION-LATENCY study (reviewer: 'dynamic-event latency / delayed map updates'). Same design as experiments.yaml, but every mid-flight change is also tested
+# with a detection delay: the world changes at `progress`, the UAV only learns of it `delay` later (further along the stale plan). Reports re-planning success
+# AND exposure (did the blind interval already cross the new zone). Run: python run.py dynamic --exp-config config/experiments_latency.yaml ...
+seeds: [0, 1, 2]
+conditions:
+  A_llm_only:        {kind: llm_only}                                                          # descriptive baseline (unverified release; 100% release rate)
+  B_llm_verify:      {kind: llm_verify}
+  E_classical:       {kind: classical}                                                         # non-LLM reference (visibility-graph planner); 0 LLM calls
+  F_astar:           {kind: astar}                                                             # grid A* feasibility reference (survey Obj. 2); 0 LLM calls
+  D_resample:        {kind: resample, max_iterations: 3, temperature: 0.7}                    # compute-matched: verifier + fresh samples, NO feedback
+  C_full:            {kind: closed_loop, feedback_level: evidence,  repair_mode: targeted,   regression_guard: true,  max_iterations: 3, feasibility_precheck: true}
+  # ablations (each differs from C_full in exactly one factor)
+  X_binary_feedback: {kind: closed_loop, feedback_level: binary,    repair_mode: regenerate, regression_guard: true,  max_iterations: 3, feasibility_precheck: true}
+  X_localized:       {kind: closed_loop, feedback_level: localized, repair_mode: regenerate, regression_guard: true,  max_iterations: 3, feasibility_precheck: true}
+  X_evidence_regen:  {kind: closed_loop, feedback_level: evidence,  repair_mode: regenerate, regression_guard: true,  max_iterations: 3, feasibility_precheck: true}  # NOTE: Decouples C_full vs X_binary_feedback confound
+  X_binary_targeted: {kind: closed_loop, feedback_level: binary,   repair_mode: targeted,   regression_guard: true,  max_iterations: 3, feasibility_precheck: true}  # NEW: varies feedback content (binary vs evidence) with repair_mode=targeted
+  X_no_guard:        {kind: closed_loop, feedback_level: evidence,  repair_mode: targeted,   regression_guard: false, max_iterations: 3, feasibility_precheck: true}
+  X_one_iteration:   {kind: closed_loop, feedback_level: evidence,  repair_mode: targeted,   regression_guard: true,  max_iterations: 1, feasibility_precheck: true}
+  C_prescriptive:    {kind: closed_loop, feedback_level: prescriptive, repair_mode: targeted, regression_guard: true, max_iterations: 3, feasibility_precheck: true}   # evidence + verifier-computed detour coordinates
+  # LLM-free control for C_prescriptive: the SAME verifier-computed detours applied programmatically to the SAME shared initial plan (0 repair calls).
+  # Anything C_prescriptive achieves beyond this is attributable to the LLM; anything equal to it is verifier work (see src/repair/direct_patch.py).
+  G_direct_patch:    {kind: direct_patch, feedback_level: prescriptive, max_iterations: 3, feasibility_precheck: true}
+  X_no_precheck:     {kind: closed_loop, feedback_level: evidence,  repair_mode: targeted,   regression_guard: true,  max_iterations: 3, feasibility_precheck: false}
+pairs:   # (treatment, control): paired comparison on final_success
+  - [C_full, A_llm_only]
+  - [C_full, D_resample]          # does feedback beat compute-matched resampling? (cf. Stechly et al.)
+  - [C_full, X_evidence_regen]    # targeted vs unrestricted regeneration (isolates repair_mode; feedback held constant at evidence)
+  - [X_evidence_regen, X_binary_feedback] # isolates feedback content (evidence vs binary) with repair_mode held constant at regenerate
+  - [C_full, X_binary_feedback]   # combined difference (feedback content + repair mode)
+  - [C_full, X_binary_targeted]   # feedback content only (binary vs evidence, repair_mode targeted in both)
+  - [C_full, X_localized]
+  - [C_full, X_no_guard]          # regression guard
+  - [C_full, X_one_iteration]
+  - [C_prescriptive, C_full]
+  - [C_prescriptive, D_resample]
+  - [C_prescriptive, G_direct_patch]   # what does the LLM add once the verifier has done the geometry?
+  - [C_full, G_direct_patch]
+  - [D_resample, A_llm_only]
+
+# Objective 4: robustness to controlled mid-flight changes (add/enlarge zone, tighten distance, reduce battery).
+dynamic:
+  conditions: [A_llm_only, E_classical, F_astar, G_direct_patch, D_resample, C_full, C_prescriptive, X_binary_feedback, X_binary_targeted, X_evidence_regen]
+  n_per_difficulty: 5
+  selection: seeded_random     # seeded_random (default, reproducible, no file-order bias) | first (legacy: first n files per difficulty)
+  selection_seed: 2024
+  detection_delays: [0.0, 0.05, 0.15]   # 0 = instant detection (control), then 5 % and 15 % of the stale route flown blind
+  require_triggered: true      # skip changes that leave the stale plan valid (they test nothing)
+  progress: [0.35, 0.65]
+  changes: [add_zone, enlarge_zone, tighten_distance, reduce_energy]
+  seeds: [0, 1, 2, 3, 4]
+dynamic_pairs:
+  - [C_prescriptive, C_full]
+  - [C_prescriptive, G_direct_patch]
+  - [C_full, D_resample]            # repair of the remaining route vs from-scratch re-plan (no feedback)
+  - [C_full, A_llm_only]
+  - [C_full, X_evidence_regen]
+  - [X_evidence_regen, X_binary_feedback]
+  - [C_full, X_binary_feedback]
+  - [C_full, X_binary_targeted]     # new: isolates feedback content effect with repair_mode=targeted

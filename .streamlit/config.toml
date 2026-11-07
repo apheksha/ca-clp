@@ -1,0 +1,7 @@
+# v12: keep the sidebar toggle usable; hide only developer menus
+[client]
+toolbarMode = "minimal"
+showSidebarNavigation = true
+
+[server]
+headless = false

@@ -1,0 +1,129 @@
+{
+ "scenario_id": "pilot_07_all_five",
+ "difficulty": "hard",
+ "base_seed": 0,
+ "attempt": 0,
+ "mission": {
+  "mission_id": "pilot_07_all_five",
+  "description": "Fly from the base at (8.0, 40.0) to the destination at (92.0, 60.0). The route must pass through the required points A at (30.0, 72.0), B at (55.0, 22.0), C at (78.0, 68.0); visit A before B; visit B before C. Maintain an altitude between 45 and 75 meters at every waypoint. Avoid all restricted zones and obstacles (Z1, Z2), including the straight paths between waypoints. Keep the total horizontal route length at or below 179.9 units. Stay within the battery budget of 237 energy units, where energy = route length + 1 x total climb (so low altitudes save battery).",
+  "start": [
+   8.0,
+   40.0
+  ],
+  "destination": [
+   92.0,
+   60.0
+  ],
+  "required_waypoints": [
+   {
+    "id": "A",
+    "x": 30.0,
+    "y": 72.0
+   },
+   {
+    "id": "B",
+    "x": 55.0,
+    "y": 22.0
+   },
+   {
+    "id": "C",
+    "x": 78.0,
+    "y": 68.0
+   }
+  ],
+  "min_altitude": 45.0,
+  "max_altitude": 75.0,
+  "max_distance": 179.9,
+  "no_fly_zones": [
+   {
+    "id": "Z1",
+    "kind": "circle",
+    "center": [
+     42.0,
+     47.0
+    ],
+    "radius": 8.0,
+    "vertices": null,
+    "description": "restricted area",
+    "category": "nfz"
+   },
+   {
+    "id": "Z2",
+    "kind": "polygon",
+    "center": null,
+    "radius": null,
+    "vertices": [
+     [
+      60.0,
+      38.0
+     ],
+     [
+      70.0,
+      38.0
+     ],
+     [
+      71.0,
+      52.0
+     ],
+     [
+      61.0,
+      53.0
+     ]
+    ],
+    "description": "restricted area",
+    "category": "nfz"
+   }
+  ],
+  "ordering": [
+   [
+    "A",
+    "B"
+   ],
+   [
+    "B",
+    "C"
+   ]
+  ],
+  "position_tolerance": 1.0,
+  "start_altitude": 0.0,
+  "max_energy": 237.0,
+  "energy_k_v": 1.0,
+  "energy_k_wp": 0.0,
+  "speed_h": 10.0,
+  "speed_v": 2.0,
+  "active": [
+   "altitude",
+   "no_fly_zone",
+   "distance",
+   "ordering",
+   "energy"
+  ]
+ },
+ "metadata": {
+  "n_zones": 2,
+  "n_obstacles": 0,
+  "zone_density": 0.0347,
+  "distance_slack": 1.08,
+  "energy_slack": 1.12,
+  "altitude_band_width": 30.0,
+  "n_required": 3,
+  "feasibility": "FEASIBLE",
+  "witness_distance": 166.611,
+  "witness_energy": 211.611,
+  "lower_bound": 162.289,
+  "infeasible_kind": null,
+  "source": "pilot",
+  "nl_style": "formal",
+  "n_polygon_zones": 1,
+  "active": [
+   "altitude",
+   "no_fly_zone",
+   "distance",
+   "ordering",
+   "energy"
+  ],
+  "n_active": 5,
+  "ordering_conflicts_with_route": false,
+  "purpose": "ALL FIVE families at once: 2 zones (circle + polygon), ordering, tight distance and battery"
+ }
+}

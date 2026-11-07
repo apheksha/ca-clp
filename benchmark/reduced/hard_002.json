@@ -1,0 +1,204 @@
+{
+ "scenario_id": "hard_002",
+ "difficulty": "hard",
+ "base_seed": 2024,
+ "attempt": 0,
+ "mission": {
+  "mission_id": "hard_002",
+  "description": "The drone leaves its base at (13.5, 25.3) and has to end up at (90.4, 60.9). On the way it must stop at A at (59.9, 33.3), B at (73.4, 11.7), C at (54.7, 50.8), D at (66.3, 16.2), E at (52.6, 67.1); visit A before B; visit B before C; visit C before D; visit D before E. Keep it no lower than 43 m and no higher than 66 m. The restricted areas and obstacles (Z1 (obstacle), Z2 (obstacle), Z3 (obstacle), Z4 (obstacle), Z5) are off limits, and that includes cutting across a corner of one on the way between two stops. The whole trip may not be longer than 279.4 units. The battery only allows 329.4 energy units, where energy = route length + 1 x total climb (so low altitudes save battery).",
+  "start": [
+   13.5,
+   25.3
+  ],
+  "destination": [
+   90.4,
+   60.9
+  ],
+  "required_waypoints": [
+   {
+    "id": "A",
+    "x": 59.9,
+    "y": 33.3
+   },
+   {
+    "id": "B",
+    "x": 73.4,
+    "y": 11.7
+   },
+   {
+    "id": "C",
+    "x": 54.7,
+    "y": 50.8
+   },
+   {
+    "id": "D",
+    "x": 66.3,
+    "y": 16.2
+   },
+   {
+    "id": "E",
+    "x": 52.6,
+    "y": 67.1
+   }
+  ],
+  "min_altitude": 43.0,
+  "max_altitude": 66.0,
+  "max_distance": 279.4,
+  "no_fly_zones": [
+   {
+    "id": "Z1",
+    "kind": "circle",
+    "center": [
+     63.9,
+     66.6
+    ],
+    "radius": 6.8,
+    "vertices": null,
+    "description": "radio tower",
+    "category": "obstacle"
+   },
+   {
+    "id": "Z2",
+    "kind": "circle",
+    "center": [
+     36.4,
+     32.1
+    ],
+    "radius": 7.4,
+    "vertices": null,
+    "description": "building",
+    "category": "obstacle"
+   },
+   {
+    "id": "Z3",
+    "kind": "polygon",
+    "center": null,
+    "radius": null,
+    "vertices": [
+     [
+      70.74,
+      26.48
+     ],
+     [
+      66.58,
+      32.0
+     ],
+     [
+      61.86,
+      27.8
+     ],
+     [
+      67.57,
+      21.84
+     ]
+    ],
+    "description": "crane",
+    "category": "obstacle"
+   },
+   {
+    "id": "Z4",
+    "kind": "polygon",
+    "center": null,
+    "radius": null,
+    "vertices": [
+     [
+      87.51,
+      64.31
+     ],
+     [
+      83.58,
+      72.06
+     ],
+     [
+      76.16,
+      70.26
+     ],
+     [
+      74.64,
+      64.81
+     ],
+     [
+      78.02,
+      59.83
+     ],
+     [
+      82.98,
+      59.19
+     ]
+    ],
+    "description": "terrain ridge",
+    "category": "obstacle"
+   },
+   {
+    "id": "Z5",
+    "kind": "circle",
+    "center": [
+     57.3,
+     43.0
+    ],
+    "radius": 5.0,
+    "vertices": null,
+    "description": "restricted area 5",
+    "category": "nfz"
+   }
+  ],
+  "ordering": [
+   [
+    "A",
+    "B"
+   ],
+   [
+    "B",
+    "C"
+   ],
+   [
+    "C",
+    "D"
+   ],
+   [
+    "D",
+    "E"
+   ]
+  ],
+  "position_tolerance": 1.0,
+  "start_altitude": 0.0,
+  "max_energy": 329.4,
+  "energy_k_v": 1.0,
+  "energy_k_wp": 0.0,
+  "speed_h": 10.0,
+  "speed_v": 2.0,
+  "active": [
+   "altitude",
+   "no_fly_zone",
+   "distance",
+   "ordering",
+   "energy"
+  ]
+ },
+ "metadata": {
+  "n_zones": 5,
+  "n_obstacles": 4,
+  "zone_density": 0.0553,
+  "distance_slack": 1.1,
+  "energy_slack": 1.109,
+  "altitude_band_width": 23.0,
+  "n_required": 5,
+  "feasibility": "FEASIBLE",
+  "witness_distance": 253.9,
+  "witness_energy": 296.9,
+  "lower_bound": 243.407,
+  "infeasible_kind": null,
+  "source": "synthetic",
+  "nl_style": "narrative",
+  "n_polygon_zones": 2,
+  "active": [
+   "altitude",
+   "no_fly_zone",
+   "distance",
+   "ordering",
+   "energy"
+  ],
+  "n_active": 5,
+  "ordering_conflicts_with_route": true
+ }
+}

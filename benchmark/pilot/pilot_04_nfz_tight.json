@@ -1,0 +1,92 @@
+{
+ "scenario_id": "pilot_04_nfz_tight",
+ "difficulty": "medium",
+ "base_seed": 0,
+ "attempt": 0,
+ "mission": {
+  "mission_id": "pilot_04_nfz_tight",
+  "description": "Fly from the base at (10.0, 50.0) to the destination at (90.0, 50.0). The route must pass through the required points A at (30.0, 50.0), B at (70.0, 50.0); visit A before B. Maintain an altitude between 40 and 80 meters at every waypoint. Avoid all restricted zones and obstacles (Z1), including the straight paths between waypoints. Keep the total horizontal route length at or below 93.8 units.",
+  "start": [
+   10.0,
+   50.0
+  ],
+  "destination": [
+   90.0,
+   50.0
+  ],
+  "required_waypoints": [
+   {
+    "id": "A",
+    "x": 30.0,
+    "y": 50.0
+   },
+   {
+    "id": "B",
+    "x": 70.0,
+    "y": 50.0
+   }
+  ],
+  "min_altitude": 40.0,
+  "max_altitude": 80.0,
+  "max_distance": 93.8,
+  "no_fly_zones": [
+   {
+    "id": "Z1",
+    "kind": "circle",
+    "center": [
+     50.0,
+     50.0
+    ],
+    "radius": 12.0,
+    "vertices": null,
+    "description": "restricted area",
+    "category": "nfz"
+   }
+  ],
+  "ordering": [
+   [
+    "A",
+    "B"
+   ]
+  ],
+  "position_tolerance": 1.0,
+  "start_altitude": 0.0,
+  "max_energy": null,
+  "energy_k_v": 1.0,
+  "energy_k_wp": 0.0,
+  "speed_h": 10.0,
+  "speed_v": 2.0,
+  "active": [
+   "altitude",
+   "no_fly_zone",
+   "distance",
+   "ordering"
+  ]
+ },
+ "metadata": {
+  "n_zones": 1,
+  "n_obstacles": 0,
+  "zone_density": 0.0452,
+  "distance_slack": 1.059,
+  "energy_slack": null,
+  "altitude_band_width": 40.0,
+  "n_required": 2,
+  "feasibility": "FEASIBLE",
+  "witness_distance": 88.534,
+  "witness_energy": 128.534,
+  "lower_bound": 80.0,
+  "infeasible_kind": null,
+  "source": "pilot",
+  "nl_style": "formal",
+  "n_polygon_zones": 0,
+  "active": [
+   "altitude",
+   "no_fly_zone",
+   "distance",
+   "ordering"
+  ],
+  "n_active": 4,
+  "ordering_conflicts_with_route": false,
+  "purpose": "INTERACTION: same geometry but distance budget only 6% above the optimum: the detour must be short and on a good side"
+ }
+}

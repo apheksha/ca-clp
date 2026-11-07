@@ -1,0 +1,28 @@
+# PILOT PACK design (10 hand-built missions, benchmark/pilot). Run this FIRST, then share the report printed by scripts/check_pilot.py.
+# One seed, deterministic decoding for A and the repair loops; D_resample samples at 0.7 (it must, otherwise 'fresh' plans are identical).
+# Worst case per feasible scenario: 1 initial + 3 (D) + 3 (C_full) + 3 (X_binary) + 3 (X_evidence_regen) = 13 calls; typically about half.
+seeds: [0]
+planner: {temperature: 0.0, normalize_format: true}
+conditions:
+  A_llm_only:        {kind: llm_only}
+  E_classical:       {kind: classical}
+  F_astar:           {kind: astar}
+  D_resample:        {kind: resample, max_iterations: 3, temperature: 0.7}
+  C_full:            {kind: closed_loop, feedback_level: evidence,  repair_mode: targeted,   regression_guard: true, max_iterations: 3, feasibility_precheck: true}
+  X_binary_feedback: {kind: closed_loop, feedback_level: binary,    repair_mode: regenerate, regression_guard: true, max_iterations: 3, feasibility_precheck: true}
+  X_evidence_regen:  {kind: closed_loop, feedback_level: evidence,  repair_mode: regenerate, regression_guard: true, max_iterations: 3, feasibility_precheck: true}
+pairs:
+  - [C_full, A_llm_only]
+  - [C_full, D_resample]
+  - [C_full, X_binary_feedback]
+  - [C_full, X_evidence_regen]
+dynamic:
+  conditions: [E_classical, F_astar, D_resample, C_full, X_binary_feedback]
+  n_per_difficulty: 2
+  progress: [0.35]
+  changes: [add_zone, enlarge_zone, tighten_distance]
+  require_triggered: true
+  seeds: [0]
+dynamic_pairs:
+  - [C_full, D_resample]
+  - [C_full, X_binary_feedback]

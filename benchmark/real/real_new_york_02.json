@@ -1,0 +1,153 @@
+{
+ "scenario_id": "real_new_york_02",
+ "difficulty": "real_hard",
+ "mission": {
+  "mission_id": "real_new_york_02",
+  "start": [
+   -6913.1,
+   -735.6
+  ],
+  "destination": [
+   -24827.4,
+   -11408.5
+  ],
+  "required_waypoints": [
+   {
+    "id": "A",
+    "x": 25788.5,
+    "y": 2423.9
+   },
+   {
+    "id": "B",
+    "x": -18018.4,
+    "y": 18602.8
+   },
+   {
+    "id": "C",
+    "x": -17074.5,
+    "y": 12765.3
+   },
+   {
+    "id": "D",
+    "x": -21035.2,
+    "y": -13332.1
+   }
+  ],
+  "min_altitude": 40.0,
+  "max_altitude": 80.0,
+  "max_distance": 132792.0,
+  "ordering": [
+   [
+    "A",
+    "B"
+   ],
+   [
+    "B",
+    "C"
+   ],
+   [
+    "C",
+    "D"
+   ]
+  ],
+  "start_altitude": 0.0,
+  "max_energy": 139054.0,
+  "energy_k_v": 30.0,
+  "energy_k_wp": 0.0,
+  "active": [
+   "altitude",
+   "no_fly_zone",
+   "distance",
+   "ordering",
+   "energy"
+  ],
+  "no_fly_zones": [
+   {
+    "id": "Z1",
+    "kind": "circle",
+    "center": [
+     6523.2,
+     6360.2
+    ],
+    "radius": 8000.0,
+    "description": "LaGuardia Airport (KLGA, large_airport) protection radius 8000 m",
+    "category": "nfz"
+   },
+   {
+    "id": "Z2",
+    "kind": "circle",
+    "center": [
+     14384.4,
+     -8957.1
+    ],
+    "radius": 8000.0,
+    "description": "John F. Kennedy International Airport (KJFK, large_airport) protection radius 8000 m",
+    "category": "nfz"
+   },
+   {
+    "id": "Z3",
+    "kind": "circle",
+    "center": [
+     -9337.6,
+     14466.6
+    ],
+    "radius": 5000.0,
+    "description": "Teterboro Airport (KTEB, medium_airport) protection radius 5000 m",
+    "category": "nfz"
+   },
+   {
+    "id": "Z4",
+    "kind": "circle",
+    "center": [
+     -18586.5,
+     -3402.6
+    ],
+    "radius": 8000.0,
+    "description": "Newark Liberty International Airport (KEWR, large_airport) protection radius 8000 m",
+    "category": "nfz"
+   }
+  ],
+  "description": "The drone leaves its base at (-6913, -735.6) and has to end up at (-24827, -11408). On the way it must stop at A (Winthrop University Hospital Heliport) at (25788, 2424), B (Metropolitan Electric Heliport) at (-18018, 18603), C (Hoffmann-La Roche Inc Heliport) at (-17074, 12765), D (American Cyanamid Linden Heliport) at (-21035, -13332); visit A before B; visit B before C; visit C before D. Keep it no lower than 40 m and no higher than 80 m. The restricted areas and obstacles (Z1 [LaGuardia Airport (KLGA, large_airport) protection radius 8000 m], Z2 [John F. Kennedy International Airport (KJFK, large_airport) protection radius 8000 m], Z3 [Teterboro Airport (KTEB, medium_airport) protection radius 5000 m], Z4 [Newark Liberty International Airport (KEWR, large_airport) protection radius 8000 m]) are off limits, and that includes cutting across a corner of one on the way between two stops. The whole trip may not be longer than 132792 meters. The battery only allows 139054 energy units, where energy = route length + 30 x total climb (so low altitudes save battery). (START is Paulus Hook Pier Heliport; DEST is Linden Airport.) Coordinates are meters east/north of the region center."
+ },
+ "metadata": {
+  "source": "ourairports",
+  "region": "new_york",
+  "region_center": [
+   40.72,
+   -73.95
+  ],
+  "airports_csv_sha256": "fe7f0d9dc2646e41b0cc520f1733d99b9c76a6b26a3e6a55f66fa89e62083ad5",
+  "n_zones": 4,
+  "zone_density": 0.2768,
+  "distance_slack": 1.08,
+  "altitude_band_width": 40.0,
+  "n_required": 4,
+  "feasibility": "FEASIBLE",
+  "witness_distance": 122955.8,
+  "lower_bound": 116114.7,
+  "infeasible_kind": null,
+  "n_polygon_zones": 0,
+  "active": [
+   "altitude",
+   "no_fly_zone",
+   "distance",
+   "ordering",
+   "energy"
+  ],
+  "n_active": 5,
+  "n_obstacles": 0,
+  "witness_energy": null,
+  "energy_slack": 1.12,
+  "nl_style": "narrative",
+  "site_names": {
+   "A": "Winthrop University Hospital Heliport",
+   "B": "Metropolitan Electric Heliport",
+   "C": "Hoffmann-La Roche Inc Heliport",
+   "D": "American Cyanamid Linden Heliport",
+   "START": "Paulus Hook Pier Heliport",
+   "DEST": "Linden Airport"
+  },
+  "n_blocked_legs": 3,
+  "assumptions": "zone radii by airport type, altitude band <=120 m AGL, equirectangular projection"
+ }
+}

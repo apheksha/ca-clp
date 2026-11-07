@@ -1,0 +1,72 @@
+{
+ "scenario_id": "combo_dist_000",
+ "difficulty": "combo",
+ "base_seed": 2024,
+ "attempt": 0,
+ "mission": {
+  "mission_id": "combo_dist_000",
+  "description": "Fly from the base at (8.9, 53.1) to the destination at (92.8, 49.1). The route must pass through the required points A at (68.8, 43.0), B at (60.7, 22.7), C at (29.5, 20.2). Keep the total horizontal route length at or below 203.1 units.",
+  "start": [
+   8.9,
+   53.1
+  ],
+  "destination": [
+   92.8,
+   49.1
+  ],
+  "required_waypoints": [
+   {
+    "id": "A",
+    "x": 68.8,
+    "y": 43.0
+   },
+   {
+    "id": "B",
+    "x": 60.7,
+    "y": 22.7
+   },
+   {
+    "id": "C",
+    "x": 29.5,
+    "y": 20.2
+   }
+  ],
+  "min_altitude": 0.0,
+  "max_altitude": 1000.0,
+  "max_distance": 203.1,
+  "no_fly_zones": [],
+  "ordering": [],
+  "position_tolerance": 1.0,
+  "start_altitude": 0.0,
+  "max_energy": null,
+  "energy_k_v": 1.0,
+  "energy_k_wp": 0.0,
+  "speed_h": 10.0,
+  "speed_v": 2.0,
+  "active": [
+   "distance"
+  ]
+ },
+ "metadata": {
+  "n_zones": 0,
+  "n_obstacles": 0,
+  "zone_density": 0.0,
+  "distance_slack": 1.107,
+  "energy_slack": null,
+  "altitude_band_width": null,
+  "n_required": 3,
+  "feasibility": "FEASIBLE",
+  "witness_distance": 183.487,
+  "witness_energy": 183.487,
+  "lower_bound": 183.487,
+  "infeasible_kind": null,
+  "source": "synthetic",
+  "nl_style": "formal",
+  "n_polygon_zones": 0,
+  "active": [
+   "distance"
+  ],
+  "n_active": 1,
+  "ordering_conflicts_with_route": false
+ }
+}

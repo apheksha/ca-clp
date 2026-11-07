@@ -1,0 +1,131 @@
+{
+ "scenario_id": "real_sydney_05",
+ "difficulty": "real_hard",
+ "mission": {
+  "mission_id": "real_sydney_05",
+  "start": [
+   -4614.1,
+   18526.7
+  ],
+  "destination": [
+   -22570.6,
+   4557.7
+  ],
+  "required_waypoints": [
+   {
+    "id": "A",
+    "x": 14797.4,
+    "y": 17877.9
+   },
+   {
+    "id": "B",
+    "x": 3878.4,
+    "y": 8759.5
+   },
+   {
+    "id": "C",
+    "x": -14428.8,
+    "y": 10859.4
+   },
+   {
+    "id": "D",
+    "x": 1246.0,
+    "y": -15621.5
+   }
+  ],
+  "min_altitude": 40.0,
+  "max_altitude": 80.0,
+  "max_distance": 125457.0,
+  "ordering": [
+   [
+    "A",
+    "B"
+   ],
+   [
+    "B",
+    "C"
+   ],
+   [
+    "C",
+    "D"
+   ]
+  ],
+  "start_altitude": 0.0,
+  "max_energy": 131448.0,
+  "energy_k_v": 30.0,
+  "energy_k_wp": 0.0,
+  "active": [
+   "altitude",
+   "no_fly_zone",
+   "distance",
+   "ordering",
+   "energy"
+  ],
+  "no_fly_zones": [
+   {
+    "id": "Z1",
+    "kind": "circle",
+    "center": [
+     2492.1,
+     -5125.9
+    ],
+    "radius": 8000.0,
+    "description": "Sydney Kingsford Smith International Airport (YSSY, large_airport) protection radius 8000 m",
+    "category": "nfz"
+   },
+   {
+    "id": "Z2",
+    "kind": "circle",
+    "center": [
+     -14693.8,
+     -2626.2
+    ],
+    "radius": 5000.0,
+    "description": "Sydney Bankstown Airport (YSBK, medium_airport) protection radius 5000 m",
+    "category": "nfz"
+   }
+  ],
+  "description": "The drone leaves its base at (-4614, 18527) and has to end up at (-22571, 4558). On the way it must stop at A (Long Reef Helipad) at (14797, 17878), B (Royal North Shore Hospital Helipad) at (3878, 8760), C (Westmead - Children's Hospital Helipad) at (-14429, 10859), D (Wanda Beach Helipad) at (1246, -15622); visit A before B; visit B before C; visit C before D. Keep it no lower than 40 m and no higher than 80 m. The restricted areas and obstacles (Z1 [Sydney Kingsford Smith International Airport (YSSY, large_airport) protection radius 8000 m], Z2 [Sydney Bankstown Airport (YSBK, medium_airport) protection radius 5000 m]) are off limits, and that includes cutting across a corner of one on the way between two stops. The whole trip may not be longer than 125457 meters. The battery only allows 131448 energy units, where energy = route length + 30 x total climb (so low altitudes save battery). (START is Sydney Adventist Hospital Helipad; DEST is Fairfield Hospital Helipad.) Coordinates are meters east/north of the region center."
+ },
+ "metadata": {
+  "source": "ourairports",
+  "region": "sydney",
+  "region_center": [
+   -33.9,
+   151.15
+  ],
+  "airports_csv_sha256": "fe7f0d9dc2646e41b0cc520f1733d99b9c76a6b26a3e6a55f66fa89e62083ad5",
+  "n_zones": 2,
+  "zone_density": 0.0989,
+  "distance_slack": 1.08,
+  "altitude_band_width": 40.0,
+  "n_required": 4,
+  "feasibility": "FEASIBLE",
+  "witness_distance": 116164.1,
+  "lower_bound": 114063.5,
+  "infeasible_kind": null,
+  "n_polygon_zones": 0,
+  "active": [
+   "altitude",
+   "no_fly_zone",
+   "distance",
+   "ordering",
+   "energy"
+  ],
+  "n_active": 5,
+  "n_obstacles": 0,
+  "witness_energy": null,
+  "energy_slack": 1.12,
+  "nl_style": "narrative",
+  "site_names": {
+   "A": "Long Reef Helipad",
+   "B": "Royal North Shore Hospital Helipad",
+   "C": "Westmead - Children's Hospital Helipad",
+   "D": "Wanda Beach Helipad",
+   "START": "Sydney Adventist Hospital Helipad",
+   "DEST": "Fairfield Hospital Helipad"
+  },
+  "n_blocked_legs": 2,
+  "assumptions": "zone radii by airport type, altitude band <=120 m AGL, equirectangular projection"
+ }
+}

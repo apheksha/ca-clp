@@ -1,0 +1,81 @@
+{
+ "scenario_id": "combo_ord_001",
+ "difficulty": "combo",
+ "base_seed": 2024,
+ "attempt": 0,
+ "mission": {
+  "mission_id": "combo_ord_001",
+  "description": "Route START(12.2,50.6) -> DEST(85.7,26.3) via A at (38.6, 63.4), B at (44.5, 21.6), C at (45.1, 82.7). Order: visit A before B; visit B before C.",
+  "start": [
+   12.2,
+   50.6
+  ],
+  "destination": [
+   85.7,
+   26.3
+  ],
+  "required_waypoints": [
+   {
+    "id": "A",
+    "x": 38.6,
+    "y": 63.4
+   },
+   {
+    "id": "B",
+    "x": 44.5,
+    "y": 21.6
+   },
+   {
+    "id": "C",
+    "x": 45.1,
+    "y": 82.7
+   }
+  ],
+  "min_altitude": 0.0,
+  "max_altitude": 1000.0,
+  "max_distance": 1000000000.0,
+  "no_fly_zones": [],
+  "ordering": [
+   [
+    "A",
+    "B"
+   ],
+   [
+    "B",
+    "C"
+   ]
+  ],
+  "position_tolerance": 1.0,
+  "start_altitude": 0.0,
+  "max_energy": null,
+  "energy_k_v": 1.0,
+  "energy_k_wp": 0.0,
+  "speed_h": 10.0,
+  "speed_v": 2.0,
+  "active": [
+   "ordering"
+  ]
+ },
+ "metadata": {
+  "n_zones": 0,
+  "n_obstacles": 0,
+  "zone_density": 0.0,
+  "distance_slack": null,
+  "energy_slack": null,
+  "altitude_band_width": null,
+  "n_required": 3,
+  "feasibility": "FEASIBLE",
+  "witness_distance": 202.15,
+  "witness_energy": 202.15,
+  "lower_bound": 202.15,
+  "infeasible_kind": null,
+  "source": "synthetic",
+  "nl_style": "terse",
+  "n_polygon_zones": 0,
+  "active": [
+   "ordering"
+  ],
+  "n_active": 1,
+  "ordering_conflicts_with_route": false
+ }
+}

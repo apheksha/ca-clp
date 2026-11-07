@@ -1,0 +1,175 @@
+{
+ "scenario_id": "real_los_angeles_02",
+ "difficulty": "real_hard",
+ "mission": {
+  "mission_id": "real_los_angeles_02",
+  "start": [
+   3905.9,
+   17092.9
+  ],
+  "destination": [
+   -10817.3,
+   6784.6
+  ],
+  "required_waypoints": [
+   {
+    "id": "A",
+    "x": 11892.0,
+    "y": 22761.6
+   },
+   {
+    "id": "B",
+    "x": 3903.1,
+    "y": 6281.4
+   },
+   {
+    "id": "C",
+    "x": 3176.5,
+    "y": 5667.8
+   },
+   {
+    "id": "D",
+    "x": 682.2,
+    "y": -18992.1
+   }
+  ],
+  "min_altitude": 40.0,
+  "max_altitude": 80.0,
+  "max_distance": 91452.0,
+  "ordering": [
+   [
+    "A",
+    "B"
+   ],
+   [
+    "B",
+    "C"
+   ],
+   [
+    "C",
+    "D"
+   ]
+  ],
+  "start_altitude": 0.0,
+  "max_energy": 96183.0,
+  "energy_k_v": 30.0,
+  "energy_k_wp": 0.0,
+  "active": [
+   "altitude",
+   "no_fly_zone",
+   "distance",
+   "ordering",
+   "energy"
+  ],
+  "no_fly_zones": [
+   {
+    "id": "Z1",
+    "kind": "circle",
+    "center": [
+     -3226.4,
+     -8584.5
+    ],
+    "radius": 5000.0,
+    "description": "Jack Northrop Field Hawthorne Municipal Airport (KHHR, medium_airport) protection radius 5000 m",
+    "category": "nfz"
+   },
+   {
+    "id": "Z2",
+    "kind": "circle",
+    "center": [
+     -9955.7,
+     -6393.6
+    ],
+    "radius": 8000.0,
+    "description": "Los Angeles International Airport (KLAX, large_airport) protection radius 8000 m",
+    "category": "nfz"
+   },
+   {
+    "id": "Z3",
+    "kind": "circle",
+    "center": [
+     -13919.6,
+     1756.9
+    ],
+    "radius": 5000.0,
+    "description": "Santa Monica Municipal Airport (KSMO, medium_airport) protection radius 5000 m",
+    "category": "nfz"
+   },
+   {
+    "id": "Z4",
+    "kind": "circle",
+    "center": [
+     -5351.3,
+     22554.1
+    ],
+    "radius": 8000.0,
+    "description": "Hollywood Burbank/Bob Hope Airport (KBUR, large_airport) protection radius 8000 m",
+    "category": "nfz"
+   },
+   {
+    "id": "Z5",
+    "kind": "circle",
+    "center": [
+     13837.8,
+     -20401.7
+    ],
+    "radius": 8000.0,
+    "description": "Long Beach International Airport (KLGB, large_airport) protection radius 8000 m",
+    "category": "nfz"
+   },
+   {
+    "id": "Z6",
+    "kind": "circle",
+    "center": [
+     -17514.9,
+     23328.8
+    ],
+    "radius": 5000.0,
+    "description": "Van Nuys Airport (KVNY, medium_airport) protection radius 5000 m",
+    "category": "nfz"
+   }
+  ],
+  "description": "The drone leaves its base at (3906, 17093) and has to end up at (-10817, 6785). On the way it must stop at A (Mesa Heliport) at (11892, 22762), B (Los Angeles Unified School District Headquarters Helipad) at (3903, 6281), C (Garland Center Heliport) at (3176, 5668), D (Harbor/UCLA Medical Center Heliport) at (682.2, -18992); visit A before B; visit B before C; visit C before D. Keep it no lower than 40 m and no higher than 80 m. The restricted areas and obstacles (Z1 [Jack Northrop Field Hawthorne Municipal Airport (KHHR, medium_airport) protection radius 5000 m], Z2 [Los Angeles International Airport (KLAX, large_airport) protection radius 8000 m], Z3 [Santa Monica Municipal Airport (KSMO, medium_airport) protection radius 5000 m], Z4 [Hollywood Burbank/Bob Hope Airport (KBUR, large_airport) protection radius 8000 m], Z5 [Long Beach International Airport (KLGB, large_airport) protection radius 8000 m], Z6 [Van Nuys Airport (KVNY, medium_airport) protection radius 5000 m]) are off limits, and that includes cutting across a corner of one on the way between two stops. The whole trip may not be longer than 91452 meters. The battery only allows 96183 energy units, where energy = route length + 30 x total climb (so low altitudes save battery). (START is 520 North Central Avenue Heliport; DEST is Century City Heliport.) Coordinates are meters east/north of the region center."
+ },
+ "metadata": {
+  "source": "ourairports",
+  "region": "los_angeles",
+  "region_center": [
+   34.0,
+   -118.3
+  ],
+  "airports_csv_sha256": "fe7f0d9dc2646e41b0cc520f1733d99b9c76a6b26a3e6a55f66fa89e62083ad5",
+  "n_zones": 6,
+  "zone_density": 0.2967,
+  "distance_slack": 1.08,
+  "altitude_band_width": 40.0,
+  "n_required": 4,
+  "feasibility": "FEASIBLE",
+  "witness_distance": 84677.7,
+  "lower_bound": 82070.1,
+  "infeasible_kind": null,
+  "n_polygon_zones": 0,
+  "active": [
+   "altitude",
+   "no_fly_zone",
+   "distance",
+   "ordering",
+   "energy"
+  ],
+  "n_active": 5,
+  "n_obstacles": 0,
+  "witness_energy": null,
+  "energy_slack": 1.12,
+  "nl_style": "narrative",
+  "site_names": {
+   "A": "Mesa Heliport",
+   "B": "Los Angeles Unified School District Headquarters Helipad",
+   "C": "Garland Center Heliport",
+   "D": "Harbor/UCLA Medical Center Heliport",
+   "START": "520 North Central Avenue Heliport",
+   "DEST": "Century City Heliport"
+  },
+  "n_blocked_legs": 3,
+  "assumptions": "zone radii by airport type, altitude band <=120 m AGL, equirectangular projection"
+ }
+}

@@ -1,0 +1,18 @@
+{
+ "n_flights": 1116,
+ "L1_verified": 1116,
+ "L2_executed_feasible": 40,
+ "verified_but_not_executable": 1076,
+ "reasons": {
+  "zone_intrusion_or_collision": 0,
+  "battery_depleted": 0,
+  "not_arrived_or_waypoint_missed": 0,
+  "order": 0
+ },
+ "plans_skipped_not_L1_verified": 26,
+ "L3_flight_safety": "not assessed",
+ "altitude_margin_m": 0.0,
+ "plans_margin_not_admissible": 0,
+ "margin_not_admissible_run_ids": [],
+ "note": "L1 = verifier-accepted geometry; L2 = executed in the built-in simulator (uncalibrated vehicle profile); L3 (real flight safety) is outside this repository's evidence."
+}

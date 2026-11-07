@@ -1,0 +1,91 @@
+{
+ "scenario_id": "easy_003",
+ "difficulty": "easy",
+ "base_seed": 2024,
+ "attempt": 0,
+ "mission": {
+  "mission_id": "easy_003",
+  "description": "Fly from the base at (12.4, 33.6) to the destination at (95.0, 66.9). The route must pass through the required points A at (54.6, 63.8), B at (63.0, 81.0); visit A before B. Maintain an altitude between 37 and 100 meters at every waypoint. Avoid all restricted zones and obstacles (Z1), including the straight paths between waypoints. Keep the total horizontal route length at or below 167.5 units.",
+  "start": [
+   12.4,
+   33.6
+  ],
+  "destination": [
+   95.0,
+   66.9
+  ],
+  "required_waypoints": [
+   {
+    "id": "A",
+    "x": 54.6,
+    "y": 63.8
+   },
+   {
+    "id": "B",
+    "x": 63.0,
+    "y": 81.0
+   }
+  ],
+  "min_altitude": 37.0,
+  "max_altitude": 100.0,
+  "max_distance": 167.5,
+  "no_fly_zones": [
+   {
+    "id": "Z1",
+    "kind": "circle",
+    "center": [
+     78.0,
+     71.0
+    ],
+    "radius": 8.8,
+    "vertices": null,
+    "description": "restricted area 1",
+    "category": "nfz"
+   }
+  ],
+  "ordering": [
+   [
+    "A",
+    "B"
+   ]
+  ],
+  "position_tolerance": 1.0,
+  "start_altitude": 0.0,
+  "max_energy": null,
+  "energy_k_v": 1.0,
+  "energy_k_wp": 0.0,
+  "speed_h": 10.0,
+  "speed_v": 2.0,
+  "active": [
+   "altitude",
+   "no_fly_zone",
+   "distance",
+   "ordering"
+  ]
+ },
+ "metadata": {
+  "n_zones": 1,
+  "n_obstacles": 0,
+  "zone_density": 0.0243,
+  "distance_slack": 1.544,
+  "energy_slack": null,
+  "altitude_band_width": 63.0,
+  "n_required": 2,
+  "feasibility": "FEASIBLE",
+  "witness_distance": 108.436,
+  "witness_energy": 145.436,
+  "lower_bound": 106.003,
+  "infeasible_kind": null,
+  "source": "synthetic",
+  "nl_style": "formal",
+  "n_polygon_zones": 0,
+  "active": [
+   "altitude",
+   "no_fly_zone",
+   "distance",
+   "ordering"
+  ],
+  "n_active": 4,
+  "ordering_conflicts_with_route": false
+ }
+}

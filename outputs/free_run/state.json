@@ -1,0 +1,243 @@
+{
+ "created": "2026-11-06 21:54",
+ "dry_run": false,
+ "models": {
+  "main": {
+   "provider": "gemini",
+   "model": "gemini-3.5-flash-lite",
+   "requested": "gemini-3.5-flash-lite",
+   "label": "main"
+  },
+  "second:open-weights model": {
+   "provider": "gemini",
+   "model": "gemma-4-31b-it",
+   "requested": "auto-gemma",
+   "label": "open-weights model"
+  },
+  "second:gpt-oss-120b": {
+   "provider": "groq",
+   "model": "openai/gpt-oss-120b",
+   "requested": "openai/gpt-oss-120b",
+   "label": "gpt-oss-120b"
+  }
+ },
+ "jobs": {
+  "tempcheck": {
+   "status": "done",
+   "dir": "outputs/tempcheck/tempcheck_gemini_gemini-3.5-flash-lite_1793982520.json",
+   "sessions": 1,
+   "history": [
+    {
+     "when": "2026-11-06 21:58",
+     "kind": "done"
+    }
+   ],
+   "model_key": "main",
+   "label": "main",
+   "blocked_until": null
+  },
+  "spec": {
+   "status": "done",
+   "dir": "outputs/nl_spec/gemini_gemini-3.5-flash-lite_20261106-215840",
+   "sessions": 1,
+   "history": [
+    {
+     "when": "2026-11-06 22:33",
+     "kind": "done"
+    }
+   ],
+   "model_key": "main",
+   "label": "main",
+   "blocked_until": null
+  },
+  "dynamic": {
+   "status": "done",
+   "dir": "outputs/raw/dyn-real_20261106-223312_3eda31",
+   "sessions": 3,
+   "history": [
+    {
+     "when": "2026-11-06 22:48",
+     "kind": "interrupted",
+     "message": "interrupted by user (Ctrl-C)"
+    },
+    {
+     "when": "2026-11-06 22:50",
+     "kind": "interrupted",
+     "message": "interrupted by user (Ctrl-C)"
+    },
+    {
+     "when": "2026-11-06 23:20",
+     "kind": "done"
+    }
+   ],
+   "model_key": "main",
+   "label": "main",
+   "blocked_until": null
+  },
+  "bengaluru": {
+   "status": "done",
+   "dir": "outputs/raw/real_20261106-232030_ffbb13",
+   "sessions": 5,
+   "history": [
+    {
+     "when": "2026-11-06 23:25",
+     "kind": "daily_quota",
+     "retry_after_s": 50643.735439776,
+     "message": "HTTP 429: daily quota appears exhausted ([{\"error\": {\"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for ). Wait for the reset, then continue with --resume."
+    },
+    {
+     "when": "2026-11-06 23:27",
+     "kind": "auth",
+     "message": "HTTP 403: [{\"error\": {\"code\": 403, \"message\": \"The Gemini API free tier is not available for this project. To use the Gemini API, please set up billing to upgrade to the paid tier at https://aistudio.google.com/billing. For more information, see https://ai.google.dev/gemini-api/docs/troubleshooting#project-un"
+    },
+    {
+     "when": "2026-11-06 23:32",
+     "kind": "auth",
+     "message": "HTTP 403: [{\"error\": {\"code\": 403, \"message\": \"The Gemini API free tier is not available for this project. To use the Gemini API, please set up billing to upgrade to the paid tier at https://aistudio.google.com/billing. For more information, see https://ai.google.dev/gemini-api/docs/troubleshooting#project-un"
+    },
+    {
+     "when": "2026-11-06 23:33",
+     "kind": "auth",
+     "message": "HTTP 403: [{\"error\": {\"code\": 403, \"message\": \"The Gemini API free tier is not available for this project. To use the Gemini API, please set up billing to upgrade to the paid tier at https://aistudio.google.com/billing. For more information, see https://ai.google.dev/gemini-api/docs/troubleshooting#project-un"
+    },
+    {
+     "when": "2026-11-07 00:03",
+     "kind": "done"
+    }
+   ],
+   "model_key": "main",
+   "label": "main",
+   "blocked_until": null
+  },
+  "dynamic_synthetic": {
+   "status": "done",
+   "dir": "outputs/raw/dyn-real_20261106-232701_338644",
+   "sessions": 6,
+   "history": [
+    {
+     "when": "2026-11-06 23:27",
+     "kind": "auth",
+     "message": "HTTP 403: [{\"error\": {\"code\": 403, \"message\": \"The Gemini API free tier is not available for this project. To use the Gemini API, please set up billing to upgrade to the paid tier at https://aistudio.google.com/billing. For more information, see https://ai.google.dev/gemini-api/docs/troubleshooting#project-un"
+    },
+    {
+     "when": "2026-11-06 23:32",
+     "kind": "auth",
+     "message": "HTTP 403: [{\"error\": {\"code\": 403, \"message\": \"The Gemini API free tier is not available for this project. To use the Gemini API, please set up billing to upgrade to the paid tier at https://aistudio.google.com/billing. For more information, see https://ai.google.dev/gemini-api/docs/troubleshooting#project-un"
+    },
+    {
+     "when": "2026-11-06 23:33",
+     "kind": "auth",
+     "message": "HTTP 403: [{\"error\": {\"code\": 403, \"message\": \"The Gemini API free tier is not available for this project. To use the Gemini API, please set up billing to upgrade to the paid tier at https://aistudio.google.com/billing. For more information, see https://ai.google.dev/gemini-api/docs/troubleshooting#project-un"
+    },
+    {
+     "when": "2026-11-07 00:03",
+     "kind": "interrupted",
+     "message": "interrupted by user (Ctrl-C)"
+    },
+    {
+     "when": "2026-11-07 00:11",
+     "kind": "interrupted",
+     "message": "interrupted by user (Ctrl-C)"
+    },
+    {
+     "when": "2026-11-07 00:50",
+     "kind": "done"
+    }
+   ],
+   "blocked_until": null,
+   "model_key": "main",
+   "label": "main"
+  },
+  "second:open-weights model": {
+   "status": "pending",
+   "dir": "outputs/raw/real_20261106-232556_ad9a62",
+   "sessions": 5,
+   "history": [
+    {
+     "when": "2026-11-06 23:26",
+     "kind": "interrupted",
+     "message": "interrupted by user (Ctrl-C)"
+    },
+    {
+     "when": "2026-11-06 23:27",
+     "kind": "auth",
+     "message": "HTTP 403: [{\"error\": {\"code\": 403, \"message\": \"The Gemini API free tier is not available for this project. To use the Gemini API, please set up billing to upgrade to the paid tier at https://aistudio.google.com/billing. For more information, see https://ai.google.dev/gemini-api/docs/troubleshooting#project-un"
+    },
+    {
+     "when": "2026-11-06 23:32",
+     "kind": "auth",
+     "message": "HTTP 403: [{\"error\": {\"code\": 403, \"message\": \"The Gemini API free tier is not available for this project. To use the Gemini API, please set up billing to upgrade to the paid tier at https://aistudio.google.com/billing. For more information, see https://ai.google.dev/gemini-api/docs/troubleshooting#project-un"
+    },
+    {
+     "when": "2026-11-06 23:33",
+     "kind": "auth",
+     "message": "HTTP 403: [{\"error\": {\"code\": 403, \"message\": \"The Gemini API free tier is not available for this project. To use the Gemini API, please set up billing to upgrade to the paid tier at https://aistudio.google.com/billing. For more information, see https://ai.google.dev/gemini-api/docs/troubleshooting#project-un"
+    },
+    {
+     "when": "2026-11-07 00:53",
+     "kind": "interrupted",
+     "message": "interrupted by user (Ctrl-C)"
+    }
+   ],
+   "model_key": "second:open-weights model",
+   "label": "open-weights model"
+  },
+  "second:gpt-oss-120b": {
+   "status": "done",
+   "dir": "outputs/raw/real_20261107-010257_268beb",
+   "sessions": 5,
+   "history": [
+    {
+     "when": "2026-11-07 02:00",
+     "kind": "interrupted",
+     "message": "interrupted by user (Ctrl-C)"
+    },
+    {
+     "when": "2026-11-07 08:02",
+     "kind": "interrupted",
+     "message": "interrupted by user (Ctrl-C)"
+    },
+    {
+     "when": "2026-11-07 08:54",
+     "kind": "interrupted",
+     "message": "interrupted by user (Ctrl-C)"
+    },
+    {
+     "when": "2026-11-07 09:39",
+     "kind": "daily_quota",
+     "retry_after_s": 1382.0,
+     "message": "HTTP 429: daily quota appears exhausted ({\"error\": {\"message\": \"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m6s5jf38e7ttfem4z35d3t75` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198769, Requested 4430. Please try again in 23m1.967999999s. Need more tokens? Upgrade to Dev Tier today at ). Wait for the reset, then continue with --resume."
+    },
+    {
+     "when": "2026-11-07 10:47",
+     "kind": "done"
+    }
+   ],
+   "model_key": "second:gpt-oss-120b",
+   "label": "gpt-oss-120b",
+   "blocked_until": null
+  },
+  "spec_second": {
+   "status": "done",
+   "dir": "outputs/nl_spec/groq_openai_gpt-oss-120b_20261107-104728",
+   "sessions": 2,
+   "history": [
+    {
+     "when": "2026-11-07 11:58",
+     "kind": "interrupted",
+     "message": "interrupted"
+    },
+    {
+     "when": "2026-11-07 12:30",
+     "kind": "done"
+    }
+   ],
+   "blocked_until": null,
+   "model_key": "second:gpt-oss-120b",
+   "label": "gpt-oss-120b"
+  }
+ },
+ "code_sha256": "ddf66636b0c32ac0190fc8a9f5ac600886b6508192a8b20b6ae3db5a7e56974d",
+ "tests_passed_for": "ddf66636b0c32ac0190fc8a9f5ac600886b6508192a8b20b6ae3db5a7e56974d",
+ "model_blocked_until": {}
+}

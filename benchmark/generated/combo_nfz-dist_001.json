@@ -1,0 +1,111 @@
+{
+ "scenario_id": "combo_nfz-dist_001",
+ "difficulty": "combo",
+ "base_seed": 2024,
+ "attempt": 0,
+ "mission": {
+  "mission_id": "combo_nfz-dist_001",
+  "description": "Route START(5.2,32.2) -> DEST(88.9,11.6) via A at (25.6, 18.6), B at (56.2, 40.5), C at (28.7, 31.1). No entry to or crossing of Z1, Z2 (obstacle), Z3. Total length <= 176.5 units.",
+  "start": [
+   5.2,
+   32.2
+  ],
+  "destination": [
+   88.9,
+   11.6
+  ],
+  "required_waypoints": [
+   {
+    "id": "A",
+    "x": 25.6,
+    "y": 18.6
+   },
+   {
+    "id": "B",
+    "x": 56.2,
+    "y": 40.5
+   },
+   {
+    "id": "C",
+    "x": 28.7,
+    "y": 31.1
+   }
+  ],
+  "min_altitude": 0.0,
+  "max_altitude": 1000.0,
+  "max_distance": 176.5,
+  "no_fly_zones": [
+   {
+    "id": "Z1",
+    "kind": "circle",
+    "center": [
+     16.9,
+     28.0
+    ],
+    "radius": 7.0,
+    "vertices": null,
+    "description": "restricted area 1",
+    "category": "nfz"
+   },
+   {
+    "id": "Z2",
+    "kind": "circle",
+    "center": [
+     69.6,
+     17.8
+    ],
+    "radius": 8.7,
+    "vertices": null,
+    "description": "radio tower",
+    "category": "obstacle"
+   },
+   {
+    "id": "Z3",
+    "kind": "circle",
+    "center": [
+     38.0,
+     30.8
+    ],
+    "radius": 5.6,
+    "vertices": null,
+    "description": "restricted area 3",
+    "category": "nfz"
+   }
+  ],
+  "ordering": [],
+  "position_tolerance": 1.0,
+  "start_altitude": 0.0,
+  "max_energy": null,
+  "energy_k_v": 1.0,
+  "energy_k_wp": 0.0,
+  "speed_h": 10.0,
+  "speed_v": 2.0,
+  "active": [
+   "no_fly_zone",
+   "distance"
+  ]
+ },
+ "metadata": {
+  "n_zones": 3,
+  "n_obstacles": 1,
+  "zone_density": 0.049,
+  "distance_slack": 1.095,
+  "energy_slack": null,
+  "altitude_band_width": null,
+  "n_required": 3,
+  "feasibility": "FEASIBLE",
+  "witness_distance": 161.246,
+  "witness_energy": 161.246,
+  "lower_bound": 154.489,
+  "infeasible_kind": null,
+  "source": "synthetic",
+  "nl_style": "terse",
+  "n_polygon_zones": 0,
+  "active": [
+   "no_fly_zone",
+   "distance"
+  ],
+  "n_active": 2,
+  "ordering_conflicts_with_route": false
+ }
+}

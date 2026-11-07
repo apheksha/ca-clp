@@ -1,0 +1,111 @@
+{
+ "scenario_id": "combo_alt-nfz_000",
+ "difficulty": "combo",
+ "base_seed": 2024,
+ "attempt": 0,
+ "mission": {
+  "mission_id": "combo_alt-nfz_000",
+  "description": "Fly from the base at (5.9, 49.8) to the destination at (93.7, 83.5). The route must pass through the required points A at (54.3, 77.3), B at (61.6, 17.9), C at (56.9, 86.1). Maintain an altitude between 46 and 69 meters at every waypoint. Avoid all restricted zones and obstacles (Z1 (obstacle), Z2, Z3), including the straight paths between waypoints.",
+  "start": [
+   5.9,
+   49.8
+  ],
+  "destination": [
+   93.7,
+   83.5
+  ],
+  "required_waypoints": [
+   {
+    "id": "A",
+    "x": 54.3,
+    "y": 77.3
+   },
+   {
+    "id": "B",
+    "x": 61.6,
+    "y": 17.9
+   },
+   {
+    "id": "C",
+    "x": 56.9,
+    "y": 86.1
+   }
+  ],
+  "min_altitude": 46.0,
+  "max_altitude": 69.0,
+  "max_distance": 1000000000.0,
+  "no_fly_zones": [
+   {
+    "id": "Z1",
+    "kind": "circle",
+    "center": [
+     57.5,
+     59.9
+    ],
+    "radius": 8.0,
+    "vertices": null,
+    "description": "building",
+    "category": "obstacle"
+   },
+   {
+    "id": "Z2",
+    "kind": "circle",
+    "center": [
+     20.7,
+     58.8
+    ],
+    "radius": 7.6,
+    "vertices": null,
+    "description": "restricted area 2",
+    "category": "nfz"
+   },
+   {
+    "id": "Z3",
+    "kind": "circle",
+    "center": [
+     59.0,
+     33.1
+    ],
+    "radius": 9.5,
+    "vertices": null,
+    "description": "restricted area 3",
+    "category": "nfz"
+   }
+  ],
+  "ordering": [],
+  "position_tolerance": 1.0,
+  "start_altitude": 0.0,
+  "max_energy": null,
+  "energy_k_v": 1.0,
+  "energy_k_wp": 0.0,
+  "speed_h": 10.0,
+  "speed_v": 2.0,
+  "active": [
+   "altitude",
+   "no_fly_zone"
+  ]
+ },
+ "metadata": {
+  "n_zones": 3,
+  "n_obstacles": 1,
+  "zone_density": 0.0666,
+  "distance_slack": null,
+  "energy_slack": null,
+  "altitude_band_width": 23.0,
+  "n_required": 3,
+  "feasibility": "FEASIBLE",
+  "witness_distance": 232.71,
+  "witness_energy": 278.71,
+  "lower_bound": 220.767,
+  "infeasible_kind": null,
+  "source": "synthetic",
+  "nl_style": "formal",
+  "n_polygon_zones": 0,
+  "active": [
+   "altitude",
+   "no_fly_zone"
+  ],
+  "n_active": 2,
+  "ordering_conflicts_with_route": false
+ }
+}

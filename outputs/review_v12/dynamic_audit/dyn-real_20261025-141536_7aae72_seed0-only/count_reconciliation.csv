@@ -1,0 +1,10 @@
+condition,records,cases_seed0,repeats_other_seeds,seeds_present,feasible_records,feasible_truly_affected,missing_units_vs_union
+A_llm_only,81,81,0,[0],80,33,0
+C_full,81,81,0,[0],80,33,0
+C_prescriptive,81,81,0,[0],80,33,0
+D_resample,81,81,0,[0],80,33,0
+E_classical,81,81,0,[0],80,33,0
+F_astar,81,81,0,[0],80,33,0
+X_binary_feedback,81,81,0,[0],80,33,0
+X_binary_targeted,81,81,0,[0],80,33,0
+X_evidence_regen,81,81,0,[0],80,33,0

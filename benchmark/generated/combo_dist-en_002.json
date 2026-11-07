@@ -1,0 +1,74 @@
+{
+ "scenario_id": "combo_dist-en_002",
+ "difficulty": "combo",
+ "base_seed": 2024,
+ "attempt": 0,
+ "mission": {
+  "mission_id": "combo_dist-en_002",
+  "description": "The drone leaves its base at (5.2, 20.3) and has to end up at (94.6, 55.1). On the way it must stop at A at (68.5, 44.0), B at (32.5, 45.4), C at (70.1, 15.0). The whole trip may not be longer than 218.6 units. The battery only allows 215.5 energy units, where energy = route length + 1 x total climb (so low altitudes save battery).",
+  "start": [
+   5.2,
+   20.3
+  ],
+  "destination": [
+   94.6,
+   55.1
+  ],
+  "required_waypoints": [
+   {
+    "id": "A",
+    "x": 68.5,
+    "y": 44.0
+   },
+   {
+    "id": "B",
+    "x": 32.5,
+    "y": 45.4
+   },
+   {
+    "id": "C",
+    "x": 70.1,
+    "y": 15.0
+   }
+  ],
+  "min_altitude": 0.0,
+  "max_altitude": 1000.0,
+  "max_distance": 218.6,
+  "no_fly_zones": [],
+  "ordering": [],
+  "position_tolerance": 1.0,
+  "start_altitude": 0.0,
+  "max_energy": 215.5,
+  "energy_k_v": 1.0,
+  "energy_k_wp": 0.0,
+  "speed_h": 10.0,
+  "speed_v": 2.0,
+  "active": [
+   "distance",
+   "energy"
+  ]
+ },
+ "metadata": {
+  "n_zones": 0,
+  "n_obstacles": 0,
+  "zone_density": 0.0,
+  "distance_slack": 1.099,
+  "energy_slack": 1.083,
+  "altitude_band_width": null,
+  "n_required": 3,
+  "feasibility": "FEASIBLE",
+  "witness_distance": 198.963,
+  "witness_energy": 198.963,
+  "lower_bound": 198.963,
+  "infeasible_kind": null,
+  "source": "synthetic",
+  "nl_style": "narrative",
+  "n_polygon_zones": 0,
+  "active": [
+   "distance",
+   "energy"
+  ],
+  "n_active": 2,
+  "ordering_conflicts_with_route": false
+ }
+}

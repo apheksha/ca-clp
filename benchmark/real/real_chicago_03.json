@@ -1,0 +1,122 @@
+{
+ "scenario_id": "real_chicago_03",
+ "difficulty": "real_easy",
+ "mission": {
+  "mission_id": "real_chicago_03",
+  "start": [
+   -24233.1,
+   -6516.0
+  ],
+  "destination": [
+   554.7,
+   5370.7
+  ],
+  "required_waypoints": [
+   {
+    "id": "A",
+    "x": 2462.3,
+    "y": -4209.6
+   },
+   {
+    "id": "B",
+    "x": 4271.0,
+    "y": -5759.2
+   }
+  ],
+  "min_altitude": 20.0,
+  "max_altitude": 120.0,
+  "max_distance": 57306.0,
+  "ordering": [
+   [
+    "A",
+    "B"
+   ]
+  ],
+  "start_altitude": 0.0,
+  "max_energy": null,
+  "energy_k_v": 0.5,
+  "energy_k_wp": 0.0,
+  "active": [
+   "altitude",
+   "no_fly_zone",
+   "distance",
+   "ordering",
+   "energy"
+  ],
+  "no_fly_zones": [
+   {
+    "id": "Z1",
+    "kind": "circle",
+    "center": [
+     -4337.1,
+     -12676.4
+    ],
+    "radius": 8000.0,
+    "description": "Chicago Midway International Airport (KMDW, large_airport) protection radius 8000 m",
+    "category": "nfz"
+   },
+   {
+    "id": "Z2",
+    "kind": "circle",
+    "center": [
+     -16950.0,
+     8739.9
+    ],
+    "radius": 8000.0,
+    "description": "Chicago O'Hare International Airport (KORD, large_airport) protection radius 8000 m",
+    "category": "nfz"
+   },
+   {
+    "id": "Z3",
+    "kind": "circle",
+    "center": [
+     -16676.4,
+     23820.4
+    ],
+    "radius": 5000.0,
+    "description": "Chicago Executive Airport (KPWK, medium_airport) protection radius 5000 m",
+    "category": "nfz"
+   }
+  ],
+  "description": "Fly from the base at (-24233, -6516) to the destination at (554.7, 5371). The route must pass through the required points A (Vertiport Chicago Heliport) at (2462, -4210), B (Chicago Helicopter Experience Heliport) at (4271, -5759); visit A before B. Maintain an altitude between 20 and 120 meters at every waypoint. Avoid all restricted zones and obstacles (Z1 [Chicago Midway International Airport (KMDW, large_airport) protection radius 8000 m], Z2 [Chicago O'Hare International Airport (KORD, large_airport) protection radius 8000 m], Z3 [Chicago Executive Airport (KPWK, medium_airport) protection radius 5000 m]), including the straight paths between waypoints. Keep the total horizontal route length at or below 57306 meters. (START is Waste Management Inc Heliport; DEST is Wgn-Tv Heliport.) Coordinates are meters east/north of the region center."
+ },
+ "metadata": {
+  "source": "ourairports",
+  "region": "chicago",
+  "region_center": [
+   41.9,
+   -87.7
+  ],
+  "airports_csv_sha256": "fe7f0d9dc2646e41b0cc520f1733d99b9c76a6b26a3e6a55f66fa89e62083ad5",
+  "n_zones": 3,
+  "zone_density": 0.17,
+  "distance_slack": 1.4,
+  "altitude_band_width": 100.0,
+  "n_required": 2,
+  "feasibility": "FEASIBLE",
+  "witness_distance": 40932.9,
+  "lower_bound": 40910.5,
+  "infeasible_kind": null,
+  "n_polygon_zones": 0,
+  "active": [
+   "altitude",
+   "no_fly_zone",
+   "distance",
+   "ordering",
+   "energy"
+  ],
+  "n_active": 5,
+  "n_obstacles": 0,
+  "witness_energy": null,
+  "energy_slack": null,
+  "nl_style": "formal",
+  "site_names": {
+   "A": "Vertiport Chicago Heliport",
+   "B": "Chicago Helicopter Experience Heliport",
+   "START": "Waste Management Inc Heliport",
+   "DEST": "Wgn-Tv Heliport"
+  },
+  "n_blocked_legs": 1,
+  "assumptions": "zone radii by airport type, altitude band <=120 m AGL, equirectangular projection"
+ }
+}

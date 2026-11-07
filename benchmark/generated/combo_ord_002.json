@@ -1,0 +1,81 @@
+{
+ "scenario_id": "combo_ord_002",
+ "difficulty": "combo",
+ "base_seed": 2024,
+ "attempt": 0,
+ "mission": {
+  "mission_id": "combo_ord_002",
+  "description": "The drone leaves its base at (8.3, 21.1) and has to end up at (92.5, 61.5). On the way it must stop at A at (29.7, 53.1), B at (40.1, 58.6), C at (67.6, 85.5); visit A before B; visit B before C.",
+  "start": [
+   8.3,
+   21.1
+  ],
+  "destination": [
+   92.5,
+   61.5
+  ],
+  "required_waypoints": [
+   {
+    "id": "A",
+    "x": 29.7,
+    "y": 53.1
+   },
+   {
+    "id": "B",
+    "x": 40.1,
+    "y": 58.6
+   },
+   {
+    "id": "C",
+    "x": 67.6,
+    "y": 85.5
+   }
+  ],
+  "min_altitude": 0.0,
+  "max_altitude": 1000.0,
+  "max_distance": 1000000000.0,
+  "no_fly_zones": [],
+  "ordering": [
+   [
+    "A",
+    "B"
+   ],
+   [
+    "B",
+    "C"
+   ]
+  ],
+  "position_tolerance": 1.0,
+  "start_altitude": 0.0,
+  "max_energy": null,
+  "energy_k_v": 1.0,
+  "energy_k_wp": 0.0,
+  "speed_h": 10.0,
+  "speed_v": 2.0,
+  "active": [
+   "ordering"
+  ]
+ },
+ "metadata": {
+  "n_zones": 0,
+  "n_obstacles": 0,
+  "zone_density": 0.0,
+  "distance_slack": null,
+  "energy_slack": null,
+  "altitude_band_width": null,
+  "n_required": 3,
+  "feasibility": "FEASIBLE",
+  "witness_distance": 123.313,
+  "witness_energy": 123.313,
+  "lower_bound": 123.313,
+  "infeasible_kind": null,
+  "source": "synthetic",
+  "nl_style": "narrative",
+  "n_polygon_zones": 0,
+  "active": [
+   "ordering"
+  ],
+  "n_active": 1,
+  "ordering_conflicts_with_route": false
+ }
+}

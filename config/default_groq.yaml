@@ -1,0 +1,46 @@
+# Used by run_free.py for an extra model served by GROQ (identical to default_extra_models.yaml except the reply cap and reasoning effort).
+# Groq's free tier counts prompt + max_tokens against 8,000 tokens per minute, so the cap is 4096; reasoning_effort low keeps gpt-oss within its daily tokens.
+# ==============================================================================
+# OPERATIONAL & EXPERIMENT SETTINGS (Applied to real LLM runs & pipeline)
+# ==============================================================================
+provider: mock            # mock | gemini | groq | openrouter | grok | cohere | ollama (free/free-credits) | anthropic | openai (paid)
+request_interval_s: 0     # extra minimum seconds between calls
+requests_per_minute: null # null => provider preset (gemini 8, groq 20, openrouter 10, ollama unlimited). Lower it if HTTP 429 occurs.
+max_retries: 5            # 429/5xx retries (honors Retry-After header; waits are logged)
+safety_note: "429 = provider rate limit, never counted as a model failure"
+model: mock-heuristic-v1  # for real runs set e.g. a model id supported by your provider
+temperature: 0.0          # decoding temperature for deterministic initial planning & repair
+max_tokens: 4096          # Groq free tier: prompt + max_tokens must fit 8,000 tokens per minute
+extra_body: {reasoning_effort: low}   # gpt-oss option on Groq (recorded in every call)
+prompt_mode: spec         # spec (NL + structured spec; paper default) | nl_only (free text only: tests constraint extraction) | spec_only
+max_parse_retries: 2      # JSON schema extraction retry budget per LLM response
+log_prompts: true         # persist full prompts and completions into raw runs.jsonl
+pricing: {input_per_mtok: null, output_per_mtok: null}   # fill in for real runs to track API cost (USD)
+benchmark: {per_difficulty: 20, n_infeasible: 6, base_seed: 2024, n_corridor: 10, n_per_combo: 3, n_vertical: 0}   # n_vertical > 0 adds the optional 3D family (finite-height obstacles); 0 keeps the 118-scenario benchmark unchanged
+
+# ==============================================================================
+# SYNTHETIC MOCK STAND-IN PARAMETERS (MOCK RUNS ONLY -- NOT REAL LLM FINDINGS)
+# ==============================================================================
+# WARNING: These parameters are synthetic heuristic error rates used SOLELY when
+# running with `provider: mock` (e.g. for CI/CD, unit tests, and pipeline verification).
+# They simulate hypothetical error and repair dynamics without invoking an LLM.
+# NONE of these values are used, loaded, or applied when evaluating real LLMs.
+# Below: each parameter is a mock stand-in assumption. Experiment settings
+# (provider, model, temperature, etc. above) are separate from these synthetic values.
+mock:
+  order_error: 0.15          # ASSUMPTION: Mock probability of scrambling waypoint visitation order
+  drop_required: 0.04        # ASSUMPTION: Mock probability of dropping a required waypoint from the mission
+  ignore_nfz: 0.60           # ASSUMPTION: Mock probability of failing to circumnavigate a no-fly zone (straight-line chord)
+  altitude_error: 0.25       # ASSUMPTION: Mock probability of assigning out-of-corridor or clipped altitudes
+  coord_error: 0.03          # ASSUMPTION: Mock probability of rounding or misplacing lat/lon coordinates
+  malformed: 0.04            # ASSUMPTION: Mock probability of producing unparseable / malformed JSON output
+  p_fix:                     # ASSUMPTION: Mock repair success probability conditioned on feedback richness
+    localized: 0.60          # - localized constraint name & segment (stand-in only)
+    evidence: 0.85           # - full verification violation evidence (stand-in only)
+    prescriptive: 0.85       # - prescriptive detour coordinates (stand-in only)
+  p_binary_resample: 0.10    # ASSUMPTION: Mock repair probability for binary yes/no feedback
+  p_collateral:              # ASSUMPTION: Mock probability of introducing a collateral violation during edit
+    regenerate: 0.25         # - full route regeneration mode (stand-in only)
+    targeted: 0.05           # - surgical localized waypoint insertion mode (stand-in only)
+  p_regen_fresh: 0.10        # ASSUMPTION: Mock probability of fresh plan fixing violations in D_resample
+  p_move_locked: 0.10        # ASSUMPTION: Mock probability of accidentally modifying fixed/locked start/goal waypoints

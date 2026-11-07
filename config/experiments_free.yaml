@@ -1,0 +1,17 @@
+# Small design for FREE tiers (cloud free tiers allow roughly 50-500 requests/day). Paired: shared initial plan per (scenario, seed).
+# Estimated calls per scenario ~ 1 (initial) + D:3 + C_full:<=3 + X_binary:<=3 + X_evidence_regen:<=3  (~13 max). Use --max-calls and --resume.
+seeds: [0]
+planner: {temperature: 0.0}   # single seed => deterministic decoding is fine
+conditions:
+  A_llm_only:        {kind: llm_only}
+  E_classical:       {kind: classical}
+  F_astar:           {kind: astar}
+  D_resample:        {kind: resample, max_iterations: 3, temperature: 0.7}
+  C_full:            {kind: closed_loop, feedback_level: evidence,  repair_mode: targeted,   regression_guard: true, max_iterations: 3, feasibility_precheck: true}
+  X_binary_feedback: {kind: closed_loop, feedback_level: binary,    repair_mode: regenerate, regression_guard: true, max_iterations: 3, feasibility_precheck: true}
+  X_evidence_regen:  {kind: closed_loop, feedback_level: evidence,  repair_mode: regenerate, regression_guard: true, max_iterations: 3, feasibility_precheck: true}
+pairs:
+  - [C_full, A_llm_only]
+  - [C_full, D_resample]
+  - [C_full, X_binary_feedback]
+  - [C_full, X_evidence_regen]

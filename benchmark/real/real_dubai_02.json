@@ -1,0 +1,142 @@
+{
+ "scenario_id": "real_dubai_02",
+ "difficulty": "real_hard",
+ "mission": {
+  "mission_id": "real_dubai_02",
+  "start": [
+   9282.5,
+   25091.2
+  ],
+  "destination": [
+   -17639.3,
+   -8610.3
+  ],
+  "required_waypoints": [
+   {
+    "id": "A",
+    "x": 9257.8,
+    "y": 24320.1
+   },
+   {
+    "id": "B",
+    "x": 11046.2,
+    "y": -2862.2
+   },
+   {
+    "id": "C",
+    "x": -21245.7,
+    "y": 2424.8
+   },
+   {
+    "id": "D",
+    "x": -21671.3,
+    "y": -12039.9
+   }
+  ],
+  "min_altitude": 40.0,
+  "max_altitude": 80.0,
+  "max_distance": 87351.0,
+  "ordering": [
+   [
+    "A",
+    "B"
+   ],
+   [
+    "B",
+    "C"
+   ],
+   [
+    "C",
+    "D"
+   ]
+  ],
+  "start_altitude": 0.0,
+  "max_energy": 91930.0,
+  "energy_k_v": 30.0,
+  "energy_k_wp": 0.0,
+  "active": [
+   "altitude",
+   "no_fly_zone",
+   "distance",
+   "ordering",
+   "energy"
+  ],
+  "no_fly_zones": [
+   {
+    "id": "Z1",
+    "kind": "circle",
+    "center": [
+     2112.1,
+     5536.4
+    ],
+    "radius": 8000.0,
+    "description": "Dubai International Airport (OMDB, large_airport) protection radius 8000 m",
+    "category": "nfz"
+   },
+   {
+    "id": "Z2",
+    "kind": "circle",
+    "center": [
+     1629.9,
+     -19259.0
+    ],
+    "radius": 5000.0,
+    "description": "Al Minhad Air Base (OMDM, medium_airport) protection radius 5000 m",
+    "category": "nfz"
+   },
+   {
+    "id": "Z3",
+    "kind": "circle",
+    "center": [
+     16822.4,
+     14299.7
+    ],
+    "radius": 8000.0,
+    "description": "Sharjah International Airport (OMSJ, large_airport) protection radius 8000 m",
+    "category": "nfz"
+   }
+  ],
+  "description": "The drone leaves its base at (9282, 25091) and has to end up at (-17639, -8610). On the way it must stop at A (Ajman Ruler's Divan Heliport) at (9258, 24320), B (Dubai Safari Park Heliport) at (11046, -2862), C (Schumacher Heliport) at (-21246, 2425), D (SkyDive Dubai Heliport) at (-21671, -12040); visit A before B; visit B before C; visit C before D. Keep it no lower than 40 m and no higher than 80 m. The restricted areas and obstacles (Z1 [Dubai International Airport (OMDB, large_airport) protection radius 8000 m], Z2 [Al Minhad Air Base (OMDM, medium_airport) protection radius 5000 m], Z3 [Sharjah International Airport (OMSJ, large_airport) protection radius 8000 m]) are off limits, and that includes cutting across a corner of one on the way between two stops. The whole trip may not be longer than 87351 meters. The battery only allows 91930 energy units, where energy = route length + 30 x total climb (so low altitudes save battery). (START is Ajman Hotel Heliport; DEST is Sheikh Sultan Bin Khalifa bin Zayed Al Nahyan Palace Heliport.) Coordinates are meters east/north of the region center."
+ },
+ "metadata": {
+  "source": "ourairports",
+  "region": "dubai",
+  "region_center": [
+   25.2,
+   55.35
+  ],
+  "airports_csv_sha256": "fe7f0d9dc2646e41b0cc520f1733d99b9c76a6b26a3e6a55f66fa89e62083ad5",
+  "n_zones": 3,
+  "zone_density": 0.17,
+  "distance_slack": 1.08,
+  "altitude_band_width": 40.0,
+  "n_required": 4,
+  "feasibility": "FEASIBLE",
+  "witness_distance": 80880.6,
+  "lower_bound": 80498.7,
+  "infeasible_kind": null,
+  "n_polygon_zones": 0,
+  "active": [
+   "altitude",
+   "no_fly_zone",
+   "distance",
+   "ordering",
+   "energy"
+  ],
+  "n_active": 5,
+  "n_obstacles": 0,
+  "witness_energy": null,
+  "energy_slack": 1.12,
+  "nl_style": "narrative",
+  "site_names": {
+   "A": "Ajman Ruler's Divan Heliport",
+   "B": "Dubai Safari Park Heliport",
+   "C": "Schumacher Heliport",
+   "D": "SkyDive Dubai Heliport",
+   "START": "Ajman Hotel Heliport",
+   "DEST": "Sheikh Sultan Bin Khalifa bin Zayed Al Nahyan Palace Heliport"
+  },
+  "n_blocked_legs": 2,
+  "assumptions": "zone radii by airport type, altitude band <=120 m AGL, equirectangular projection"
+ }
+}

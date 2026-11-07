@@ -1,0 +1,13 @@
+# A profile fixes WHAT is run. Choose with: python run.py final --profile <name>
+reduced:   # 34 stratified scenarios (scripts/make_reduced_benchmark.py), 1 seed. Cheapest design that covers every scenario family.
+  scenario_dir: benchmark/reduced
+  exp_config: config/experiments_reduced.yaml
+reduced-fresh:   # same design as 'reduced' but a separate profile => separate outputs/final state folder (clean single-provider run)
+  scenario_dir: benchmark/reduced
+  exp_config: config/experiments_reduced.yaml
+full:      # all 118 scenarios, seeds and conditions as in config/experiments.yaml (large: see the printed call estimate first)
+  scenario_dir: benchmark/generated
+  exp_config: config/experiments.yaml
+pilot:     # 10 hand-built missions, for a quick first contact with a new provider/model. Pilot numbers are never paper results.
+  scenario_dir: benchmark/pilot
+  exp_config: config/experiments_pilot.yaml

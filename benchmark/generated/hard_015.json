@@ -1,0 +1,161 @@
+{
+ "scenario_id": "hard_015",
+ "difficulty": "hard",
+ "base_seed": 2024,
+ "attempt": 0,
+ "mission": {
+  "mission_id": "hard_015",
+  "description": "Fly from the base at (10.7, 76.4) to the destination at (89.8, 18.6). The route must pass through the required points A at (26.9, 46.5), B at (33.8, 38.9), C at (33.8, 36.6), D at (35.4, 46.7); visit A before B; visit B before C; visit C before D. Maintain an altitude between 34 and 58 meters at every waypoint. Avoid all restricted zones and obstacles (Z1, Z2, Z3, Z5 (obstacle)), including the straight paths between waypoints. Keep the total horizontal route length at or below 134.5 units. Stay within the battery budget of 175.5 energy units, where energy = route length + 1 x total climb (so low altitudes save battery).",
+  "start": [
+   10.7,
+   76.4
+  ],
+  "destination": [
+   89.8,
+   18.6
+  ],
+  "required_waypoints": [
+   {
+    "id": "A",
+    "x": 26.9,
+    "y": 46.5
+   },
+   {
+    "id": "B",
+    "x": 33.8,
+    "y": 38.9
+   },
+   {
+    "id": "C",
+    "x": 33.8,
+    "y": 36.6
+   },
+   {
+    "id": "D",
+    "x": 35.4,
+    "y": 46.7
+   }
+  ],
+  "min_altitude": 34.0,
+  "max_altitude": 58.0,
+  "max_distance": 134.5,
+  "no_fly_zones": [
+   {
+    "id": "Z1",
+    "kind": "polygon",
+    "center": null,
+    "radius": null,
+    "vertices": [
+     [
+      28.62,
+      60.03
+     ],
+     [
+      22.96,
+      66.27
+     ],
+     [
+      14.8,
+      58.9
+     ],
+     [
+      21.2,
+      52.98
+     ]
+    ],
+    "description": "restricted area 1",
+    "category": "nfz"
+   },
+   {
+    "id": "Z2",
+    "kind": "circle",
+    "center": [
+     49.7,
+     41.4
+    ],
+    "radius": 8.4,
+    "vertices": null,
+    "description": "restricted area 2",
+    "category": "nfz"
+   },
+   {
+    "id": "Z3",
+    "kind": "circle",
+    "center": [
+     75.6,
+     23.3
+    ],
+    "radius": 8.6,
+    "vertices": null,
+    "description": "restricted area 3",
+    "category": "nfz"
+   },
+   {
+    "id": "Z5",
+    "kind": "circle",
+    "center": [
+     65.2,
+     36.0
+    ],
+    "radius": 6.5,
+    "vertices": null,
+    "description": "terrain ridge",
+    "category": "obstacle"
+   }
+  ],
+  "ordering": [
+   [
+    "A",
+    "B"
+   ],
+   [
+    "B",
+    "C"
+   ],
+   [
+    "C",
+    "D"
+   ]
+  ],
+  "position_tolerance": 1.0,
+  "start_altitude": 0.0,
+  "max_energy": 175.5,
+  "energy_k_v": 1.0,
+  "energy_k_wp": 0.0,
+  "speed_h": 10.0,
+  "speed_v": 2.0,
+  "active": [
+   "altitude",
+   "no_fly_zone",
+   "distance",
+   "ordering",
+   "energy"
+  ]
+ },
+ "metadata": {
+  "n_zones": 4,
+  "n_obstacles": 1,
+  "zone_density": 0.0678,
+  "distance_slack": 1.068,
+  "energy_slack": 1.098,
+  "altitude_band_width": 24.0,
+  "n_required": 4,
+  "feasibility": "FEASIBLE",
+  "witness_distance": 125.932,
+  "witness_energy": 159.932,
+  "lower_bound": 118.026,
+  "infeasible_kind": null,
+  "source": "synthetic",
+  "nl_style": "formal",
+  "n_polygon_zones": 1,
+  "active": [
+   "altitude",
+   "no_fly_zone",
+   "distance",
+   "ordering",
+   "energy"
+  ],
+  "n_active": 5,
+  "ordering_conflicts_with_route": false
+ }
+}

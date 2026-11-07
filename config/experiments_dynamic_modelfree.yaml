@@ -1,0 +1,22 @@
+# MODEL-FREE dynamic study (v12): the corrected case filter (stale plan must be invalid) over ALL feasible missions, with detection latency.
+# Only conditions that make no language-model call: A_llm_only (stale plan kept), E_classical, F_astar, G_direct_patch (verifier detours applied to the stale plan).
+# Run with the 'none' provider (it raises if a model call is ever attempted):
+#   python run.py dynamic --provider none --model none --exp-config config/experiments_dynamic_modelfree.yaml --scenario-dir benchmark/real
+seeds: [0]
+conditions:
+  A_llm_only:     {kind: llm_only}
+  E_classical:    {kind: classical}
+  F_astar:        {kind: astar}
+  G_direct_patch: {kind: direct_patch, feedback_level: prescriptive, max_iterations: 3, feasibility_precheck: true}
+pairs: []
+dynamic:
+  conditions: [A_llm_only, E_classical, F_astar, G_direct_patch]
+  n_per_difficulty: 1000          # every feasible mission (no subset, so no selection bias)
+  selection: seeded_random
+  selection_seed: 2024
+  detection_delays: [0.0, 0.05, 0.15]
+  require_triggered: true
+  progress: [0.35, 0.65]
+  changes: [add_zone, enlarge_zone, tighten_distance, reduce_energy]
+  seeds: [0]
+dynamic_pairs: []

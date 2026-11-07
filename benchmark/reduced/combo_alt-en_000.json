@@ -1,0 +1,74 @@
+{
+ "scenario_id": "combo_alt-en_000",
+ "difficulty": "combo",
+ "base_seed": 2024,
+ "attempt": 0,
+ "mission": {
+  "mission_id": "combo_alt-en_000",
+  "description": "Fly from the base at (5.8, 56.5) to the destination at (88.4, 12.8). The route must pass through the required points A at (60.8, 52.2), B at (38.1, 33.7), C at (73.2, 42.9). Maintain an altitude between 45 and 68 meters at every waypoint. Stay within the battery budget of 218.2 energy units, where energy = route length + 1 x total climb (so low altitudes save battery).",
+  "start": [
+   5.8,
+   56.5
+  ],
+  "destination": [
+   88.4,
+   12.8
+  ],
+  "required_waypoints": [
+   {
+    "id": "A",
+    "x": 60.8,
+    "y": 52.2
+   },
+   {
+    "id": "B",
+    "x": 38.1,
+    "y": 33.7
+   },
+   {
+    "id": "C",
+    "x": 73.2,
+    "y": 42.9
+   }
+  ],
+  "min_altitude": 45.0,
+  "max_altitude": 68.0,
+  "max_distance": 1000000000.0,
+  "no_fly_zones": [],
+  "ordering": [],
+  "position_tolerance": 1.0,
+  "start_altitude": 0.0,
+  "max_energy": 218.2,
+  "energy_k_v": 1.0,
+  "energy_k_wp": 0.0,
+  "speed_h": 10.0,
+  "speed_v": 2.0,
+  "active": [
+   "altitude",
+   "energy"
+  ]
+ },
+ "metadata": {
+  "n_zones": 0,
+  "n_obstacles": 0,
+  "zone_density": 0.0,
+  "distance_slack": null,
+  "energy_slack": 1.094,
+  "altitude_band_width": 23.0,
+  "n_required": 3,
+  "feasibility": "FEASIBLE",
+  "witness_distance": 154.457,
+  "witness_energy": 199.457,
+  "lower_bound": 154.457,
+  "infeasible_kind": null,
+  "source": "synthetic",
+  "nl_style": "formal",
+  "n_polygon_zones": 0,
+  "active": [
+   "altitude",
+   "energy"
+  ],
+  "n_active": 2,
+  "ordering_conflicts_with_route": false
+ }
+}

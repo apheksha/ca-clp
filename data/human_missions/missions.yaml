@@ -1,0 +1,128 @@
+# Collection of free-form UAV mission instructions with ground truth, for the natural-language understanding study (src/nl, scripts/nl_eval.py).
+#
+# PROVENANCE (read this): the 22 seed instructions below were written by hand by the development team in different personal styles (colloquial, terse, formal,
+# with typos, with hedges). They are NOT collected from external operators. Replace/extend them with instructions from real pilots/operators using the same
+# schema (see docs/NL_UNDERSTANDING.md); `scripts/nl_eval.py --missions <file>` evaluates any file in this format.
+#
+# map: coordinates in metres (x east, y north). category: complete | incomplete | ambiguous | conflicting.
+# truth: the intended constraints (null = not specified by the instruction on purpose). expect: what a careful assistant must do.
+map:
+  name: Harbor Valley (fictional)
+  unit_m: 1.0
+  sites:
+    Home: [0, 0]
+    Depot: [2000, 500]
+    Tower A: [800, 900]
+    Pier: [1500, 1500]
+    School: [1200, 300]
+    Substation: [1800, 1100]
+    Landfill: [400, 1600]
+    Hospital: [900, 1300]
+  zones:
+    Airfield: {kind: circle, center: [1000, 600], radius: 350}
+    Stadium: {kind: circle, center: [1600, 900], radius: 200}
+    Power Plant: {kind: circle, center: [500, 1000], radius: 250}
+    Hospital helipad: {kind: circle, center: [900, 1300], radius: 150}
+missions:
+  - id: c01
+    category: complete
+    text: "Take off from Home, check Tower A, then School, then land at Depot. Stay between 40 and 100 metres and keep out of the Airfield and the Stadium. Total flight must be under 6 km."
+    truth: {start: Home, destination: Depot, waypoints: [Tower A, School], order: [[Tower A, School]], min_altitude_m: 40, max_altitude_m: 100, max_distance_m: 6000, avoid_zones: [Airfield, Stadium]}
+  - id: c02
+    category: complete
+    text: "Mission: start at Home, end at Pier, visit Landfill on the way. Altitude between 30 m and 90 m. Distance limit 5000 m. Do not enter the Power Plant zone."
+    truth: {start: Home, destination: Pier, waypoints: [Landfill], order: [], min_altitude_m: 30, max_altitude_m: 90, max_distance_m: 5000, avoid_zones: [Power Plant]}
+  - id: c03
+    category: complete
+    text: "Drone leaves Depot, goes to Substation then Pier (in that order), returns to Home. Fly no lower than 50 and no higher than 110 metres. Max 7 km total. Avoid the Stadium."
+    truth: {start: Depot, destination: Home, waypoints: [Substation, Pier], order: [[Substation, Pier]], min_altitude_m: 50, max_altitude_m: 110, max_distance_m: 7000, avoid_zones: [Stadium]}
+  - id: c04
+    category: complete
+    text: "From Home to Depot via School. 40-100 m altitude. no more than 4 km. stay clear of Airfield."
+    truth: {start: Home, destination: Depot, waypoints: [School], order: [], min_altitude_m: 40, max_altitude_m: 100, max_distance_m: 4000, avoid_zones: [Airfield]}
+  - id: c05
+    category: complete
+    text: "Requesting a survey flight: depart Landfill, overfly Hospital before Tower A, and terminate at Home. Altitude must remain within 60 to 120 m. Maximum route length: 4.5 km. Exclusion zones: Power Plant, Airfield."
+    truth: {start: Landfill, destination: Home, waypoints: [Hospital, Tower A], order: [[Hospital, Tower A]], min_altitude_m: 60, max_altitude_m: 120, max_distance_m: 4500, avoid_zones: [Power Plant, Airfield]}
+  - id: c06
+    category: complete
+    text: "Start Home. Visit Tower A. Finish at Substation. Between 35 and 95 metres. 3500 m max. Keep out of the Airfield, the Stadium and the Power Plant."
+    truth: {start: Home, destination: Substation, waypoints: [Tower A], order: [], min_altitude_m: 35, max_altitude_m: 95, max_distance_m: 3500, avoid_zones: [Airfield, Stadium, Power Plant]}
+  - id: c07
+    category: complete
+    text: "Go Home -> School -> Substation -> Pier and stop there. Keep the altitude in 45..100 m. Do not exceed 5.5 km of flight. Avoid Stadium please."
+    truth: {start: Home, destination: Pier, waypoints: [School, Substation], order: [[School, Substation]], min_altitude_m: 45, max_altitude_m: 100, max_distance_m: 5500, avoid_zones: [Stadium]}
+  - id: c08
+    category: complete
+    text: "The aircraft shall depart from Depot and proceed to Pier, with a mandatory stop at Substation beforehand. It shall land at Pier. Permitted altitude: min 50 m, max 100 m. Range limit 3 km. Prohibited: Stadium."
+    truth: {start: Depot, destination: Pier, waypoints: [Substation], order: [], min_altitude_m: 50, max_altitude_m: 100, max_distance_m: 3000, avoid_zones: [Stadium]}
+  - id: i01
+    category: incomplete
+    text: "Fly from Home to the Pier and take a look, then come back."
+    truth: {start: Home, destination: Home, waypoints: [Pier], order: [], min_altitude_m: null, max_altitude_m: null, max_distance_m: null, avoid_zones: []}
+    expect: {clarify: [max_altitude_m]}
+  - id: i02
+    category: incomplete
+    text: "Inspect Tower A and Substation, land at Depot. Max height 100 m."
+    truth: {start: null, destination: Depot, waypoints: [Tower A, Substation], order: [], min_altitude_m: null, max_altitude_m: 100, max_distance_m: null, avoid_zones: []}
+    expect: {clarify: [start]}
+  - id: i03
+    category: incomplete
+    text: "Take off, visit School and Landfill, stay below 90 m and away from Airfield."
+    truth: {start: null, destination: null, waypoints: [School, Landfill], order: [], min_altitude_m: null, max_altitude_m: 90, max_distance_m: null, avoid_zones: [Airfield]}
+    expect: {clarify: [start, destination]}
+  - id: i04
+    category: complete   # min altitude and distance limit are optional; start, destination and a ceiling are given
+    text: "Start from Depot and end at Home. Keep it under 100 meters."
+    truth: {start: Depot, destination: Home, waypoints: [], order: [], min_altitude_m: null, max_altitude_m: 100, max_distance_m: null, avoid_zones: []}
+    expect: {clarify: []}
+  - id: i05
+    category: incomplete
+    text: "Home to Substation then Pier. Don't go through the Stadium."
+    truth: {start: Home, destination: Pier, waypoints: [Substation], order: [], min_altitude_m: null, max_altitude_m: null, max_distance_m: null, avoid_zones: [Stadium]}
+    expect: {clarify: [max_altitude_m]}
+  - id: a01
+    category: ambiguous
+    text: "Fly pretty low over Tower A, then go somewhere near the School and finish at Home. Start at Depot. Keep under 5 km."
+    truth: {start: Depot, destination: Home, waypoints: [Tower A, School], order: [[Tower A, School]], min_altitude_m: null, max_altitude_m: null, max_distance_m: 5000, avoid_zones: []}
+    expect: {clarify: [max_altitude_m]}
+  - id: a02
+    category: ambiguous
+    text: "Start at Home and visit the usual spot and then the Pier, ending at Depot. Max 100 m."
+    truth: {start: Home, destination: Depot, waypoints: [Pier], order: [], min_altitude_m: null, max_altitude_m: 100, max_distance_m: null, avoid_zones: []}
+    expect: {clarify: [unknown_place]}
+  - id: a03
+    category: ambiguous
+    text: "Go from Home to the old factory, then Substation, landing at Depot. Altitude 40-100 m. About 5 km at most."
+    truth: {start: Home, destination: Depot, waypoints: [Substation], order: [], min_altitude_m: 40, max_altitude_m: 100, max_distance_m: 5000, avoid_zones: []}
+    expect: {clarify: [unknown_place, max_distance_m]}
+  - id: a04
+    category: ambiguous
+    text: "Start Home, land at Pier. Fly roughly 80 metres up, give or take, and try not to go near the Airfield. Stop by Landfill."
+    truth: {start: Home, destination: Pier, waypoints: [Landfill], order: [], min_altitude_m: null, max_altitude_m: null, max_distance_m: null, avoid_zones: [Airfield]}
+    expect: {clarify: [max_altitude_m, avoid_zones]}
+  - id: a05
+    category: ambiguous
+    text: "Home to Depot via the hospital. Not too high. Stay out of the helipad area."
+    truth: {start: Home, destination: Depot, waypoints: [Hospital], order: [], min_altitude_m: null, max_altitude_m: null, max_distance_m: null, avoid_zones: [Hospital helipad]}
+    expect: {clarify: [max_altitude_m]}
+  - id: x01
+    category: conflicting
+    text: "Start at Home, visit Tower A before School and School before Tower A, finish at Depot. Between 40 and 100 m. Max 8 km."
+    truth: {start: Home, destination: Depot, waypoints: [Tower A, School], order: [[Tower A, School], [School, Tower A]], min_altitude_m: 40, max_altitude_m: 100, max_distance_m: 8000, avoid_zones: []}
+    expect: {conflicts: [cyclic_ordering]}
+  - id: x02
+    category: conflicting
+    text: "Home to Depot via School. Fly at least 150 m high but never above 100 m. Under 5 km."
+    truth: {start: Home, destination: Depot, waypoints: [School], order: [], min_altitude_m: 150, max_altitude_m: 100, max_distance_m: 5000, avoid_zones: []}
+    expect: {conflicts: [empty_altitude_band]}
+  - id: x03
+    category: conflicting
+    text: "Start Home, visit Pier, Landfill and Hospital, end at Depot, altitude 40-100 m, total flight below 2 km."
+    truth: {start: Home, destination: Depot, waypoints: [Pier, Landfill, Hospital], order: [], min_altitude_m: 40, max_altitude_m: 100, max_distance_m: 2000, avoid_zones: []}
+    expect: {conflicts: [distance_lower_bound]}
+  - id: x04
+    category: conflicting
+    text: "Home to Depot, visit Hospital, altitude 40-100 m, 6 km max, and keep out of the Hospital helipad zone."
+    truth: {start: Home, destination: Depot, waypoints: [Hospital], order: [], min_altitude_m: 40, max_altitude_m: 100, max_distance_m: 6000, avoid_zones: [Hospital helipad]}
+    expect: {conflicts: [point_in_zone]}

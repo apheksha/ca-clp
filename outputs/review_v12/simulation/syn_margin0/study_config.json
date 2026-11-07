@@ -1,0 +1,32 @@
+{
+ "vehicle": "generic_quad_large",
+ "winds": {
+  "calm": [
+   0.0,
+   0.0
+  ],
+  "crosswind": [
+   0.0,
+   4.0
+  ]
+ },
+ "gust_sigma": 1.0,
+ "seeds": [
+  0,
+  1,
+  2
+ ],
+ "run_seeds": [
+  0
+ ],
+ "conditions": [
+  "C_prescriptive",
+  "C_full",
+  "E_classical",
+  "G_direct_patch"
+ ],
+ "limit": null,
+ "altitude_margin_m": 0.0,
+ "required_waypoint_tolerance": "1.5 x vehicle acceptance radius (min 5 m)",
+ "note": "built-in kinematic simulator, representative vehicle parameters; NOT PX4/Gazebo, not calibrated"
+}

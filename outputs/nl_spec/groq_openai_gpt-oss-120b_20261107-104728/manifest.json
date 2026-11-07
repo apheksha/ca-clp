@@ -1,0 +1,52 @@
+{
+ "provider": "groq",
+ "model": "openai/gpt-oss-120b",
+ "is_mock": false,
+ "scenario_dirs": [
+  "benchmark/real",
+  "benchmark/generated"
+ ],
+ "n_scenarios": 165,
+ "system_prompt": "You convert a UAV mission written in plain English into a structured specification.\nCopy numbers exactly as written. Never invent a value: if the text does not state something, use null (or an empty list).\nReply with ONE JSON object and nothing else.",
+ "temperature": 0.0,
+ "max_tokens": 4000,
+ "env": {
+  "python": "3.11.13 (main, Sep 13 2025, 19:09:42) [Clang 15.0.0 (clang-1500.3.9.4)]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "packages": {
+   "numpy": "1.26.4",
+   "pandas": "2.3.2",
+   "scipy": "1.16.2",
+   "matplotlib": "3.10.6",
+   "PyYAML": "6.0.2",
+   "pydantic": "2.11.9",
+   "shapely": "2.1.2",
+   "streamlit": "1.51.0",
+   "pytest": "9.0.2"
+  },
+  "git_commit": null,
+  "git_dirty": null,
+  "code_sha256": "ddf66636b0c32ac0190fc8a9f5ac600886b6508192a8b20b6ae3db5a7e56974d",
+  "n_files": 98
+ },
+ "started": "2026-11-07T10:47:28+0530",
+ "sessions": [
+  {
+   "started": "2026-11-07T10:47:28+0530",
+   "finished": "2026-11-07T11:58:22+0530",
+   "calls": 104,
+   "stopped_reason": "interrupted"
+  },
+  {
+   "started": "2026-11-07T11:58:24+0530",
+   "finished": "2026-11-07T12:30:17+0530",
+   "calls": 61,
+   "stopped_reason": null
+  }
+ ],
+ "note": "one call per mission; end_to_end_success = oracle witness planned on the EXTRACTED mission is valid and mission-preserving for the TRUE mission",
+ "stop": {
+  "kind": "none",
+  "message": null
+ }
+}

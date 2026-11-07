@@ -1,0 +1,83 @@
+{
+ "scenario_id": "combo_ord-dist_002",
+ "difficulty": "combo",
+ "base_seed": 2024,
+ "attempt": 0,
+ "mission": {
+  "mission_id": "combo_ord-dist_002",
+  "description": "The drone leaves its base at (14.3, 35.8) and has to end up at (92.1, 20.1). On the way it must stop at A at (52.2, 76.6), B at (25.4, 80.0), C at (49.4, 55.1); visit A before B; visit B before C. The whole trip may not be longer than 192 units.",
+  "start": [
+   14.3,
+   35.8
+  ],
+  "destination": [
+   92.1,
+   20.1
+  ],
+  "required_waypoints": [
+   {
+    "id": "A",
+    "x": 52.2,
+    "y": 76.6
+   },
+   {
+    "id": "B",
+    "x": 25.4,
+    "y": 80.0
+   },
+   {
+    "id": "C",
+    "x": 49.4,
+    "y": 55.1
+   }
+  ],
+  "min_altitude": 0.0,
+  "max_altitude": 1000.0,
+  "max_distance": 192.0,
+  "no_fly_zones": [],
+  "ordering": [
+   [
+    "A",
+    "B"
+   ],
+   [
+    "B",
+    "C"
+   ]
+  ],
+  "position_tolerance": 1.0,
+  "start_altitude": 0.0,
+  "max_energy": null,
+  "energy_k_v": 1.0,
+  "energy_k_wp": 0.0,
+  "speed_h": 10.0,
+  "speed_v": 2.0,
+  "active": [
+   "ordering",
+   "distance"
+  ]
+ },
+ "metadata": {
+  "n_zones": 0,
+  "n_obstacles": 0,
+  "zone_density": 0.0,
+  "distance_slack": 1.113,
+  "energy_slack": null,
+  "altitude_band_width": null,
+  "n_required": 3,
+  "feasibility": "FEASIBLE",
+  "witness_distance": 172.497,
+  "witness_energy": 172.497,
+  "lower_bound": 172.497,
+  "infeasible_kind": null,
+  "source": "synthetic",
+  "nl_style": "narrative",
+  "n_polygon_zones": 0,
+  "active": [
+   "ordering",
+   "distance"
+  ],
+  "n_active": 2,
+  "ordering_conflicts_with_route": true
+ }
+}

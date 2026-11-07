@@ -1,0 +1,153 @@
+{
+ "scenario_id": "real_san_francisco_05",
+ "difficulty": "real_hard",
+ "mission": {
+  "mission_id": "real_san_francisco_05",
+  "start": [
+   -22572.4,
+   14825.8
+  ],
+  "destination": [
+   -4046.1,
+   19072.7
+  ],
+  "required_waypoints": [
+   {
+    "id": "A",
+    "x": -21921.9,
+    "y": 7716.8
+   },
+   {
+    "id": "B",
+    "x": -13646.0,
+    "y": 13888.1
+   },
+   {
+    "id": "C",
+    "x": 6378.5,
+    "y": -23951.4
+   },
+   {
+    "id": "D",
+    "x": 23934.5,
+    "y": -10288.5
+   }
+  ],
+  "min_altitude": 40.0,
+  "max_altitude": 80.0,
+  "max_distance": 137900.0,
+  "ordering": [
+   [
+    "A",
+    "B"
+   ],
+   [
+    "B",
+    "C"
+   ],
+   [
+    "C",
+    "D"
+   ]
+  ],
+  "start_altitude": 0.0,
+  "max_energy": 144352.0,
+  "energy_k_v": 30.0,
+  "energy_k_wp": 0.0,
+  "active": [
+   "altitude",
+   "no_fly_zone",
+   "distance",
+   "ordering",
+   "energy"
+  ],
+  "no_fly_zones": [
+   {
+    "id": "Z1",
+    "kind": "circle",
+    "center": [
+     2536.9,
+     7793.1
+    ],
+    "radius": 8000.0,
+    "description": "Oakland San Francisco Bay Airport (KOAK, large_airport) protection radius 8000 m",
+    "category": "nfz"
+   },
+   {
+    "id": "Z2",
+    "kind": "circle",
+    "center": [
+     -10989.2,
+     -3357.4
+    ],
+    "radius": 8000.0,
+    "description": "San Francisco International Airport (KSFO, large_airport) protection radius 8000 m",
+    "category": "nfz"
+   },
+   {
+    "id": "Z3",
+    "kind": "circle",
+    "center": [
+     -73.8,
+     -15219.3
+    ],
+    "radius": 5000.0,
+    "description": "San Carlos Airport (KSQL, medium_airport) protection radius 5000 m",
+    "category": "nfz"
+   },
+   {
+    "id": "Z4",
+    "kind": "circle",
+    "center": [
+     11885.5,
+     -21004.5
+    ],
+    "radius": 5000.0,
+    "description": "Palo Alto Airport (KPAO, medium_airport) protection radius 5000 m",
+    "category": "nfz"
+   }
+  ],
+  "description": "The drone leaves its base at (-22572, 14826) and has to end up at (-4046, 19073). On the way it must stop at A (Police Pistol Range Heliport) at (-21922, 7717), B (Hall of Justice Heliport) at (-13646, 13888), C (Stanford Health Care West Heliport) at (6378, -23951), D (Washington Hospital Parking Structure Heliport) at (23934, -10288); visit A before B; visit B before C; visit C before D. Keep it no lower than 40 m and no higher than 80 m. The restricted areas and obstacles (Z1 [Oakland San Francisco Bay Airport (KOAK, large_airport) protection radius 8000 m], Z2 [San Francisco International Airport (KSFO, large_airport) protection radius 8000 m], Z3 [San Carlos Airport (KSQL, medium_airport) protection radius 5000 m], Z4 [Palo Alto Airport (KPAO, medium_airport) protection radius 5000 m]) are off limits, and that includes cutting across a corner of one on the way between two stops. The whole trip may not be longer than 137900 meters. The battery only allows 144352 energy units, where energy = route length + 30 x total climb (so low altitudes save battery). (START is San Francisco VA Medical Center Heliport; DEST is Childrens Hospital Oakland Alternate Heliport.) Coordinates are meters east/north of the region center."
+ },
+ "metadata": {
+  "source": "ourairports",
+  "region": "san_francisco",
+  "region_center": [
+   37.65,
+   -122.25
+  ],
+  "airports_csv_sha256": "fe7f0d9dc2646e41b0cc520f1733d99b9c76a6b26a3e6a55f66fa89e62083ad5",
+  "n_zones": 4,
+  "zone_density": 0.227,
+  "distance_slack": 1.08,
+  "altitude_band_width": 40.0,
+  "n_required": 4,
+  "feasibility": "FEASIBLE",
+  "witness_distance": 127685.3,
+  "lower_bound": 123078.2,
+  "infeasible_kind": null,
+  "n_polygon_zones": 0,
+  "active": [
+   "altitude",
+   "no_fly_zone",
+   "distance",
+   "ordering",
+   "energy"
+  ],
+  "n_active": 5,
+  "n_obstacles": 0,
+  "witness_energy": null,
+  "energy_slack": 1.12,
+  "nl_style": "narrative",
+  "site_names": {
+   "A": "Police Pistol Range Heliport",
+   "B": "Hall of Justice Heliport",
+   "C": "Stanford Health Care West Heliport",
+   "D": "Washington Hospital Parking Structure Heliport",
+   "START": "San Francisco VA Medical Center Heliport",
+   "DEST": "Childrens Hospital Oakland Alternate Heliport"
+  },
+  "n_blocked_legs": 4,
+  "assumptions": "zone radii by airport type, altitude band <=120 m AGL, equirectangular projection"
+ }
+}

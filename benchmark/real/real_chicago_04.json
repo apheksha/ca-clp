@@ -1,0 +1,132 @@
+{
+ "scenario_id": "real_chicago_04",
+ "difficulty": "real_medium",
+ "mission": {
+  "mission_id": "real_chicago_04",
+  "start": [
+   4271.0,
+   -5759.2
+  ],
+  "destination": [
+   -19514.3,
+   -16765.1
+  ],
+  "required_waypoints": [
+   {
+    "id": "A",
+    "x": -15836.7,
+    "y": 17229.1
+   },
+   {
+    "id": "B",
+    "x": -26311.2,
+    "y": 11647.0
+   },
+   {
+    "id": "C",
+    "x": -25464.5,
+    "y": -9035.4
+   }
+  ],
+  "min_altitude": 30.0,
+  "max_altitude": 100.0,
+  "max_distance": 88349.0,
+  "ordering": [
+   [
+    "A",
+    "B"
+   ],
+   [
+    "B",
+    "C"
+   ]
+  ],
+  "start_altitude": 0.0,
+  "max_energy": 96881.0,
+  "energy_k_v": 30.0,
+  "energy_k_wp": 0.0,
+  "active": [
+   "altitude",
+   "no_fly_zone",
+   "distance",
+   "ordering",
+   "energy"
+  ],
+  "no_fly_zones": [
+   {
+    "id": "Z1",
+    "kind": "circle",
+    "center": [
+     -4337.1,
+     -12676.4
+    ],
+    "radius": 8000.0,
+    "description": "Chicago Midway International Airport (KMDW, large_airport) protection radius 8000 m",
+    "category": "nfz"
+   },
+   {
+    "id": "Z2",
+    "kind": "circle",
+    "center": [
+     -16950.0,
+     8739.9
+    ],
+    "radius": 8000.0,
+    "description": "Chicago O'Hare International Airport (KORD, large_airport) protection radius 8000 m",
+    "category": "nfz"
+   },
+   {
+    "id": "Z3",
+    "kind": "circle",
+    "center": [
+     -16676.4,
+     23820.4
+    ],
+    "radius": 5000.0,
+    "description": "Chicago Executive Airport (KPWK, medium_airport) protection radius 5000 m",
+    "category": "nfz"
+   }
+  ],
+  "description": "Route START(4271,-5759) -> DEST(-19514,-16765) via A (Presence Holy Family Medical Center Heliport) at (-15837, 17229), B (Amita Health-Alexian Brothers Medical Center Heliport) at (-26311, 11647), C (Advocate Good Samaritan Hospital Heliport) at (-25464, -9035). Order: visit A before B; visit B before C. Altitude 30-100 m at all waypoints. No entry to or crossing of Z1 [Chicago Midway International Airport (KMDW, large_airport) protection radius 8000 m], Z2 [Chicago O'Hare International Airport (KORD, large_airport) protection radius 8000 m], Z3 [Chicago Executive Airport (KPWK, medium_airport) protection radius 5000 m]. Total length <= 88349 meters. Battery: 96881 energy units, where energy = route length + 30 x total climb (so low altitudes save battery). (START is Chicago Helicopter Experience Heliport; DEST is Midwest Heliport.) Coordinates are meters east/north of the region center."
+ },
+ "metadata": {
+  "source": "ourairports",
+  "region": "chicago",
+  "region_center": [
+   41.9,
+   -87.7
+  ],
+  "airports_csv_sha256": "fe7f0d9dc2646e41b0cc520f1733d99b9c76a6b26a3e6a55f66fa89e62083ad5",
+  "n_zones": 3,
+  "zone_density": 0.17,
+  "distance_slack": 1.2,
+  "altitude_band_width": 70.0,
+  "n_required": 3,
+  "feasibility": "FEASIBLE",
+  "witness_distance": 73624.2,
+  "lower_bound": 72864.9,
+  "infeasible_kind": null,
+  "n_polygon_zones": 0,
+  "active": [
+   "altitude",
+   "no_fly_zone",
+   "distance",
+   "ordering",
+   "energy"
+  ],
+  "n_active": 5,
+  "n_obstacles": 0,
+  "witness_energy": null,
+  "energy_slack": 1.3,
+  "nl_style": "terse",
+  "site_names": {
+   "A": "Presence Holy Family Medical Center Heliport",
+   "B": "Amita Health-Alexian Brothers Medical Center Heliport",
+   "C": "Advocate Good Samaritan Hospital Heliport",
+   "START": "Chicago Helicopter Experience Heliport",
+   "DEST": "Midwest Heliport"
+  },
+  "n_blocked_legs": 1,
+  "assumptions": "zone radii by airport type, altitude band <=120 m AGL, equirectangular projection"
+ }
+}

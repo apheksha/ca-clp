@@ -1,0 +1,91 @@
+{
+ "scenario_id": "easy_005",
+ "difficulty": "easy",
+ "base_seed": 2024,
+ "attempt": 0,
+ "mission": {
+  "mission_id": "easy_005",
+  "description": "The drone leaves its base at (8.7, 72.6) and has to end up at (93.7, 48.4). On the way it must stop at A at (26.3, 56.6), B at (35.8, 35.0); visit A before B. Keep it no lower than 37 m and no higher than 99 m. The restricted areas and obstacles (Z1) are off limits, and that includes cutting across a corner of one on the way between two stops. The whole trip may not be longer than 169.3 units.",
+  "start": [
+   8.7,
+   72.6
+  ],
+  "destination": [
+   93.7,
+   48.4
+  ],
+  "required_waypoints": [
+   {
+    "id": "A",
+    "x": 26.3,
+    "y": 56.6
+   },
+   {
+    "id": "B",
+    "x": 35.8,
+    "y": 35.0
+   }
+  ],
+  "min_altitude": 37.0,
+  "max_altitude": 99.0,
+  "max_distance": 169.3,
+  "no_fly_zones": [
+   {
+    "id": "Z1",
+    "kind": "circle",
+    "center": [
+     14.4,
+     65.2
+    ],
+    "radius": 5.4,
+    "vertices": null,
+    "description": "restricted area 1",
+    "category": "nfz"
+   }
+  ],
+  "ordering": [
+   [
+    "A",
+    "B"
+   ]
+  ],
+  "position_tolerance": 1.0,
+  "start_altitude": 0.0,
+  "max_energy": null,
+  "energy_k_v": 1.0,
+  "energy_k_wp": 0.0,
+  "speed_h": 10.0,
+  "speed_v": 2.0,
+  "active": [
+   "altitude",
+   "no_fly_zone",
+   "distance",
+   "ordering"
+  ]
+ },
+ "metadata": {
+  "n_zones": 1,
+  "n_obstacles": 0,
+  "zone_density": 0.0092,
+  "distance_slack": 1.56,
+  "energy_slack": null,
+  "altitude_band_width": 62.0,
+  "n_required": 2,
+  "feasibility": "FEASIBLE",
+  "witness_distance": 108.499,
+  "witness_energy": 145.499,
+  "lower_bound": 106.813,
+  "infeasible_kind": null,
+  "source": "synthetic",
+  "nl_style": "narrative",
+  "n_polygon_zones": 0,
+  "active": [
+   "altitude",
+   "no_fly_zone",
+   "distance",
+   "ordering"
+  ],
+  "n_active": 4,
+  "ordering_conflicts_with_route": false
+ }
+}

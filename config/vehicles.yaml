@@ -1,0 +1,103 @@
+# Vehicle profiles for the PHYSICAL energy model and the flight simulator.
+# IMPORTANT: these are REPRESENTATIVE parameter sets of vehicle classes, NOT calibrated to a specific airframe/battery. Replace them with measured data
+# (hover power test, battery discharge curve, drag test) for any claim about a real vehicle. Every number below is documented in `src/models/vehicle.py`.
+profiles:
+  generic_quad_small:      # ~1.5 kg camera quadrotor class
+    kind: multirotor
+    mass_kg: 1.5
+    rotor_disc_area_m2: 0.20      # total rotor disc area
+    efficiency: 0.60              # battery -> thrust (motor+ESC+propeller) overall efficiency
+    drag_area_m2: 0.012           # Cd*A parasitic drag area
+    avionics_w: 8.0
+    battery_wh: 60.0
+    usable_fraction: 0.80         # reserve 20 %
+    v_cruise: 12.0                # m/s airspeed
+    v_max: 18.0
+    v_climb_max: 3.0
+    v_descend_max: 2.5
+    max_accel: 3.0
+    max_lateral_accel: 4.0
+    min_turn_radius_m: 8.0
+    hover_time_per_waypoint_s: 2.0
+    payload_max_kg: 0.5
+    tracking_gain: 0.8            # first-order velocity response (1/s)
+    acceptance_radius_m: 3.0
+    sensor_range_m: 60.0
+    gps_sigma_m: 1.2
+    gps_bias_tau_s: 60.0
+    gps_bias_sigma_m: 1.5
+    gps_dropout_p: 0.0
+  generic_quad_large:      # ~5 kg survey / inspection quadrotor class
+    kind: multirotor
+    mass_kg: 5.0
+    rotor_disc_area_m2: 0.65
+    efficiency: 0.62
+    drag_area_m2: 0.035
+    avionics_w: 15.0
+    battery_wh: 220.0
+    usable_fraction: 0.80
+    v_cruise: 14.0
+    v_max: 20.0
+    v_climb_max: 4.0
+    v_descend_max: 3.0
+    max_accel: 3.5
+    max_lateral_accel: 4.5
+    min_turn_radius_m: 12.0
+    hover_time_per_waypoint_s: 3.0
+    payload_max_kg: 2.0
+    tracking_gain: 0.7
+    acceptance_radius_m: 4.0
+    sensor_range_m: 80.0
+    gps_sigma_m: 1.0
+    gps_bias_tau_s: 60.0
+    gps_bias_sigma_m: 1.2
+    gps_dropout_p: 0.0
+  generic_fixed_wing:      # ~3 kg small fixed-wing / VTOL cruise class
+    kind: fixed_wing
+    mass_kg: 3.0
+    lift_to_drag: 12.0
+    efficiency: 0.55
+    avionics_w: 10.0
+    battery_wh: 150.0
+    usable_fraction: 0.80
+    v_cruise: 20.0
+    v_max: 28.0
+    v_climb_max: 3.5
+    v_descend_max: 4.0
+    max_accel: 2.0
+    max_lateral_accel: 3.0
+    min_turn_radius_m: 60.0
+    hover_time_per_waypoint_s: 0.0
+    payload_max_kg: 0.5
+    tracking_gain: 0.5
+    acceptance_radius_m: 15.0
+    sensor_range_m: 150.0
+    gps_sigma_m: 1.5
+    gps_bias_tau_s: 90.0
+    gps_bias_sigma_m: 2.0
+    gps_dropout_p: 0.0
+
+  long_range_fixed_wing:   # ~6 kg long-endurance fixed-wing class; sized so the 24-146 km airport-scale missions are physically flyable
+    kind: fixed_wing
+    mass_kg: 6.0
+    lift_to_drag: 16.0
+    efficiency: 0.60
+    avionics_w: 12.0
+    battery_wh: 600.0
+    usable_fraction: 0.80
+    v_cruise: 22.0
+    v_max: 30.0
+    v_climb_max: 3.5
+    v_descend_max: 4.0
+    max_accel: 2.0
+    max_lateral_accel: 3.0
+    min_turn_radius_m: 80.0
+    hover_time_per_waypoint_s: 0.0
+    payload_max_kg: 1.0
+    tracking_gain: 0.5
+    acceptance_radius_m: 25.0
+    sensor_range_m: 300.0
+    gps_sigma_m: 1.5
+    gps_bias_tau_s: 90.0
+    gps_bias_sigma_m: 2.0
+    gps_dropout_p: 0.0

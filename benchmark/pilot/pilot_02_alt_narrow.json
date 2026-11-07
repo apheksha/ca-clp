@@ -1,0 +1,75 @@
+{
+ "scenario_id": "pilot_02_alt_narrow",
+ "difficulty": "easy",
+ "base_seed": 0,
+ "attempt": 0,
+ "mission": {
+  "mission_id": "pilot_02_alt_narrow",
+  "description": "Route START(10.0,20.0) -> DEST(90.0,80.0) via A at (40.0, 45.0), B at (65.0, 60.0). Order: visit A before B. Altitude 50-58 m at all waypoints.",
+  "start": [
+   10.0,
+   20.0
+  ],
+  "destination": [
+   90.0,
+   80.0
+  ],
+  "required_waypoints": [
+   {
+    "id": "A",
+    "x": 40.0,
+    "y": 45.0
+   },
+   {
+    "id": "B",
+    "x": 65.0,
+    "y": 60.0
+   }
+  ],
+  "min_altitude": 50.0,
+  "max_altitude": 58.0,
+  "max_distance": 1000000000.0,
+  "no_fly_zones": [],
+  "ordering": [
+   [
+    "A",
+    "B"
+   ]
+  ],
+  "position_tolerance": 1.0,
+  "start_altitude": 0.0,
+  "max_energy": null,
+  "energy_k_v": 1.0,
+  "energy_k_wp": 0.0,
+  "speed_h": 10.0,
+  "speed_v": 2.0,
+  "active": [
+   "altitude",
+   "ordering"
+  ]
+ },
+ "metadata": {
+  "n_zones": 0,
+  "n_obstacles": 0,
+  "zone_density": 0.0,
+  "distance_slack": null,
+  "energy_slack": null,
+  "altitude_band_width": 8.0,
+  "n_required": 2,
+  "feasibility": "FEASIBLE",
+  "witness_distance": 100.222,
+  "witness_energy": 150.222,
+  "lower_bound": 100.222,
+  "infeasible_kind": null,
+  "source": "pilot",
+  "nl_style": "terse",
+  "n_polygon_zones": 0,
+  "active": [
+   "altitude",
+   "ordering"
+  ],
+  "n_active": 2,
+  "ordering_conflicts_with_route": false,
+  "purpose": "ALTITUDE: narrow 8 m band; checks precise numeric compliance"
+ }
+}

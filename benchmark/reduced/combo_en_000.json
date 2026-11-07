@@ -1,0 +1,72 @@
+{
+ "scenario_id": "combo_en_000",
+ "difficulty": "combo",
+ "base_seed": 2024,
+ "attempt": 0,
+ "mission": {
+  "mission_id": "combo_en_000",
+  "description": "Fly from the base at (12.1, 66.4) to the destination at (88.9, 32.7). The route must pass through the required points A at (60.3, 74.2), B at (33.9, 24.2), C at (36.3, 50.7). Stay within the battery budget of 219.6 energy units, where energy = route length + 1 x total climb (so low altitudes save battery).",
+  "start": [
+   12.1,
+   66.4
+  ],
+  "destination": [
+   88.9,
+   32.7
+  ],
+  "required_waypoints": [
+   {
+    "id": "A",
+    "x": 60.3,
+    "y": 74.2
+   },
+   {
+    "id": "B",
+    "x": 33.9,
+    "y": 24.2
+   },
+   {
+    "id": "C",
+    "x": 36.3,
+    "y": 50.7
+   }
+  ],
+  "min_altitude": 0.0,
+  "max_altitude": 1000.0,
+  "max_distance": 1000000000.0,
+  "no_fly_zones": [],
+  "ordering": [],
+  "position_tolerance": 1.0,
+  "start_altitude": 0.0,
+  "max_energy": 219.6,
+  "energy_k_v": 1.0,
+  "energy_k_wp": 0.0,
+  "speed_h": 10.0,
+  "speed_v": 2.0,
+  "active": [
+   "energy"
+  ]
+ },
+ "metadata": {
+  "n_zones": 0,
+  "n_obstacles": 0,
+  "zone_density": 0.0,
+  "distance_slack": null,
+  "energy_slack": 1.171,
+  "altitude_band_width": null,
+  "n_required": 3,
+  "feasibility": "FEASIBLE",
+  "witness_distance": 187.572,
+  "witness_energy": 187.572,
+  "lower_bound": 187.572,
+  "infeasible_kind": null,
+  "source": "synthetic",
+  "nl_style": "formal",
+  "n_polygon_zones": 0,
+  "active": [
+   "energy"
+  ],
+  "n_active": 1,
+  "ordering_conflicts_with_route": false
+ }
+}

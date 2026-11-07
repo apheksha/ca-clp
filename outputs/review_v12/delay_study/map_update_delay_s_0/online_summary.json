@@ -1,0 +1,18 @@
+{
+ "classical|broadcast": {
+  "n": 56,
+  "success_rate": 0.625,
+  "detect_rate": 0.9821428571428571,
+  "intrusions": 19
+ },
+ "none|broadcast": {
+  "n": 56,
+  "success_rate": 0.03571428571428571,
+  "detect_rate": 0.9821428571428571,
+  "intrusions": 54
+ },
+ "no_event_baseline": {
+  "n": 30,
+  "success_rate": 0.8666666666666667
+ }
+}

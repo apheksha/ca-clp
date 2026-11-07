@@ -1,0 +1,133 @@
+{
+ "scenario_id": "real_london_03",
+ "difficulty": "real_easy",
+ "mission": {
+  "mission_id": "real_london_03",
+  "start": [
+   13266.6,
+   1986.8
+  ],
+  "destination": [
+   18493.7,
+   17103.8
+  ],
+  "required_waypoints": [
+   {
+    "id": "A",
+    "x": 10662.9,
+    "y": -21635.3
+   },
+   {
+    "id": "B",
+    "x": -16590.2,
+    "y": 19374.2
+   }
+  ],
+  "min_altitude": 20.0,
+  "max_altitude": 120.0,
+  "max_distance": 151678.0,
+  "ordering": [
+   [
+    "A",
+    "B"
+   ]
+  ],
+  "start_altitude": 0.0,
+  "max_energy": null,
+  "energy_k_v": 0.5,
+  "energy_k_wp": 0.0,
+  "active": [
+   "altitude",
+   "no_fly_zone",
+   "distance",
+   "ordering",
+   "energy"
+  ],
+  "no_fly_zones": [
+   {
+    "id": "Z1",
+    "kind": "circle",
+    "center": [
+     -11640.6,
+     5893.5
+    ],
+    "radius": 5000.0,
+    "description": "RAF Northolt (EGWU, medium_airport) protection radius 5000 m",
+    "category": "nfz"
+   },
+   {
+    "id": "Z2",
+    "kind": "circle",
+    "center": [
+     -14530.0,
+     -3252.7
+    ],
+    "radius": 8000.0,
+    "description": "London Heathrow Airport (EGLL, large_airport) protection radius 8000 m",
+    "category": "nfz"
+   },
+   {
+    "id": "Z3",
+    "kind": "circle",
+    "center": [
+     21131.5,
+     589.2
+    ],
+    "radius": 5000.0,
+    "description": "London City Airport (EGLC, medium_airport) protection radius 5000 m",
+    "category": "nfz"
+   },
+   {
+    "id": "Z4",
+    "kind": "circle",
+    "center": [
+     19554.8,
+     -18814.3
+    ],
+    "radius": 5000.0,
+    "description": "London Biggin Hill Airport (EGKB, medium_airport) protection radius 5000 m",
+    "category": "nfz"
+   }
+  ],
+  "description": "Fly from the base at (13267, 1987) to the destination at (18494, 17104). The route must pass through the required points A (Kenley Glider Field) at (10663, -21635), B (New Model Farm Airstrip) at (-16590, 19374); visit A before B. Maintain an altitude between 20 and 120 meters at every waypoint. Avoid all restricted zones and obstacles (Z1 [RAF Northolt (EGWU, medium_airport) protection radius 5000 m], Z2 [London Heathrow Airport (EGLL, large_airport) protection radius 8000 m], Z3 [London City Airport (EGLC, medium_airport) protection radius 5000 m], Z4 [London Biggin Hill Airport (EGKB, medium_airport) protection radius 5000 m]), including the straight paths between waypoints. Keep the total horizontal route length at or below 151678 meters. (START is The Royal London Hospital Helipad; DEST is Metropolitan Police Air Support Unit Lippitts Hill.) Coordinates are meters east/north of the region center."
+ },
+ "metadata": {
+  "source": "ourairports",
+  "region": "london",
+  "region_center": [
+   51.5,
+   -0.25
+  ],
+  "airports_csv_sha256": "fe7f0d9dc2646e41b0cc520f1733d99b9c76a6b26a3e6a55f66fa89e62083ad5",
+  "n_zones": 4,
+  "zone_density": 0.1544,
+  "distance_slack": 1.4,
+  "altitude_band_width": 100.0,
+  "n_required": 2,
+  "feasibility": "FEASIBLE",
+  "witness_distance": 108341.3,
+  "lower_bound": 108161.8,
+  "infeasible_kind": null,
+  "n_polygon_zones": 0,
+  "active": [
+   "altitude",
+   "no_fly_zone",
+   "distance",
+   "ordering",
+   "energy"
+  ],
+  "n_active": 5,
+  "n_obstacles": 0,
+  "witness_energy": null,
+  "energy_slack": null,
+  "nl_style": "formal",
+  "site_names": {
+   "A": "Kenley Glider Field",
+   "B": "New Model Farm Airstrip",
+   "START": "The Royal London Hospital Helipad",
+   "DEST": "Metropolitan Police Air Support Unit Lippitts Hill"
+  },
+  "n_blocked_legs": 1,
+  "assumptions": "zone radii by airport type, altitude band <=120 m AGL, equirectangular projection"
+ }
+}

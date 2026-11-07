@@ -1,0 +1,102 @@
+{
+ "run": "dyn-real_20261025-173134_6d86b6",
+ "n_cases": 146,
+ "n_truly_affected": 106,
+ "n_not_affected_but_counted": 40,
+ "id_bug_present_in_log": true,
+ "not_affected_by_change": {
+  "add_zone": [
+   6,
+   44
+  ],
+  "enlarge_zone": [
+   5,
+   38
+  ],
+  "reduce_energy": [
+   0,
+   20
+  ],
+  "tighten_distance": [
+   29,
+   44
+  ]
+ },
+ "feasible_after_change": {
+  "FEASIBLE": 142,
+  "UNKNOWN": 4
+ },
+ "selection": {
+  "source_missions": [
+   "combo_alt-en_000",
+   "combo_alt-en_001",
+   "combo_alt-en_002",
+   "combo_alt-nfz-dist-ord-en_000",
+   "combo_alt-nfz-dist-ord-en_001",
+   "corridor_000",
+   "corridor_001",
+   "corridor_002",
+   "corridor_003",
+   "corridor_004",
+   "easy_000",
+   "easy_001",
+   "easy_002",
+   "easy_003",
+   "easy_004",
+   "hard_000",
+   "hard_001",
+   "hard_002",
+   "hard_003",
+   "hard_004",
+   "medium_000",
+   "medium_001",
+   "medium_002",
+   "medium_003",
+   "medium_004"
+  ],
+  "n_source_missions": 25,
+  "difficulty_counts_cases": {
+   "combo": 20,
+   "corridor": 37,
+   "easy": 22,
+   "hard": 37,
+   "medium": 30
+  },
+  "selection_mode_in_manifest": "first (legacy default)",
+  "n_per_difficulty": 5,
+  "stopped_reason": "interrupted by user (Ctrl-C)",
+  "static_success_selected_vs_rest": {
+   "A_llm_only": {
+    "static_success_selected": 0.12,
+    "n_selected_runs": 75,
+    "static_success_not_selected": 0.2222222222222222,
+    "n_not_selected_runs": 261
+   },
+   "C_full": {
+    "static_success_selected": 0.3466666666666667,
+    "n_selected_runs": 75,
+    "static_success_not_selected": 0.5900383141762452,
+    "n_not_selected_runs": 261
+   },
+   "C_prescriptive": {
+    "static_success_selected": 0.9466666666666667,
+    "n_selected_runs": 75,
+    "static_success_not_selected": 0.9770114942528736,
+    "n_not_selected_runs": 261
+   },
+   "X_binary_feedback": {
+    "static_success_selected": 0.21333333333333335,
+    "n_selected_runs": 75,
+    "static_success_not_selected": 0.28735632183908044,
+    "n_not_selected_runs": 261
+   },
+   "D_resample": {
+    "static_success_selected": 0.14666666666666667,
+    "n_selected_runs": 75,
+    "static_success_not_selected": 0.2222222222222222,
+    "n_not_selected_runs": 261
+   }
+  }
+ },
+ "caveat": "first repair prompt of LLM conditions listed a spurious MISSION_ID_MISMATCH in these logs; final success is unaffected (the parser assigns the id)"
+}

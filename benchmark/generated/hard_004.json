@@ -1,0 +1,257 @@
+{
+ "scenario_id": "hard_004",
+ "difficulty": "hard",
+ "base_seed": 2024,
+ "attempt": 0,
+ "mission": {
+  "mission_id": "hard_004",
+  "description": "Route START(5.4,52.3) -> DEST(87.4,39.3) via A at (50.9, 31.1), B at (56.6, 79.6), C at (71.2, 51.2), D at (52.7, 20.3). Order: visit A before B; visit C before D. Altitude 34-53 m at all waypoints. No entry to or crossing of Z1 (obstacle), Z2, Z3 (obstacle), Z4, Z5 (obstacle), Z6 (obstacle). Total length <= 222.8 units. Battery: 271.2 energy units, where energy = route length + 1 x total climb (so low altitudes save battery).",
+  "start": [
+   5.4,
+   52.3
+  ],
+  "destination": [
+   87.4,
+   39.3
+  ],
+  "required_waypoints": [
+   {
+    "id": "A",
+    "x": 50.9,
+    "y": 31.1
+   },
+   {
+    "id": "B",
+    "x": 56.6,
+    "y": 79.6
+   },
+   {
+    "id": "C",
+    "x": 71.2,
+    "y": 51.2
+   },
+   {
+    "id": "D",
+    "x": 52.7,
+    "y": 20.3
+   }
+  ],
+  "min_altitude": 34.0,
+  "max_altitude": 53.0,
+  "max_distance": 222.8,
+  "no_fly_zones": [
+   {
+    "id": "Z1",
+    "kind": "polygon",
+    "center": null,
+    "radius": null,
+    "vertices": [
+     [
+      46.5,
+      41.39
+     ],
+     [
+      41.93,
+      46.66
+     ],
+     [
+      34.36,
+      45.72
+     ],
+     [
+      31.86,
+      38.18
+     ],
+     [
+      36.86,
+      32.9
+     ],
+     [
+      44.02,
+      34.19
+     ]
+    ],
+    "description": "terrain ridge",
+    "category": "obstacle"
+   },
+   {
+    "id": "Z2",
+    "kind": "circle",
+    "center": [
+     57.6,
+     59.5
+    ],
+    "radius": 5.3,
+    "vertices": null,
+    "description": "restricted area 2",
+    "category": "nfz"
+   },
+   {
+    "id": "Z3",
+    "kind": "polygon",
+    "center": null,
+    "radius": null,
+    "vertices": [
+     [
+      82.41,
+      31.18
+     ],
+     [
+      75.14,
+      37.54
+     ],
+     [
+      69.62,
+      30.7
+     ],
+     [
+      76.43,
+      23.7
+     ]
+    ],
+    "description": "building",
+    "category": "obstacle"
+   },
+   {
+    "id": "Z4",
+    "kind": "polygon",
+    "center": null,
+    "radius": null,
+    "vertices": [
+     [
+      25.36,
+      42.48
+     ],
+     [
+      23.04,
+      45.94
+     ],
+     [
+      18.18,
+      46.09
+     ],
+     [
+      15.8,
+      41.19
+     ],
+     [
+      18.77,
+      37.25
+     ],
+     [
+      23.43,
+      37.54
+     ]
+    ],
+    "description": "restricted area 4",
+    "category": "nfz"
+   },
+   {
+    "id": "Z5",
+    "kind": "polygon",
+    "center": null,
+    "radius": null,
+    "vertices": [
+     [
+      69.56,
+      41.75
+     ],
+     [
+      64.78,
+      46.7
+     ],
+     [
+      59.41,
+      41.81
+     ],
+     [
+      65.13,
+      36.9
+     ]
+    ],
+    "description": "building",
+    "category": "obstacle"
+   },
+   {
+    "id": "Z6",
+    "kind": "polygon",
+    "center": null,
+    "radius": null,
+    "vertices": [
+     [
+      72.31,
+      70.27
+     ],
+     [
+      68.34,
+      76.82
+     ],
+     [
+      60.81,
+      75.43
+     ],
+     [
+      60.24,
+      67.19
+     ],
+     [
+      68.31,
+      66.28
+     ]
+    ],
+    "description": "building",
+    "category": "obstacle"
+   }
+  ],
+  "ordering": [
+   [
+    "A",
+    "B"
+   ],
+   [
+    "C",
+    "D"
+   ]
+  ],
+  "position_tolerance": 1.0,
+  "start_altitude": 0.0,
+  "max_energy": 271.2,
+  "energy_k_v": 1.0,
+  "energy_k_wp": 0.0,
+  "speed_h": 10.0,
+  "speed_v": 2.0,
+  "active": [
+   "altitude",
+   "no_fly_zone",
+   "distance",
+   "ordering",
+   "energy"
+  ]
+ },
+ "metadata": {
+  "n_zones": 6,
+  "n_obstacles": 4,
+  "zone_density": 0.0527,
+  "distance_slack": 1.047,
+  "energy_slack": 1.099,
+  "altitude_band_width": 19.0,
+  "n_required": 4,
+  "feasibility": "FEASIBLE",
+  "witness_distance": 212.711,
+  "witness_energy": 246.711,
+  "lower_bound": 206.539,
+  "infeasible_kind": null,
+  "source": "synthetic",
+  "nl_style": "terse",
+  "n_polygon_zones": 5,
+  "active": [
+   "altitude",
+   "no_fly_zone",
+   "distance",
+   "ordering",
+   "energy"
+  ],
+  "n_active": 5,
+  "ordering_conflicts_with_route": true
+ }
+}

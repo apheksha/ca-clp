@@ -1,0 +1,195 @@
+{
+ "scenario_id": "hard_006",
+ "difficulty": "hard",
+ "base_seed": 2024,
+ "attempt": 0,
+ "mission": {
+  "mission_id": "hard_006",
+  "description": "Fly from the base at (6.5, 26.8) to the destination at (85.5, 61.7). The route must pass through the required points A at (45.5, 66.7), B at (52.0, 14.6), C at (32.4, 37.1), D at (42.5, 52.5); visit A before B; visit B before C; visit C before D. Maintain an altitude between 36 and 54 meters at every waypoint. Avoid all restricted zones and obstacles (Z1, Z2 (obstacle), Z3, Z4, Z5), including the straight paths between waypoints. Keep the total horizontal route length at or below 230.5 units. Stay within the battery budget of 267.5 energy units, where energy = route length + 1 x total climb (so low altitudes save battery).",
+  "start": [
+   6.5,
+   26.8
+  ],
+  "destination": [
+   85.5,
+   61.7
+  ],
+  "required_waypoints": [
+   {
+    "id": "A",
+    "x": 45.5,
+    "y": 66.7
+   },
+   {
+    "id": "B",
+    "x": 52.0,
+    "y": 14.6
+   },
+   {
+    "id": "C",
+    "x": 32.4,
+    "y": 37.1
+   },
+   {
+    "id": "D",
+    "x": 42.5,
+    "y": 52.5
+   }
+  ],
+  "min_altitude": 36.0,
+  "max_altitude": 54.0,
+  "max_distance": 230.5,
+  "no_fly_zones": [
+   {
+    "id": "Z1",
+    "kind": "circle",
+    "center": [
+     46.9,
+     30.1
+    ],
+    "radius": 5.9,
+    "vertices": null,
+    "description": "restricted area 1",
+    "category": "nfz"
+   },
+   {
+    "id": "Z2",
+    "kind": "polygon",
+    "center": null,
+    "radius": null,
+    "vertices": [
+     [
+      26.29,
+      40.86
+     ],
+     [
+      24.72,
+      45.36
+     ],
+     [
+      19.94,
+      45.77
+     ],
+     [
+      16.83,
+      42.18
+     ],
+     [
+      20.13,
+      36.79
+     ],
+     [
+      23.84,
+      37.18
+     ]
+    ],
+    "description": "building",
+    "category": "obstacle"
+   },
+   {
+    "id": "Z3",
+    "kind": "polygon",
+    "center": null,
+    "radius": null,
+    "vertices": [
+     [
+      63.44,
+      54.95
+     ],
+     [
+      56.17,
+      60.12
+     ],
+     [
+      50.7,
+      53.33
+     ],
+     [
+      57.56,
+      48.1
+     ]
+    ],
+    "description": "restricted area 3",
+    "category": "nfz"
+   },
+   {
+    "id": "Z4",
+    "kind": "circle",
+    "center": [
+     37.8,
+     43.4
+    ],
+    "radius": 5.1,
+    "vertices": null,
+    "description": "restricted area 4",
+    "category": "nfz"
+   },
+   {
+    "id": "Z5",
+    "kind": "circle",
+    "center": [
+     71.7,
+     61.2
+    ],
+    "radius": 8.7,
+    "vertices": null,
+    "description": "restricted area 5",
+    "category": "nfz"
+   }
+  ],
+  "ordering": [
+   [
+    "A",
+    "B"
+   ],
+   [
+    "B",
+    "C"
+   ],
+   [
+    "C",
+    "D"
+   ]
+  ],
+  "position_tolerance": 1.0,
+  "start_altitude": 0.0,
+  "max_energy": 267.5,
+  "energy_k_v": 1.0,
+  "energy_k_wp": 0.0,
+  "speed_h": 10.0,
+  "speed_v": 2.0,
+  "active": [
+   "altitude",
+   "no_fly_zone",
+   "distance",
+   "ordering",
+   "energy"
+  ]
+ },
+ "metadata": {
+  "n_zones": 5,
+  "n_obstacles": 1,
+  "zone_density": 0.0566,
+  "distance_slack": 1.107,
+  "energy_slack": 1.095,
+  "altitude_band_width": 18.0,
+  "n_required": 4,
+  "feasibility": "FEASIBLE",
+  "witness_distance": 208.314,
+  "witness_energy": 244.314,
+  "lower_bound": 200.528,
+  "infeasible_kind": null,
+  "source": "synthetic",
+  "nl_style": "formal",
+  "n_polygon_zones": 2,
+  "active": [
+   "altitude",
+   "no_fly_zone",
+   "distance",
+   "ordering",
+   "energy"
+  ],
+  "n_active": 5,
+  "ordering_conflicts_with_route": true
+ }
+}

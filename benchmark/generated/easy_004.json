@@ -1,0 +1,91 @@
+{
+ "scenario_id": "easy_004",
+ "difficulty": "easy",
+ "base_seed": 2024,
+ "attempt": 0,
+ "mission": {
+  "mission_id": "easy_004",
+  "description": "Route START(13.5,27.2) -> DEST(92.0,71.2) via A at (33.4, 27.4), B at (41.8, 79.3). Order: visit A before B. Altitude 38-95 m at all waypoints. No entry to or crossing of Z1. Total length <= 202.3 units.",
+  "start": [
+   13.5,
+   27.2
+  ],
+  "destination": [
+   92.0,
+   71.2
+  ],
+  "required_waypoints": [
+   {
+    "id": "A",
+    "x": 33.4,
+    "y": 27.4
+   },
+   {
+    "id": "B",
+    "x": 41.8,
+    "y": 79.3
+   }
+  ],
+  "min_altitude": 38.0,
+  "max_altitude": 95.0,
+  "max_distance": 202.3,
+  "no_fly_zones": [
+   {
+    "id": "Z1",
+    "kind": "circle",
+    "center": [
+     75.3,
+     77.1
+    ],
+    "radius": 7.3,
+    "vertices": null,
+    "description": "restricted area 1",
+    "category": "nfz"
+   }
+  ],
+  "ordering": [
+   [
+    "A",
+    "B"
+   ]
+  ],
+  "position_tolerance": 1.0,
+  "start_altitude": 0.0,
+  "max_energy": null,
+  "energy_k_v": 1.0,
+  "energy_k_wp": 0.0,
+  "speed_h": 10.0,
+  "speed_v": 2.0,
+  "active": [
+   "altitude",
+   "no_fly_zone",
+   "distance",
+   "ordering"
+  ]
+ },
+ "metadata": {
+  "n_zones": 1,
+  "n_obstacles": 0,
+  "zone_density": 0.0167,
+  "distance_slack": 1.627,
+  "energy_slack": null,
+  "altitude_band_width": 57.0,
+  "n_required": 2,
+  "feasibility": "FEASIBLE",
+  "witness_distance": 124.358,
+  "witness_energy": 162.358,
+  "lower_bound": 123.326,
+  "infeasible_kind": null,
+  "source": "synthetic",
+  "nl_style": "terse",
+  "n_polygon_zones": 0,
+  "active": [
+   "altitude",
+   "no_fly_zone",
+   "distance",
+   "ordering"
+  ],
+  "n_active": 4,
+  "ordering_conflicts_with_route": false
+ }
+}

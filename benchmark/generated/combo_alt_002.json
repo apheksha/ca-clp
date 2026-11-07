@@ -1,0 +1,72 @@
+{
+ "scenario_id": "combo_alt_002",
+ "difficulty": "combo",
+ "base_seed": 2024,
+ "attempt": 0,
+ "mission": {
+  "mission_id": "combo_alt_002",
+  "description": "The drone leaves its base at (7.4, 78.6) and has to end up at (88.7, 45.7). On the way it must stop at A at (66.1, 17.3), B at (58.1, 61.2), C at (44.6, 65.6). Keep it no lower than 34 m and no higher than 61 m.",
+  "start": [
+   7.4,
+   78.6
+  ],
+  "destination": [
+   88.7,
+   45.7
+  ],
+  "required_waypoints": [
+   {
+    "id": "A",
+    "x": 66.1,
+    "y": 17.3
+   },
+   {
+    "id": "B",
+    "x": 58.1,
+    "y": 61.2
+   },
+   {
+    "id": "C",
+    "x": 44.6,
+    "y": 65.6
+   }
+  ],
+  "min_altitude": 34.0,
+  "max_altitude": 61.0,
+  "max_distance": 1000000000.0,
+  "no_fly_zones": [],
+  "ordering": [],
+  "position_tolerance": 1.0,
+  "start_altitude": 0.0,
+  "max_energy": null,
+  "energy_k_v": 1.0,
+  "energy_k_wp": 0.0,
+  "speed_h": 10.0,
+  "speed_v": 2.0,
+  "active": [
+   "altitude"
+  ]
+ },
+ "metadata": {
+  "n_zones": 0,
+  "n_obstacles": 0,
+  "zone_density": 0.0,
+  "distance_slack": null,
+  "energy_slack": null,
+  "altitude_band_width": 27.0,
+  "n_required": 3,
+  "feasibility": "FEASIBLE",
+  "witness_distance": 192.077,
+  "witness_energy": 226.077,
+  "lower_bound": 192.077,
+  "infeasible_kind": null,
+  "source": "synthetic",
+  "nl_style": "narrative",
+  "n_polygon_zones": 0,
+  "active": [
+   "altitude"
+  ],
+  "n_active": 1,
+  "ordering_conflicts_with_route": false
+ }
+}

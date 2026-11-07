@@ -1,0 +1,24 @@
+# v12: mid-flight re-planning WITH the language model, re-run with the corrected code (the stale plan must be invalid for a case to count) on a RANDOM
+# sample of the SYNTHETIC missions (3 per difficulty group, selection seed 2024), so the LLM dynamic results no longer come from early-stopped runs on the
+# first files. Model-free controls (E, G1) and the stale plan (A) run on the same cases. Used by run_free.py (stage 'dynamic').
+seeds: [0]
+conditions:
+  A_llm_only:     {kind: llm_only}
+  E_classical:    {kind: classical}
+  G_direct_patch: {kind: direct_patch, feedback_level: prescriptive, max_iterations: 3, feasibility_precheck: true}
+  C_full:         {kind: closed_loop, feedback_level: evidence, repair_mode: targeted, regression_guard: true, max_iterations: 3, feasibility_precheck: true}
+  C_prescriptive: {kind: closed_loop, feedback_level: prescriptive, repair_mode: targeted, regression_guard: true, max_iterations: 3, feasibility_precheck: true}
+pairs: []
+dynamic:
+  conditions: [A_llm_only, E_classical, G_direct_patch, C_full, C_prescriptive]
+  n_per_difficulty: 3
+  selection: seeded_random
+  selection_seed: 2024
+  detection_delays: [0.0]
+  require_triggered: true
+  progress: [0.35, 0.65]
+  changes: [add_zone, enlarge_zone, tighten_distance, reduce_energy]
+  seeds: [0]
+dynamic_pairs:
+  - [C_prescriptive, G_direct_patch]
+  - [C_full, G_direct_patch]

@@ -1,0 +1,49 @@
+{
+ "vehicle": "generic_quad_large",
+ "effective_turn_radius_m": 43.6,
+ "v_climb_max": 4.0,
+ "v_descend_max": 3.0,
+ "plans": 389,
+ "smoothed_valid_rate": 0.987146529562982,
+ "smoothed_invalid_by_condition": {
+  "C_full": 0,
+  "C_prescriptive": 2,
+  "E_classical": 1,
+  "G_direct_patch": 2
+ },
+ "plans_with_reduced_fillet": 2,
+ "margin_m": 5.0,
+ "modes": {
+  "baseline": {
+   "flights": 778,
+   "arrived": 0.8071979434447301,
+   "zone_entered": 0.0,
+   "near_or_contact": 0.1928020565552699,
+   "required_visited": 0.8123393316195373,
+   "L2_executed_feasible": 0.7660668380462725,
+   "cross_track_p95_median_m": 5.541982800002918,
+   "vertical_dev_max_median_m": 2.503706939204317
+  },
+  "dyn_margin": {
+   "flights": 778,
+   "arrived": 0.7416452442159382,
+   "zone_entered": 0.0,
+   "near_or_contact": 0.2583547557840617,
+   "required_visited": 0.7622107969151671,
+   "L2_executed_feasible": 0.699228791773779,
+   "cross_track_p95_median_m": 6.026980195324577,
+   "vertical_dev_max_median_m": 2.6249079779338222
+  },
+  "dynamics": {
+   "flights": 778,
+   "arrived": 0.7493573264781491,
+   "zone_entered": 0.0,
+   "near_or_contact": 0.2506426735218509,
+   "required_visited": 0.7660668380462725,
+   "L2_executed_feasible": 0.6773778920308483,
+   "cross_track_p95_median_m": 6.023188677915192,
+   "vertical_dev_max_median_m": 2.6249079685675962
+  },
+  "dyn_margin_not_admissible": 0
+ }
+}

@@ -1,0 +1,21 @@
+A & first plan released, no verifier & 1.9 & \scriptsize[0.3, 9.9] & 98.1 & 0.0 & 19.9 & \scriptsize[12.8, 27.1] & 80.1 & 0.0 & 1.0/1.0 \\
+B & first plan, released only if valid & 1.9 & \scriptsize[0.3, 9.9] & 0.0 & 98.1 & 19.9 & \scriptsize[12.8, 27.1] & 0.0 & 80.1 & 1.0/1.0 \\
+\midrule
+D & new plan each round, $T{=}0.7$ & 5.7 & \scriptsize[1.9, 15.4] & 0.0 & 94.3 & 20.5 & \scriptsize[13.4, 27.7] & 0.0 & 79.5 & 3.9/3.4 \\
+X\_binary & binary feedback, regenerate & 17.0 & \scriptsize[9.2, 29.2] & 0.0 & 83.0 & 27.1 & \scriptsize[19.6, 34.8] & 0.0 & 72.9 & 3.8/3.3 \\
+X\_binary\_targ & binary feedback, targeted & 17.0 & \scriptsize[9.2, 29.2] & 0.0 & 83.0 & 27.1 & \scriptsize[19.6, 34.8] & 0.0 & 72.9 & 3.9/3.3 \\
+X\_localized & localized feedback, regenerate & 45.3 & \scriptsize[32.7, 58.5] & 0.0 & 54.7 & 47.3 & \scriptsize[39.3, 55.4] & 0.0 & 52.7 & 3.6/3.1 \\
+X\_one\_round & as C\_full, one round & 35.8 & \scriptsize[24.3, 49.3] & 0.0 & 64.2 & 37.2 & \scriptsize[29.2, 45.5] & 0.0 & 62.8 & 2.1/1.8 \\
+\textbf{C\_full} & evidence, targeted, guard, precheck & 50.9 & \scriptsize[37.9, 63.9] & 0.0 & 49.1 & 53.6 & \scriptsize[45.5, 61.3] & 0.0 & 46.4 & 3.4/3.1 \\
+X\_no\_guard & as C\_full, no guard & 50.9 & \scriptsize[37.9, 63.9] & 0.0 & 49.1 & 56.5 & \scriptsize[48.5, 64.0] & 0.0 & 43.5 & 3.5/3.0 \\
+X\_no\_precheck & as C\_full, no precheck & 50.9 & \scriptsize[37.9, 63.9] & 0.0 & 49.1 & 52.4 & \scriptsize[44.6, 60.4] & 0.0 & 47.6 & 3.3/3.1 \\
+X\_evid\_regen & evidence, regenerate & 56.6 & \scriptsize[43.3, 69.0] & 0.0 & 43.4 & 50.6 & \scriptsize[42.6, 58.3] & 0.0 & 49.4 & 3.2/3.1 \\
+\midrule
+\textbf{C\_prescriptive} & evidence + verifier detours & 100.0 & \scriptsize[93.2, 100.0] & 0.0 & 0.0 & 97.0 & \scriptsize[93.5, 99.7] & 0.0 & 3.0 & 2.0/1.9 \\
+\midrule
+G1 & detours applied, no model & 100.0 & \scriptsize[93.2, 100.0] & 0.0 & 0.0 & 97.3 & \scriptsize[93.8, 100.0] & 0.0 & 2.7 & 1.0/1.0 \\
+G2 & G1 + rebuild required points & 100.0 & \scriptsize[93.2, 100.0] & 0.0 & 0.0 & 98.2 & \scriptsize[95.5, 100.0] & 0.0 & 1.8 & 1.0/1.0 \\
+G3 & G2, else oracle witness & 100.0 & \scriptsize[93.2, 100.0] & 0.0 & 0.0 & 100.0 & \scriptsize[100.0, 100.0] & 0.0 & 0.0 & 1.0/1.0 \\
+\midrule
+E & visibility-graph planner & 100.0 & \scriptsize[93.2, 100.0] & 0.0 & 0.0 & 100.0 & \scriptsize[100.0, 100.0] & 0.0 & 0.0 & 0/0 \\
+F & grid A* planner & 100.0 & \scriptsize[93.2, 100.0] & 0.0 & 0.0 & 100.0 & \scriptsize[100.0, 100.0] & 0.0 & 0.0 & 0/0 \\

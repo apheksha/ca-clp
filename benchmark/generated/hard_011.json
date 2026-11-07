@@ -1,0 +1,232 @@
+{
+ "scenario_id": "hard_011",
+ "difficulty": "hard",
+ "base_seed": 2024,
+ "attempt": 0,
+ "mission": {
+  "mission_id": "hard_011",
+  "description": "The drone leaves its base at (5.3, 46.8) and has to end up at (85.9, 87.1). On the way it must stop at A at (72.9, 63.3), B at (32.4, 57.8), C at (43.3, 87.9), D at (28.4, 34.9), E at (45.0, 82.7); visit A before B; visit C before D. Keep it no lower than 31 m and no higher than 55 m. The restricted areas and obstacles (Z1, Z2, Z3 (obstacle), Z4, Z5, Z6) are off limits, and that includes cutting across a corner of one on the way between two stops. The whole trip may not be longer than 315.4 units. The battery only allows 377.6 energy units, where energy = route length + 1 x total climb (so low altitudes save battery).",
+  "start": [
+   5.3,
+   46.8
+  ],
+  "destination": [
+   85.9,
+   87.1
+  ],
+  "required_waypoints": [
+   {
+    "id": "A",
+    "x": 72.9,
+    "y": 63.3
+   },
+   {
+    "id": "B",
+    "x": 32.4,
+    "y": 57.8
+   },
+   {
+    "id": "C",
+    "x": 43.3,
+    "y": 87.9
+   },
+   {
+    "id": "D",
+    "x": 28.4,
+    "y": 34.9
+   },
+   {
+    "id": "E",
+    "x": 45.0,
+    "y": 82.7
+   }
+  ],
+  "min_altitude": 31.0,
+  "max_altitude": 55.0,
+  "max_distance": 315.4,
+  "no_fly_zones": [
+   {
+    "id": "Z1",
+    "kind": "polygon",
+    "center": null,
+    "radius": null,
+    "vertices": [
+     [
+      56.38,
+      62.05
+     ],
+     [
+      49.97,
+      71.01
+     ],
+     [
+      41.06,
+      62.62
+     ],
+     [
+      50.92,
+      56.42
+     ]
+    ],
+    "description": "restricted area 1",
+    "category": "nfz"
+   },
+   {
+    "id": "Z2",
+    "kind": "circle",
+    "center": [
+     71.2,
+     81.6
+    ],
+    "radius": 8.0,
+    "vertices": null,
+    "description": "restricted area 2",
+    "category": "nfz"
+   },
+   {
+    "id": "Z3",
+    "kind": "circle",
+    "center": [
+     36.5,
+     45.2
+    ],
+    "radius": 6.7,
+    "vertices": null,
+    "description": "radio tower",
+    "category": "obstacle"
+   },
+   {
+    "id": "Z4",
+    "kind": "polygon",
+    "center": null,
+    "radius": null,
+    "vertices": [
+     [
+      26.63,
+      52.25
+     ],
+     [
+      21.57,
+      58.42
+     ],
+     [
+      12.99,
+      56.26
+     ],
+     [
+      13.12,
+      46.63
+     ],
+     [
+      23.21,
+      45.41
+     ]
+    ],
+    "description": "restricted area 4",
+    "category": "nfz"
+   },
+   {
+    "id": "Z5",
+    "kind": "polygon",
+    "center": null,
+    "radius": null,
+    "vertices": [
+     [
+      41.32,
+      73.49
+     ],
+     [
+      35.98,
+      78.22
+     ],
+     [
+      31.78,
+      74.2
+     ],
+     [
+      35.4,
+      69.02
+     ]
+    ],
+    "description": "restricted area 5",
+    "category": "nfz"
+   },
+   {
+    "id": "Z6",
+    "kind": "polygon",
+    "center": null,
+    "radius": null,
+    "vertices": [
+     [
+      58.26,
+      84.86
+     ],
+     [
+      54.1,
+      90.0
+     ],
+     [
+      48.89,
+      84.42
+     ],
+     [
+      53.52,
+      79.57
+     ]
+    ],
+    "description": "restricted area 6",
+    "category": "nfz"
+   }
+  ],
+  "ordering": [
+   [
+    "A",
+    "B"
+   ],
+   [
+    "C",
+    "D"
+   ]
+  ],
+  "position_tolerance": 1.0,
+  "start_altitude": 0.0,
+  "max_energy": 377.6,
+  "energy_k_v": 1.0,
+  "energy_k_wp": 0.0,
+  "speed_h": 10.0,
+  "speed_v": 2.0,
+  "active": [
+   "altitude",
+   "no_fly_zone",
+   "distance",
+   "ordering",
+   "energy"
+  ]
+ },
+ "metadata": {
+  "n_zones": 6,
+  "n_obstacles": 1,
+  "zone_density": 0.068,
+  "distance_slack": 1.059,
+  "energy_slack": 1.148,
+  "altitude_band_width": 24.0,
+  "n_required": 5,
+  "feasibility": "FEASIBLE",
+  "witness_distance": 297.911,
+  "witness_energy": 328.911,
+  "lower_bound": 289.26,
+  "infeasible_kind": null,
+  "source": "synthetic",
+  "nl_style": "narrative",
+  "n_polygon_zones": 4,
+  "active": [
+   "altitude",
+   "no_fly_zone",
+   "distance",
+   "ordering",
+   "energy"
+  ],
+  "n_active": 5,
+  "ordering_conflicts_with_route": true
+ }
+}

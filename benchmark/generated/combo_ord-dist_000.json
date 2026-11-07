@@ -1,0 +1,83 @@
+{
+ "scenario_id": "combo_ord-dist_000",
+ "difficulty": "combo",
+ "base_seed": 2024,
+ "attempt": 0,
+ "mission": {
+  "mission_id": "combo_ord-dist_000",
+  "description": "Fly from the base at (12.8, 47.3) to the destination at (94.9, 75.5). The route must pass through the required points A at (28.2, 26.9), B at (38.6, 88.4), C at (71.8, 17.0); visit A before B; visit B before C. Keep the total horizontal route length at or below 262.1 units.",
+  "start": [
+   12.8,
+   47.3
+  ],
+  "destination": [
+   94.9,
+   75.5
+  ],
+  "required_waypoints": [
+   {
+    "id": "A",
+    "x": 28.2,
+    "y": 26.9
+   },
+   {
+    "id": "B",
+    "x": 38.6,
+    "y": 88.4
+   },
+   {
+    "id": "C",
+    "x": 71.8,
+    "y": 17.0
+   }
+  ],
+  "min_altitude": 0.0,
+  "max_altitude": 1000.0,
+  "max_distance": 262.1,
+  "no_fly_zones": [],
+  "ordering": [
+   [
+    "A",
+    "B"
+   ],
+   [
+    "B",
+    "C"
+   ]
+  ],
+  "position_tolerance": 1.0,
+  "start_altitude": 0.0,
+  "max_energy": null,
+  "energy_k_v": 1.0,
+  "energy_k_wp": 0.0,
+  "speed_h": 10.0,
+  "speed_v": 2.0,
+  "active": [
+   "ordering",
+   "distance"
+  ]
+ },
+ "metadata": {
+  "n_zones": 0,
+  "n_obstacles": 0,
+  "zone_density": 0.0,
+  "distance_slack": 1.142,
+  "energy_slack": null,
+  "altitude_band_width": null,
+  "n_required": 3,
+  "feasibility": "FEASIBLE",
+  "witness_distance": 229.57,
+  "witness_energy": 229.57,
+  "lower_bound": 229.57,
+  "infeasible_kind": null,
+  "source": "synthetic",
+  "nl_style": "formal",
+  "n_polygon_zones": 0,
+  "active": [
+   "ordering",
+   "distance"
+  ],
+  "n_active": 2,
+  "ordering_conflicts_with_route": false
+ }
+}

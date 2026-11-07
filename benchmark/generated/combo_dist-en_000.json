@@ -1,0 +1,74 @@
+{
+ "scenario_id": "combo_dist-en_000",
+ "difficulty": "combo",
+ "base_seed": 2024,
+ "attempt": 0,
+ "mission": {
+  "mission_id": "combo_dist-en_000",
+  "description": "Fly from the base at (9.0, 44.6) to the destination at (94.5, 83.6). The route must pass through the required points A at (49.6, 60.9), B at (25.5, 49.2), C at (25.9, 52.2). Keep the total horizontal route length at or below 169.9 units. Stay within the battery budget of 172.4 energy units, where energy = route length + 1 x total climb (so low altitudes save battery).",
+  "start": [
+   9.0,
+   44.6
+  ],
+  "destination": [
+   94.5,
+   83.6
+  ],
+  "required_waypoints": [
+   {
+    "id": "A",
+    "x": 49.6,
+    "y": 60.9
+   },
+   {
+    "id": "B",
+    "x": 25.5,
+    "y": 49.2
+   },
+   {
+    "id": "C",
+    "x": 25.9,
+    "y": 52.2
+   }
+  ],
+  "min_altitude": 0.0,
+  "max_altitude": 1000.0,
+  "max_distance": 169.9,
+  "no_fly_zones": [],
+  "ordering": [],
+  "position_tolerance": 1.0,
+  "start_altitude": 0.0,
+  "max_energy": 172.4,
+  "energy_k_v": 1.0,
+  "energy_k_wp": 0.0,
+  "speed_h": 10.0,
+  "speed_v": 2.0,
+  "active": [
+   "distance",
+   "energy"
+  ]
+ },
+ "metadata": {
+  "n_zones": 0,
+  "n_obstacles": 0,
+  "zone_density": 0.0,
+  "distance_slack": 1.14,
+  "energy_slack": 1.157,
+  "altitude_band_width": null,
+  "n_required": 3,
+  "feasibility": "FEASIBLE",
+  "witness_distance": 149.011,
+  "witness_energy": 149.011,
+  "lower_bound": 149.011,
+  "infeasible_kind": null,
+  "source": "synthetic",
+  "nl_style": "formal",
+  "n_polygon_zones": 0,
+  "active": [
+   "distance",
+   "energy"
+  ],
+  "n_active": 2,
+  "ordering_conflicts_with_route": false
+ }
+}

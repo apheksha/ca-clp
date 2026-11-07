@@ -1,0 +1,11 @@
+{
+ "made": 10,
+ "attempts": 66,
+ "skipped": {
+  "oracle_timeout": 0,
+  "too_many_obstacles": 19,
+  "not_feasible": 0,
+  "too_few_blocked_legs": 0,
+  "leg_length": 37
+ }
+}

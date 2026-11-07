@@ -1,0 +1,144 @@
+{
+ "scenario_id": "medium_006",
+ "difficulty": "medium",
+ "base_seed": 2024,
+ "attempt": 0,
+ "mission": {
+  "mission_id": "medium_006",
+  "description": "Fly from the base at (11.5, 87.2) to the destination at (94.1, 43.2). The route must pass through the required points A at (27.5, 23.8), B at (44.5, 37.6), C at (60.9, 48.0); visit A before B; visit B before C. Maintain an altitude between 32 and 67 meters at every waypoint. Avoid all restricted zones and obstacles (Z1, Z2 (obstacle), Z3 (obstacle)), including the straight paths between waypoints. Keep the total horizontal route length at or below 181.8 units. Stay within the battery budget of 279.7 energy units, where energy = route length + 1 x total climb (so low altitudes save battery).",
+  "start": [
+   11.5,
+   87.2
+  ],
+  "destination": [
+   94.1,
+   43.2
+  ],
+  "required_waypoints": [
+   {
+    "id": "A",
+    "x": 27.5,
+    "y": 23.8
+   },
+   {
+    "id": "B",
+    "x": 44.5,
+    "y": 37.6
+   },
+   {
+    "id": "C",
+    "x": 60.9,
+    "y": 48.0
+   }
+  ],
+  "min_altitude": 32.0,
+  "max_altitude": 67.0,
+  "max_distance": 181.8,
+  "no_fly_zones": [
+   {
+    "id": "Z1",
+    "kind": "polygon",
+    "center": null,
+    "radius": null,
+    "vertices": [
+     [
+      45.73,
+      29.89
+     ],
+     [
+      42.27,
+      34.37
+     ],
+     [
+      37.05,
+      32.93
+     ],
+     [
+      37.56,
+      26.36
+     ],
+     [
+      42.95,
+      25.25
+     ]
+    ],
+    "description": "restricted area 1",
+    "category": "nfz"
+   },
+   {
+    "id": "Z2",
+    "kind": "circle",
+    "center": [
+     24.2,
+     47.4
+    ],
+    "radius": 6.0,
+    "vertices": null,
+    "description": "radio tower",
+    "category": "obstacle"
+   },
+   {
+    "id": "Z3",
+    "kind": "circle",
+    "center": [
+     15.8,
+     66.2
+    ],
+    "radius": 7.1,
+    "vertices": null,
+    "description": "building",
+    "category": "obstacle"
+   }
+  ],
+  "ordering": [
+   [
+    "A",
+    "B"
+   ],
+   [
+    "B",
+    "C"
+   ]
+  ],
+  "position_tolerance": 1.0,
+  "start_altitude": 0.0,
+  "max_energy": 279.7,
+  "energy_k_v": 1.0,
+  "energy_k_wp": 0.0,
+  "speed_h": 10.0,
+  "speed_v": 2.0,
+  "active": [
+   "altitude",
+   "no_fly_zone",
+   "distance",
+   "ordering",
+   "energy"
+  ]
+ },
+ "metadata": {
+  "n_zones": 3,
+  "n_obstacles": 2,
+  "zone_density": 0.0327,
+  "distance_slack": 1.27,
+  "energy_slack": 1.597,
+  "altitude_band_width": 35.0,
+  "n_required": 3,
+  "feasibility": "FEASIBLE",
+  "witness_distance": 143.164,
+  "witness_energy": 175.164,
+  "lower_bound": 140.249,
+  "infeasible_kind": null,
+  "source": "synthetic",
+  "nl_style": "formal",
+  "n_polygon_zones": 1,
+  "active": [
+   "altitude",
+   "no_fly_zone",
+   "distance",
+   "ordering",
+   "energy"
+  ],
+  "n_active": 5,
+  "ordering_conflicts_with_route": false
+ }
+}

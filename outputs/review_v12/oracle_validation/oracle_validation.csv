@@ -1,0 +1,472 @@
+S1_witness_verified,S2_independent_solution_found,UNKNOWN_but_independent_solution,active,bracket_lb,bracket_ub,energy_model,kind,len_12gon,len_96gon,mission,proof_kind,reason,rel_overestimate,status,terrain
+True,,,altitude+energy,118.040395,154.457463,proxy,stored,154.4575,154.4575,combo_alt-en_000,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,altitude+energy,168.160968,229.207502,proxy,stored,229.2075,229.2075,combo_alt-en_001,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,altitude+energy,160.956267,160.956267,proxy,stored,160.9563,160.9563,combo_alt-en_002,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,113.766782,114.338296,proxy,stored,114.3383,114.1609,combo_alt-nfz-dist-ord-en_000,,verified witness plan exists,0.00155,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,232.607139,234.545293,proxy,stored,234.5453,233.5872,combo_alt-nfz-dist-ord-en_001,,verified witness plan exists,0.0041,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,129.915682,131.310337,proxy,stored,131.3103,130.6381,combo_alt-nfz-dist-ord-en_002,,verified witness plan exists,0.00515,FEASIBLE,False
+True,,,altitude+distance+no_fly_zone+ordering,143.15189,144.162927,proxy,stored,144.1629,143.5836,combo_alt-nfz-dist-ord_000,,verified witness plan exists,0.00403,FEASIBLE,False
+True,,,altitude+distance+no_fly_zone+ordering,109.708922,110.604939,proxy,stored,110.6049,110.2987,combo_alt-nfz-dist-ord_001,,verified witness plan exists,0.00278,FEASIBLE,False
+True,,,altitude+distance+no_fly_zone+ordering,209.187337,210.434014,proxy,stored,210.434,210.099,combo_alt-nfz-dist-ord_002,,verified witness plan exists,0.00159,FEASIBLE,False
+True,,,altitude+distance+no_fly_zone,112.985497,164.754036,proxy,stored,164.754,164.2911,combo_alt-nfz-dist_000,,verified witness plan exists,0.00282,FEASIBLE,False
+True,,,altitude+distance+no_fly_zone,145.957647,147.156972,proxy,stored,147.157,146.8281,combo_alt-nfz-dist_001,,verified witness plan exists,0.00224,FEASIBLE,False
+True,,,altitude+distance+no_fly_zone,165.283957,192.320081,proxy,stored,192.3201,191.9464,combo_alt-nfz-dist_002,,verified witness plan exists,0.00195,FEASIBLE,False
+True,,,altitude+no_fly_zone,175.025851,232.710095,proxy,stored,232.7101,231.8092,combo_alt-nfz_000,,verified witness plan exists,0.00389,FEASIBLE,False
+True,,,altitude+no_fly_zone,109.187744,153.147904,proxy,stored,153.1479,152.6571,combo_alt-nfz_001,,verified witness plan exists,0.00322,FEASIBLE,False
+True,,,altitude+no_fly_zone,179.472665,189.394348,proxy,stored,189.3943,189.1622,combo_alt-nfz_002,,verified witness plan exists,0.00123,FEASIBLE,False
+True,,,altitude,167.872514,209.647615,proxy,stored,209.6476,209.6476,combo_alt_000,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,altitude,159.862439,194.400896,proxy,stored,194.4009,194.4009,combo_alt_001,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,altitude,134.522914,192.076669,proxy,stored,192.0767,192.0767,combo_alt_002,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,distance+energy,95.714176,149.011144,proxy,stored,149.0111,149.0111,combo_dist-en_000,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,distance+energy,157.734559,163.976586,proxy,stored,163.9766,163.9766,combo_dist-en_001,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,distance+energy,142.843483,198.962653,proxy,stored,198.9627,198.9627,combo_dist-en_002,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,distance,116.736562,183.487084,proxy,stored,183.4871,183.4871,combo_dist_000,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,distance,106.255615,107.871377,proxy,stored,107.8714,107.8714,combo_dist_001,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,distance,123.144632,123.144632,proxy,stored,123.1446,123.1446,combo_dist_002,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,energy,158.096597,187.571769,proxy,stored,187.5718,187.5718,combo_en_000,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,energy,110.995657,162.544081,proxy,stored,162.5441,162.5441,combo_en_001,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,energy,171.368969,176.933878,proxy,stored,176.9339,176.9339,combo_en_002,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,distance+energy+no_fly_zone,106.958915,189.075982,proxy,stored,189.076,188.367,combo_nfz-dist-en_000,,verified witness plan exists,0.00376,FEASIBLE,False
+True,,,distance+energy+no_fly_zone,175.566601,206.427171,proxy,stored,206.4272,205.8915,combo_nfz-dist-en_001,,verified witness plan exists,0.0026,FEASIBLE,False
+True,,,distance+energy+no_fly_zone,93.978417,94.894782,proxy,stored,94.8948,94.41,combo_nfz-dist-en_002,,verified witness plan exists,0.00514,FEASIBLE,False
+True,,,distance+no_fly_zone,110.688052,127.774776,proxy,stored,127.7748,127.157,combo_nfz-dist_000,,verified witness plan exists,0.00486,FEASIBLE,False
+True,,,distance+no_fly_zone,111.90511,161.245836,proxy,stored,161.2458,160.3559,combo_nfz-dist_001,,verified witness plan exists,0.00555,FEASIBLE,False
+True,,,distance+no_fly_zone,157.30038,191.464439,proxy,stored,191.4644,190.886,combo_nfz-dist_002,,verified witness plan exists,0.00303,FEASIBLE,False
+True,,,no_fly_zone,117.431893,181.349173,proxy,stored,181.3492,181.0887,combo_nfz_000,,verified witness plan exists,0.00144,FEASIBLE,False
+True,,,no_fly_zone,116.179558,116.472543,proxy,stored,116.4725,116.3498,combo_nfz_001,,verified witness plan exists,0.00105,FEASIBLE,False
+True,,,no_fly_zone,104.675311,105.158807,proxy,stored,105.1588,104.93,combo_nfz_002,,verified witness plan exists,0.00218,FEASIBLE,False
+True,,,distance+ordering,229.570253,229.570253,proxy,stored,229.5703,229.5703,combo_ord-dist_000,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,distance+ordering,184.848099,184.848099,proxy,stored,184.8481,184.8481,combo_ord-dist_001,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,distance+ordering,172.496582,172.496582,proxy,stored,172.4966,172.4966,combo_ord-dist_002,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,ordering,163.112793,163.112793,proxy,stored,163.1128,163.1128,combo_ord_000,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,ordering,202.149982,202.149982,proxy,stored,202.15,202.15,combo_ord_001,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,ordering,123.313338,123.313338,proxy,stored,123.3133,123.3133,combo_ord_002,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,altitude+distance+no_fly_zone+ordering,116.799451,118.055646,proxy,stored,118.0556,118.0556,corridor_000,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,altitude+distance+no_fly_zone+ordering,116.569534,122.131619,proxy,stored,122.1316,122.1316,corridor_001,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,altitude+distance+no_fly_zone+ordering,124.369815,125.819138,proxy,stored,125.8191,125.8191,corridor_002,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,altitude+distance+no_fly_zone+ordering,123.262033,124.575248,proxy,stored,124.5752,124.5752,corridor_003,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,altitude+distance+no_fly_zone+ordering,117.175941,118.384494,proxy,stored,118.3845,118.3845,corridor_004,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,altitude+distance+no_fly_zone+ordering,171.477229,172.053158,proxy,stored,172.0532,172.0532,corridor_005,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,altitude+distance+no_fly_zone+ordering,132.463702,133.739758,proxy,stored,133.7398,133.7398,corridor_006,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,altitude+distance+no_fly_zone+ordering,169.679546,171.114841,proxy,stored,171.1148,171.1148,corridor_007,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,altitude+distance+no_fly_zone+ordering,116.206206,117.364696,proxy,stored,117.3647,117.3647,corridor_008,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,altitude+distance+no_fly_zone+ordering,94.427449,98.983263,proxy,stored,98.9833,98.9833,corridor_009,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,altitude+distance+no_fly_zone+ordering,135.629322,136.670747,proxy,stored,136.6707,136.1518,easy_000,,verified witness plan exists,0.00381,FEASIBLE,False
+True,,,altitude+distance+no_fly_zone+ordering,92.591149,93.0191,proxy,stored,93.0191,92.8414,easy_001,,verified witness plan exists,0.00191,FEASIBLE,False
+True,,,altitude+distance+no_fly_zone+ordering,119.068859,119.334091,proxy,stored,119.3341,119.1724,easy_002,,verified witness plan exists,0.00136,FEASIBLE,False
+True,,,altitude+distance+no_fly_zone+ordering,107.897671,108.435804,proxy,stored,108.4358,108.1427,easy_003,,verified witness plan exists,0.00271,FEASIBLE,False
+True,,,altitude+distance+no_fly_zone+ordering,124.077204,124.357827,proxy,stored,124.3578,124.1706,easy_004,,verified witness plan exists,0.00151,FEASIBLE,False
+True,,,altitude+distance+no_fly_zone+ordering,108.093796,108.499464,proxy,stored,108.4995,108.3668,easy_005,,verified witness plan exists,0.00122,FEASIBLE,False
+True,,,altitude+distance+no_fly_zone+ordering,127.195034,127.682405,proxy,stored,127.6824,127.4312,easy_006,,verified witness plan exists,0.00197,FEASIBLE,False
+True,,,altitude+distance+no_fly_zone+ordering,134.094592,134.248972,proxy,stored,134.249,134.1256,easy_007,,verified witness plan exists,0.00092,FEASIBLE,False
+True,,,altitude+distance+no_fly_zone+ordering,116.734292,117.131393,proxy,stored,117.1314,116.9356,easy_008,,verified witness plan exists,0.00167,FEASIBLE,False
+True,,,altitude+distance+no_fly_zone+ordering,121.875245,122.298315,proxy,stored,122.2983,122.125,easy_009,,verified witness plan exists,0.00142,FEASIBLE,False
+True,,,altitude+distance+no_fly_zone+ordering,138.961283,139.765962,proxy,stored,139.766,139.3452,easy_010,,verified witness plan exists,0.00302,FEASIBLE,False
+True,,,altitude+distance+no_fly_zone+ordering,119.333437,119.937698,proxy,stored,119.9377,119.5882,easy_011,,verified witness plan exists,0.00292,FEASIBLE,False
+True,,,altitude+distance+no_fly_zone+ordering,130.255736,130.270478,proxy,stored,130.2705,130.2596,easy_012,,verified witness plan exists,8e-05,FEASIBLE,False
+True,,,altitude+distance+no_fly_zone+ordering,166.594706,166.677274,proxy,stored,166.6773,166.6199,easy_013,,verified witness plan exists,0.00034,FEASIBLE,False
+True,,,altitude+distance+no_fly_zone+ordering,142.157535,143.260865,proxy,stored,143.2609,142.7349,easy_014,,verified witness plan exists,0.00369,FEASIBLE,False
+True,,,altitude+distance+no_fly_zone+ordering,140.377267,141.252297,proxy,stored,141.2523,140.8602,easy_015,,verified witness plan exists,0.00278,FEASIBLE,False
+True,,,altitude+distance+no_fly_zone+ordering,126.889057,127.310192,proxy,stored,127.3102,127.1367,easy_016,,verified witness plan exists,0.00136,FEASIBLE,False
+True,,,altitude+distance+no_fly_zone+ordering,132.405043,133.058689,proxy,stored,133.0587,132.7342,easy_017,,verified witness plan exists,0.00244,FEASIBLE,False
+True,,,altitude+distance+no_fly_zone+ordering,109.894828,110.618684,proxy,stored,110.6187,110.2791,easy_018,,verified witness plan exists,0.00308,FEASIBLE,False
+True,,,altitude+distance+no_fly_zone+ordering,130.14674,130.752231,proxy,stored,130.7522,130.4095,easy_019,,verified witness plan exists,0.00263,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,216.314155,218.567952,proxy,stored,218.568,218.0386,hard_000,,verified witness plan exists,0.00243,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,266.128293,268.416464,proxy,stored,268.4165,267.6357,hard_001,,verified witness plan exists,0.00292,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,251.089242,253.900187,proxy,stored,253.9002,252.9975,hard_002,,verified witness plan exists,0.00357,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,207.829274,209.046126,proxy,stored,209.0461,208.7354,hard_003,,verified witness plan exists,0.00149,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,210.777596,212.71062,proxy,stored,212.7106,212.6189,hard_004,,verified witness plan exists,0.00043,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,181.978531,184.64408,proxy,stored,184.6441,183.8418,hard_005,,verified witness plan exists,0.00436,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,206.680637,208.31449,proxy,stored,208.3145,207.7838,hard_006,,verified witness plan exists,0.00255,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,136.461328,138.297552,proxy,stored,138.2976,137.8125,hard_007,,verified witness plan exists,0.00352,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,254.70188,256.639645,proxy,stored,256.6396,256.4198,hard_008,,verified witness plan exists,0.00086,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,184.195552,206.665777,proxy,stored,206.6658,206.0177,hard_009,,verified witness plan exists,0.00315,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,173.259244,182.098501,proxy,stored,182.0985,181.0587,hard_010,,verified witness plan exists,0.00574,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,235.810684,297.911077,proxy,stored,297.9111,297.4788,hard_011,,verified witness plan exists,0.00145,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,196.952343,257.78537,proxy,stored,257.7854,257.5842,hard_012,,verified witness plan exists,0.00078,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,154.463128,179.162909,proxy,stored,179.1629,178.9679,hard_013,,verified witness plan exists,0.00109,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,155.779233,157.101136,proxy,stored,157.1011,157.1011,hard_014,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,124.817117,125.93185,proxy,stored,125.9318,125.5654,hard_015,,verified witness plan exists,0.00292,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,191.263784,192.719337,proxy,stored,192.7193,192.4938,hard_016,,verified witness plan exists,0.00117,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,219.847984,221.296683,proxy,stored,221.2967,220.8675,hard_017,,verified witness plan exists,0.00194,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,164.490573,166.738596,proxy,stored,166.7386,166.4219,hard_018,,verified witness plan exists,0.0019,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,119.515049,120.318776,proxy,stored,120.3188,119.9488,hard_019,,verified witness plan exists,0.00308,FEASIBLE,False
+,False,,altitude+distance+energy+no_fly_zone+ordering,,,proxy,stored,,,infeasible_000,point_in_zone,required waypoint A lies inside no-fly zone Z1,,INFEASIBLE,False
+,False,,altitude+distance+energy+no_fly_zone+ordering,,,proxy,stored,,,infeasible_001,distance_lower_bound,straight-line lower bound 168.51 exceeds max_distance 149.2,,INFEASIBLE,False
+,False,,altitude+distance+energy+no_fly_zone+ordering,,,proxy,stored,,,infeasible_002,cyclic_ordering,contradictory (cyclic) ordering constraints,,INFEASIBLE,False
+,False,,altitude+distance+energy+no_fly_zone+ordering,,,proxy,stored,,,infeasible_003,energy_lower_bound,energy lower bound 189.02 exceeds max_energy 120.8,,INFEASIBLE,False
+,False,,altitude+distance+energy+no_fly_zone+ordering,,,proxy,stored,,,infeasible_004,point_in_zone,required waypoint A lies inside no-fly zone Z1,,INFEASIBLE,False
+,False,,altitude+distance+energy+no_fly_zone+ordering,,,proxy,stored,,,infeasible_005,distance_lower_bound,straight-line lower bound 111.81 exceeds max_distance 101.0,,INFEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,173.648833,174.963511,proxy,stored,174.9635,174.5764,medium_000,,verified witness plan exists,0.00222,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,120.289106,121.63816,proxy,stored,121.6382,121.1811,medium_001,,verified witness plan exists,0.00377,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,146.532122,147.750896,proxy,stored,147.7509,147.3752,medium_002,,verified witness plan exists,0.00255,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,169.831087,170.92286,proxy,stored,170.9229,170.3293,medium_003,,verified witness plan exists,0.00348,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,118.661238,119.476369,proxy,stored,119.4764,119.3222,medium_004,,verified witness plan exists,0.00129,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,142.548678,143.74744,proxy,stored,143.7474,143.6308,medium_005,,verified witness plan exists,0.00081,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,142.616309,143.163976,proxy,stored,143.164,143.0029,medium_006,,verified witness plan exists,0.00113,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,200.610536,201.664659,proxy,stored,201.6647,201.2802,medium_007,,verified witness plan exists,0.00191,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,126.159602,127.083277,proxy,stored,127.0833,127.0833,medium_008,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,109.558473,111.069098,proxy,stored,111.0691,110.3995,medium_009,,verified witness plan exists,0.00607,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,123.685856,125.660298,proxy,stored,125.6603,125.4667,medium_010,,verified witness plan exists,0.00154,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,214.71592,215.593795,proxy,stored,215.5938,215.2696,medium_011,,verified witness plan exists,0.00151,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,151.94299,154.143627,proxy,stored,154.1436,153.5156,medium_012,,verified witness plan exists,0.00409,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,106.138193,107.502506,proxy,stored,107.5025,106.8618,medium_013,,verified witness plan exists,0.006,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,171.273012,172.006505,proxy,stored,172.0065,171.769,medium_014,,verified witness plan exists,0.00138,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,133.941055,134.934338,proxy,stored,134.9343,134.7167,medium_015,,verified witness plan exists,0.00162,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,165.418551,166.081932,proxy,stored,166.0819,166.0108,medium_016,,verified witness plan exists,0.00043,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,184.956846,186.108341,proxy,stored,186.1083,185.8709,medium_017,,verified witness plan exists,0.00128,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,110.91999,112.179398,proxy,stored,112.1794,111.5764,medium_018,,verified witness plan exists,0.0054,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,104.396428,106.338981,proxy,stored,106.339,105.6079,medium_019,,verified witness plan exists,0.00692,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,44756.383061,45019.159238,proxy,stored,45019.1592,44820.9188,real_chicago_00,,verified witness plan exists,0.00442,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,52973.166388,53044.337977,proxy,stored,53044.338,52986.3183,real_chicago_01,,verified witness plan exists,0.00109,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,94377.352358,95159.593334,proxy,stored,95159.5933,94622.1587,real_chicago_02,,verified witness plan exists,0.00568,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,40911.952066,40932.931738,proxy,stored,40932.9317,40913.2865,real_chicago_03,,verified witness plan exists,0.00048,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,73354.044757,73624.203981,proxy,stored,73624.204,73423.0333,real_chicago_04,,verified witness plan exists,0.00274,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,120157.681642,120861.166869,proxy,stored,120861.1669,120363.638,real_chicago_05,,verified witness plan exists,0.00413,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,88224.558421,88260.412973,proxy,stored,88260.413,88235.535,real_dubai_00,,verified witness plan exists,0.00028,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,47483.421813,47662.838959,proxy,stored,47662.839,47534.0035,real_dubai_01,,verified witness plan exists,0.00271,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,80687.960251,80880.573428,proxy,stored,80880.5734,80732.1677,real_dubai_02,,verified witness plan exists,0.00184,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,57467.057995,57581.390355,proxy,stored,57581.3904,57493.4279,real_dubai_03,,verified witness plan exists,0.00153,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,75751.009704,75874.787501,proxy,stored,75874.7875,75785.4524,real_dubai_04,,verified witness plan exists,0.00118,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,80650.035262,80891.243307,proxy,stored,80891.2433,80708.0242,real_dubai_05,,verified witness plan exists,0.00227,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,82429.075257,82776.125903,proxy,stored,82776.1259,82551.2229,real_frankfurt_00,,verified witness plan exists,0.00272,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,66276.920447,66498.874511,proxy,stored,66498.8745,66348.0576,real_frankfurt_01,,verified witness plan exists,0.00227,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,145236.152131,145639.521432,proxy,stored,145639.5214,145373.7858,real_frankfurt_02,,verified witness plan exists,0.00183,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,96757.725032,96954.783127,proxy,stored,96954.7831,96821.5799,real_frankfurt_03,,verified witness plan exists,0.00138,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,63260.798525,63401.993497,proxy,stored,63401.9935,63300.9624,real_frankfurt_04,,verified witness plan exists,0.0016,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,132930.619799,133354.831964,proxy,stored,133354.832,133059.7781,real_frankfurt_05,,verified witness plan exists,0.00222,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,78718.62473,79052.641428,proxy,stored,79052.6414,78830.4461,real_london_00,,verified witness plan exists,0.00282,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,103353.660407,103388.694841,proxy,stored,103388.6948,103355.981,real_london_01,,verified witness plan exists,0.00032,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,143296.288326,143887.440001,proxy,stored,143887.44,143486.4434,real_london_02,,verified witness plan exists,0.00279,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,108297.455491,108341.289981,proxy,stored,108341.29,108308.7255,real_london_03,,verified witness plan exists,0.0003,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,68659.062775,68661.436985,proxy,stored,68661.437,68659.5672,real_london_04,,verified witness plan exists,3e-05,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,120706.341779,121040.358477,proxy,stored,121040.3585,120818.1631,real_london_05,,verified witness plan exists,0.00184,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,45484.875414,45700.544983,proxy,stored,45700.545,45562.6534,real_los_angeles_00,,verified witness plan exists,0.00303,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,59700.175551,59848.311364,proxy,stored,59848.3114,59745.7502,real_los_angeles_01,,verified witness plan exists,0.00172,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,84468.126351,84677.734028,proxy,stored,84677.734,84537.3399,real_los_angeles_02,,verified witness plan exists,0.00166,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,61370.717112,62172.270309,proxy,stored,62172.2703,61641.2339,real_los_angeles_03,,verified witness plan exists,0.00861,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,68691.48917,68740.475407,proxy,stored,68740.4754,68711.6354,real_los_angeles_04,,verified witness plan exists,0.00042,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,59211.593246,59437.459611,proxy,stored,59437.4596,59285.1954,real_los_angeles_05,,verified witness plan exists,0.00257,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,46562.468996,46771.822714,proxy,stored,46771.8227,46614.838,real_new_york_00,,verified witness plan exists,0.00337,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,96296.069055,97148.925715,proxy,stored,97148.9257,96548.3778,real_new_york_01,,verified witness plan exists,0.00622,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,122209.619806,122955.755851,proxy,stored,122955.7559,122434.3274,real_new_york_02,,verified witness plan exists,0.00426,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,53299.974687,53517.269753,proxy,stored,53517.2698,53352.3501,real_new_york_03,,verified witness plan exists,0.00309,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,102049.248777,102365.591648,proxy,stored,102365.5916,102141.3465,real_new_york_04,,verified witness plan exists,0.0022,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,132995.890723,134279.226835,proxy,stored,134279.2268,133370.3587,real_new_york_05,,verified witness plan exists,0.00681,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,67686.622065,68253.778321,proxy,stored,68253.7783,67862.9081,real_san_francisco_00,,verified witness plan exists,0.00576,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,94890.161155,95144.496937,proxy,stored,95144.4969,94968.5842,real_san_francisco_01,,verified witness plan exists,0.00185,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,113377.875627,113544.677386,proxy,stored,113544.6774,113422.8341,real_san_francisco_02,,verified witness plan exists,0.00107,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,58144.755029,58508.183361,proxy,stored,58508.1834,58252.9466,real_san_francisco_03,,verified witness plan exists,0.00438,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,105089.451484,105480.830546,proxy,stored,105480.8305,105218.3161,real_san_francisco_04,,verified witness plan exists,0.00249,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,127131.828739,127685.298285,proxy,stored,127685.2983,127313.398,real_san_francisco_05,,verified witness plan exists,0.00292,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,47093.295291,47200.171691,proxy,stored,47200.1717,47126.4108,real_sydney_00,,verified witness plan exists,0.00157,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,74279.716507,74367.948302,proxy,stored,74367.9483,74298.7069,real_sydney_01,,verified witness plan exists,0.00093,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,98492.422587,99144.704915,proxy,stored,99144.7049,98679.2881,real_sydney_02,,verified witness plan exists,0.00472,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,82613.538024,82837.530146,proxy,stored,82837.5301,82682.3976,real_sydney_03,,verified witness plan exists,0.00188,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,102770.973247,102896.718617,proxy,stored,102896.7186,102811.6833,real_sydney_04,,verified witness plan exists,0.00083,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,115851.558864,116164.138336,proxy,stored,116164.1383,115935.4741,real_sydney_05,,verified witness plan exists,0.00197,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,80656.502097,80889.921093,proxy,stored,80889.9211,80716.6212,real_tokyo_00,,verified witness plan exists,0.00215,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,40235.064361,40244.503373,proxy,stored,40244.5034,40236.0195,real_tokyo_01,,verified witness plan exists,0.00021,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,132628.404281,133044.126766,proxy,stored,133044.1268,132749.2786,real_tokyo_02,,verified witness plan exists,0.00222,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,32086.836673,32123.922183,proxy,stored,32123.9222,32091.1446,real_tokyo_03,,verified witness plan exists,0.00102,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,23672.800096,23983.006679,proxy,stored,23983.0067,23757.6892,real_tokyo_04,,verified witness plan exists,0.00948,FEASIBLE,False
+True,,,altitude+distance+energy,139.084251,250.267297,proxy,random,250.2673,250.2673,random_0000,,verified witness plan exists,0.0,FEASIBLE,False
+,False,,altitude+energy+no_fly_zone+ordering,,,physical,random,,,random_0001,routed_energy_lower_bound,routed energy lower bound exceeds max_energy,,INFEASIBLE,False
+,False,,distance+energy+ordering,,,proxy,random,,,random_0002,cyclic_ordering,contradictory (cyclic) ordering constraints,,INFEASIBLE,False
+,False,,altitude+distance+energy+no_fly_zone+ordering,,,proxy,random,,,random_0003,distance_lower_bound,straight-line lower bound 94.41 exceeds max_distance 68.2,,INFEASIBLE,False
+,False,,altitude+distance+energy+ordering,,,physical,random,,,random_0004,energy_lower_bound,energy lower bound 7.38 exceeds max_energy 1.0,,INFEASIBLE,True
+,False,,altitude+distance+energy+ordering,,,proxy,random,,,random_0005,distance_lower_bound,straight-line lower bound 237.22 exceeds max_distance 237.2,,INFEASIBLE,True
+True,,,altitude+distance+no_fly_zone,155.955695,218.577228,proxy,random,218.5772,218.5772,random_0006,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,103.534814,103.961929,proxy,random,103.9619,103.7456,random_0007,,verified witness plan exists,0.00209,FEASIBLE,False
+,False,,altitude+distance+energy+no_fly_zone+ordering,,,physical,random,,,random_0008,distance_lower_bound,straight-line lower bound 111.18 exceeds max_distance 110.8,,INFEASIBLE,False
+,False,,altitude+distance+energy+ordering,,,physical,random,,,random_0009,energy_lower_bound,energy lower bound 4.66 exceeds max_energy 0.4,,INFEASIBLE,True
+True,,,altitude+energy+no_fly_zone+ordering,209.863222,210.611739,proxy,random,210.6117,210.6117,random_0010,,verified witness plan exists,0.0,FEASIBLE,False
+,False,,altitude+distance+energy+no_fly_zone+ordering,,,physical,random,,,random_0011,energy_lower_bound,energy lower bound 7.70 exceeds max_energy 0.4,,INFEASIBLE,False
+True,,,altitude+energy+no_fly_zone+ordering,214.911232,214.911232,proxy,random,214.9112,214.9112,random_0012,,verified witness plan exists,0.0,FEASIBLE,False
+,False,,altitude+distance+energy+no_fly_zone,,,proxy,random,,,random_0013,point_in_zone,required waypoint B lies inside no-fly zone Z1,,INFEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,144.875449,144.982443,proxy,random,144.9824,144.9238,random_0014,,verified witness plan exists,0.0004,FEASIBLE,False
+True,,,altitude+distance+energy+ordering,148.187461,148.187461,proxy,random,148.1875,148.1875,random_0015,,verified witness plan exists,0.0,FEASIBLE,False
+,False,,altitude+distance+energy+no_fly_zone,,,physical,random,,,random_0016,energy_lower_bound,energy lower bound 4.40 exceeds max_energy 1.0,,INFEASIBLE,False
+True,,,altitude+energy+no_fly_zone+ordering,105.017322,105.017322,proxy,random,105.0173,105.0173,random_0017,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,182.403444,182.903556,proxy,random,182.9036,182.5908,random_0018,,verified witness plan exists,0.00171,FEASIBLE,False
+True,,,altitude+distance+no_fly_zone,97.564395,97.564395,physical,random,97.5644,97.5644,random_0019,,verified witness plan exists,0.0,FEASIBLE,False
+,False,,altitude+distance+ordering,,,proxy,random,,,random_0020,distance_lower_bound,straight-line lower bound 150.24 exceeds max_distance 150.2,,INFEASIBLE,False
+True,,,altitude+distance+no_fly_zone,127.68884,170.936089,proxy,random,170.9361,170.7602,random_0021,,verified witness plan exists,0.00103,FEASIBLE,False
+,False,,altitude+distance+energy+no_fly_zone+ordering,,,physical,random,,,random_0022,point_in_zone,required waypoint B lies inside no-fly zone Z6,,INFEASIBLE,False
+,False,,altitude+distance+energy+no_fly_zone+ordering,,,physical,random,,,random_0023,distance_lower_bound,straight-line lower bound 122.26 exceeds max_distance 87.7,,INFEASIBLE,False
+,False,,distance+energy+ordering,,,physical,random,,,random_0024,distance_lower_bound,straight-line lower bound 159.50 exceeds max_distance 159.5,,INFEASIBLE,False
+,,False,altitude+distance+energy+no_fly_zone+ordering,,,proxy,random,,,random_0025,,witness plan did not satisfy constraints (likely distance); no impossibility proof,,UNKNOWN,False
+,False,,distance+energy+no_fly_zone+ordering,,,physical,random,,,random_0026,energy_lower_bound,energy lower bound 8.19 exceeds max_energy 3.0,,INFEASIBLE,True
+True,,,altitude+distance+energy+ordering,135.383447,135.383447,physical,random,135.3834,135.3834,random_0027,,verified witness plan exists,0.0,FEASIBLE,False
+,,False,altitude+distance+no_fly_zone+ordering,,,physical,random,,,random_0028,,witness plan did not satisfy constraints (likely distance); no impossibility proof,,UNKNOWN,True
+True,,,altitude+distance+ordering,124.055208,124.055208,proxy,random,124.0552,124.0552,random_0029,,verified witness plan exists,0.0,FEASIBLE,False
+,False,,altitude+distance+energy+no_fly_zone+ordering,,,proxy,random,,,random_0030,point_in_zone,destination lies inside no-fly zone Z2,,INFEASIBLE,False
+,False,,altitude+distance+energy+no_fly_zone+ordering,,,physical,random,,,random_0031,energy_lower_bound,energy lower bound 5.34 exceeds max_energy 0.4,,INFEASIBLE,False
+,False,,distance+energy+no_fly_zone+ordering,,,proxy,random,,,random_0032,distance_lower_bound,straight-line lower bound 122.36 exceeds max_distance 85.6,,INFEASIBLE,True
+True,,,altitude+distance+energy+no_fly_zone+ordering,123.094609,123.094609,proxy,random,123.0946,123.0946,random_0033,,verified witness plan exists,0.0,FEASIBLE,False
+,False,,altitude+distance+energy+no_fly_zone+ordering,,,proxy,random,,,random_0034,point_in_zone,required waypoint A lies inside no-fly zone Z1,,INFEASIBLE,True
+True,,,distance+energy+no_fly_zone+ordering,124.0795,183.413179,proxy,random,183.4132,183.4097,random_0035,,verified witness plan exists,2e-05,FEASIBLE,False
+,,False,altitude+distance+energy+no_fly_zone,,,proxy,random,,,random_0036,,witness plan did not satisfy constraints (likely distance); no impossibility proof,,UNKNOWN,True
+,False,,altitude+distance+energy+no_fly_zone,,,physical,random,,,random_0037,energy_lower_bound,energy lower bound 5.03 exceeds max_energy 3.0,,INFEASIBLE,False
+True,,,altitude+distance+energy+ordering,189.08989,240.635595,proxy,random,240.6356,240.6356,random_0038,,verified witness plan exists,0.0,FEASIBLE,False
+,False,,altitude+distance+energy+no_fly_zone+ordering,,,proxy,random,,,random_0039,distance_lower_bound,straight-line lower bound 98.84 exceeds max_distance 69.2,,INFEASIBLE,True
+,False,,altitude+distance+no_fly_zone+ordering,,,proxy,random,,,random_0040,point_in_zone,destination lies inside no-fly zone Z4,,INFEASIBLE,False
+,,True,distance+no_fly_zone+ordering,,,proxy,random,,,random_0041,,witness plan did not satisfy constraints (likely distance); no impossibility proof,,UNKNOWN,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,108.554731,153.668504,proxy,random,153.6685,153.6645,random_0042,,verified witness plan exists,3e-05,FEASIBLE,False
+,,False,altitude+distance+energy,,,proxy,random,,,random_0043,,witness plan did not satisfy constraints (likely distance); no impossibility proof,,UNKNOWN,True
+True,,,distance+no_fly_zone+ordering,147.191065,176.91441,proxy,random,176.9144,176.9144,random_0044,,verified witness plan exists,0.0,FEASIBLE,False
+,,True,altitude+distance+no_fly_zone+ordering,,,physical,random,,,random_0045,,witness plan did not satisfy constraints (likely distance); no impossibility proof,,UNKNOWN,False
+,False,,distance+energy+no_fly_zone+ordering,,,physical,random,,,random_0046,energy_lower_bound,energy lower bound 5.66 exceeds max_energy 0.4,,INFEASIBLE,False
+,False,,distance+no_fly_zone+ordering,,,proxy,random,,,random_0047,distance_lower_bound,straight-line lower bound 132.49 exceeds max_distance 92.7,,INFEASIBLE,False
+True,,,altitude+distance+energy+ordering,97.130583,100.675971,proxy,random,100.676,100.676,random_0048,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,altitude+distance+energy,145.08837,147.577608,proxy,random,147.5776,147.5776,random_0049,,verified witness plan exists,0.0,FEASIBLE,False
+,False,,altitude+distance+energy+no_fly_zone+ordering,,,proxy,random,,,random_0050,point_in_zone,start lies inside no-fly zone Z3,,INFEASIBLE,False
+,False,,altitude+distance+no_fly_zone,,,proxy,random,,,random_0051,point_in_zone,required waypoint C lies inside no-fly zone Z6,,INFEASIBLE,True
+True,,,altitude+energy+ordering,109.783223,109.783223,proxy,random,109.7832,109.7832,random_0052,,verified witness plan exists,0.0,FEASIBLE,False
+,False,,altitude+distance+energy+no_fly_zone+ordering,,,proxy,random,,,random_0053,distance_lower_bound,straight-line lower bound 115.03 exceeds max_distance 115.0,,INFEASIBLE,False
+,False,,altitude+distance+energy+no_fly_zone+ordering,,,proxy,random,,,random_0054,distance_lower_bound,straight-line lower bound 140.58 exceeds max_distance 100.5,,INFEASIBLE,True
+True,,,altitude+energy+no_fly_zone+ordering,107.478862,107.665886,proxy,random,107.6659,107.6659,random_0055,,verified witness plan exists,0.0,FEASIBLE,False
+,False,,distance+no_fly_zone+ordering,,,proxy,random,,,random_0056,point_in_zone,required waypoint B lies inside no-fly zone Z3,,INFEASIBLE,False
+True,,,distance+energy+no_fly_zone+ordering,102.395378,102.395378,proxy,random,102.3954,102.3954,random_0057,,verified witness plan exists,0.0,FEASIBLE,False
+,False,,altitude+distance+energy+no_fly_zone+ordering,,,physical,random,,,random_0058,energy_lower_bound,energy lower bound 3.81 exceeds max_energy 0.4,,INFEASIBLE,False
+,,False,altitude+no_fly_zone,,,proxy,random,,,random_0059,,witness plan did not satisfy constraints (likely distance); no impossibility proof,,UNKNOWN,True
+,False,,altitude+distance+energy+ordering,,,physical,random,,,random_0060,energy_lower_bound,energy lower bound 9.90 exceeds max_energy 1.0,,INFEASIBLE,True
+,False,,altitude+distance+energy+no_fly_zone+ordering,,,proxy,random,,,random_0061,distance_lower_bound,straight-line lower bound 148.85 exceeds max_distance 104.2,,INFEASIBLE,False
+,False,,altitude+distance+energy+no_fly_zone+ordering,,,proxy,random,,,random_0062,point_in_zone,destination lies inside no-fly zone Z3,,INFEASIBLE,False
+,False,,altitude+distance+energy+no_fly_zone+ordering,,,proxy,random,,,random_0063,point_in_zone,required waypoint A lies inside no-fly zone Z1,,INFEASIBLE,False
+,False,,altitude+distance+energy+no_fly_zone+ordering,,,physical,random,,,random_0064,energy_lower_bound,energy lower bound 3.86 exceeds max_energy 0.4,,INFEASIBLE,True
+,,False,distance+energy+no_fly_zone+ordering,,,proxy,random,,,random_0065,,witness plan did not satisfy constraints (likely distance); no impossibility proof,,UNKNOWN,True
+,False,,altitude+distance+energy+no_fly_zone+ordering,,,physical,random,,,random_0066,cyclic_ordering,contradictory (cyclic) ordering constraints,,INFEASIBLE,False
+True,,,altitude+distance+no_fly_zone+ordering,153.352763,153.65745,proxy,random,153.6575,153.4563,random_0067,,verified witness plan exists,0.00131,FEASIBLE,False
+,False,,altitude+distance+energy+no_fly_zone+ordering,,,proxy,random,,,random_0068,distance_lower_bound,straight-line lower bound 273.82 exceeds max_distance 273.8,,INFEASIBLE,True
+,False,,altitude+energy+ordering,,,physical,random,,,random_0069,energy_lower_bound,energy lower bound 15.48 exceeds max_energy 8.0,,INFEASIBLE,False
+,,False,altitude+distance+energy+no_fly_zone+ordering,,,proxy,random,,,random_0070,,witness plan did not satisfy constraints (likely distance); no impossibility proof,,UNKNOWN,True
+,False,,altitude+distance+energy+no_fly_zone+ordering,,,proxy,random,,,random_0071,distance_lower_bound,straight-line lower bound 90.69 exceeds max_distance 67.0,,INFEASIBLE,False
+,,False,altitude+distance+energy+no_fly_zone,,,proxy,random,,,random_0072,,witness plan did not satisfy constraints (likely distance); no impossibility proof,,UNKNOWN,False
+,,False,altitude+energy+no_fly_zone+ordering,,,proxy,random,,,random_0073,,witness plan did not satisfy constraints (likely distance); no impossibility proof,,UNKNOWN,True
+,,False,altitude+energy+no_fly_zone+ordering,,,proxy,random,,,random_0074,,witness plan did not satisfy constraints (likely distance); no impossibility proof,,UNKNOWN,True
+,False,,altitude+distance+energy+ordering,,,proxy,random,,,random_0075,distance_lower_bound,straight-line lower bound 236.10 exceeds max_distance 171.6,,INFEASIBLE,False
+True,,,distance+energy+no_fly_zone+ordering,179.524451,179.524451,proxy,random,179.5245,179.5245,random_0076,,verified witness plan exists,0.0,FEASIBLE,False
+,False,,altitude+distance+energy+no_fly_zone+ordering,,,proxy,random,,,random_0077,point_in_zone,required waypoint B lies inside no-fly zone Z3,,INFEASIBLE,False
+True,,,altitude+distance+no_fly_zone,130.592259,132.429511,proxy,random,132.4295,132.2142,random_0078,,verified witness plan exists,0.00163,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,104.846829,141.723653,proxy,random,141.7237,141.7237,random_0079,,verified witness plan exists,0.0,FEASIBLE,False
+,False,,distance+energy+ordering,,,physical,random,,,random_0080,energy_lower_bound,energy lower bound 12.09 exceeds max_energy 1.0,,INFEASIBLE,False
+,False,,altitude+distance+no_fly_zone,,,proxy,random,,,random_0081,distance_lower_bound,straight-line lower bound 124.78 exceeds max_distance 120.8,,INFEASIBLE,False
+,,False,altitude+energy+no_fly_zone+ordering,,,proxy,random,,,random_0082,,witness plan did not satisfy constraints (likely distance); no impossibility proof,,UNKNOWN,True
+True,,,altitude+distance+energy+no_fly_zone+ordering,241.792398,242.167596,proxy,random,242.1676,242.1676,random_0083,,verified witness plan exists,0.0,FEASIBLE,False
+,,False,altitude+energy+ordering,,,physical,random,,,random_0084,,witness plan did not satisfy constraints (likely distance); no impossibility proof,,UNKNOWN,False
+,False,,altitude+distance+energy+no_fly_zone+ordering,,,physical,random,,,random_0085,distance_lower_bound,straight-line lower bound 121.60 exceeds max_distance 121.6,,INFEASIBLE,False
+,,False,altitude+distance+ordering,,,physical,random,,,random_0086,,witness plan did not satisfy constraints (likely distance); no impossibility proof,,UNKNOWN,False
+True,,,distance+no_fly_zone,130.216465,183.602067,proxy,random,183.6021,183.1496,random_0087,,verified witness plan exists,0.00247,FEASIBLE,False
+,False,,altitude+energy+no_fly_zone+ordering,,,physical,random,,,random_0088,energy_lower_bound,energy lower bound 7.22 exceeds max_energy 1.0,,INFEASIBLE,False
+,False,,altitude+distance+energy,,,physical,random,,,random_0089,energy_lower_bound,energy lower bound 4.88 exceeds max_energy 0.4,,INFEASIBLE,False
+,,False,distance+energy+no_fly_zone,,,physical,random,,,random_0090,,witness plan did not satisfy constraints (likely distance); no impossibility proof,,UNKNOWN,False
+,False,,altitude+distance+energy+no_fly_zone+ordering,,,proxy,random,,,random_0091,distance_lower_bound,straight-line lower bound 105.30 exceeds max_distance 77.2,,INFEASIBLE,False
+,False,,altitude+distance+energy+no_fly_zone+ordering,,,proxy,random,,,random_0092,point_in_zone,required waypoint B lies inside no-fly zone Z3,,INFEASIBLE,False
+,False,,altitude+distance+ordering,,,proxy,random,,,random_0093,distance_lower_bound,straight-line lower bound 145.67 exceeds max_distance 102.0,,INFEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,131.479068,131.479068,proxy,random,131.4791,131.4791,random_0094,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,energy+no_fly_zone,117.236169,117.236169,proxy,random,117.2362,117.2362,random_0095,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,altitude+energy+no_fly_zone+ordering,281.185873,283.381464,proxy,random,283.3815,283.3815,random_0096,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,115.472915,115.472915,proxy,random,115.4729,115.4729,random_0097,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone,205.164277,205.164277,proxy,random,205.1643,205.1643,random_0098,,verified witness plan exists,0.0,FEASIBLE,False
+,False,,altitude+distance+energy+no_fly_zone,,,physical,random,,,random_0099,energy_lower_bound,energy lower bound 4.83 exceeds max_energy 0.4,,INFEASIBLE,True
+,False,,altitude+distance+no_fly_zone+ordering,,,proxy,random,,,random_0100,point_in_zone,start lies inside no-fly zone Z3,,INFEASIBLE,True
+,False,,altitude+distance+no_fly_zone+ordering,,,proxy,random,,,random_0101,point_in_zone,required waypoint B lies inside no-fly zone Z3,,INFEASIBLE,False
+True,,,distance+energy+no_fly_zone,124.336419,201.359899,proxy,random,201.3599,201.2039,random_0102,,verified witness plan exists,0.00078,FEASIBLE,False
+,False,,altitude+distance+energy+no_fly_zone+ordering,,,proxy,random,,,random_0103,distance_lower_bound,straight-line lower bound 195.31 exceeds max_distance 136.7,,INFEASIBLE,False
+,,True,altitude+distance+energy+no_fly_zone+ordering,,,proxy,random,,,random_0104,,witness plan did not satisfy constraints (likely distance); no impossibility proof,,UNKNOWN,False
+,,False,altitude+energy+no_fly_zone+ordering,,,proxy,random,,,random_0105,,witness search found no route,,UNKNOWN,False
+True,,,altitude+distance+energy+no_fly_zone,171.21979,252.108812,proxy,random,252.1088,252.1088,random_0106,,verified witness plan exists,0.0,FEASIBLE,False
+,False,,altitude+distance+energy+no_fly_zone,,,physical,random,,,random_0107,energy_lower_bound,energy lower bound 5.81 exceeds max_energy 3.0,,INFEASIBLE,False
+True,,,energy+no_fly_zone,138.423024,183.175036,proxy,random,183.175,183.175,random_0108,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,altitude+distance+energy,128.640423,128.640423,proxy,random,128.6404,128.6404,random_0109,,verified witness plan exists,0.0,FEASIBLE,False
+,False,,altitude+distance+energy+no_fly_zone,,,physical,random,,,random_0110,distance_lower_bound,straight-line lower bound 121.46 exceeds max_distance 87.1,,INFEASIBLE,False
+,False,,energy+no_fly_zone+ordering,,,proxy,random,,,random_0111,point_in_zone,destination lies inside no-fly zone Z2,,INFEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,202.287193,202.63424,proxy,random,202.6342,202.3719,random_0112,,verified witness plan exists,0.0013,FEASIBLE,False
+True,,,distance+energy+ordering,185.863684,266.896442,proxy,random,266.8964,266.8964,random_0113,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,altitude+energy+no_fly_zone+ordering,149.093049,171.432239,proxy,random,171.4322,171.4322,random_0114,,verified witness plan exists,0.0,FEASIBLE,False
+,,False,altitude+distance+energy+no_fly_zone,,,proxy,random,,,random_0115,,witness plan did not satisfy constraints (likely distance); no impossibility proof,,UNKNOWN,True
+True,,,altitude+no_fly_zone+ordering,191.467624,222.985764,proxy,random,222.9858,222.8333,random_0116,,verified witness plan exists,0.00068,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone,147.930713,252.243144,proxy,random,252.2431,252.2431,random_0117,,verified witness plan exists,0.0,FEASIBLE,False
+,False,,altitude+distance+energy+no_fly_zone+ordering,,,proxy,random,,,random_0118,point_in_zone,start lies inside no-fly zone Z1,,INFEASIBLE,False
+True,,,distance+energy+no_fly_zone,156.31658,254.593576,proxy,random,254.5936,254.5936,random_0119,,verified witness plan exists,0.0,FEASIBLE,False
+,,False,altitude+distance+no_fly_zone+ordering,,,proxy,random,,,random_0120,,witness plan did not satisfy constraints (likely distance); no impossibility proof,,UNKNOWN,False
+,False,,distance+ordering,,,proxy,random,,,random_0121,distance_lower_bound,straight-line lower bound 95.64 exceeds max_distance 66.9,,INFEASIBLE,False
+,False,,distance+energy+no_fly_zone+ordering,,,proxy,random,,,random_0122,distance_lower_bound,straight-line lower bound 139.50 exceeds max_distance 139.5,,INFEASIBLE,False
+,,False,distance+energy+no_fly_zone,,,proxy,random,,,random_0123,,witness search found no route,,UNKNOWN,False
+,False,,altitude+distance+ordering,,,proxy,random,,,random_0124,distance_lower_bound,straight-line lower bound 171.54 exceeds max_distance 126.4,,INFEASIBLE,False
+,,False,altitude+distance+energy+no_fly_zone+ordering,,,physical,random,,,random_0125,,witness plan did not satisfy constraints (likely distance); no impossibility proof,,UNKNOWN,True
+,False,,energy+no_fly_zone,,,proxy,random,,,random_0126,point_in_zone,required waypoint C lies inside no-fly zone Z3,,INFEASIBLE,True
+,False,,altitude+distance+no_fly_zone,,,proxy,random,,,random_0127,point_in_zone,required waypoint A lies inside no-fly zone Z2,,INFEASIBLE,False
+True,,,distance+energy+no_fly_zone+ordering,96.310147,96.904722,proxy,random,96.9047,96.9047,random_0128,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,altitude+energy+no_fly_zone,87.338353,87.338353,proxy,random,87.3384,87.3384,random_0129,,verified witness plan exists,0.0,FEASIBLE,False
+,,False,altitude+distance+energy+no_fly_zone+ordering,,,physical,random,,,random_0130,,witness plan did not satisfy constraints (likely distance); no impossibility proof,,UNKNOWN,False
+,,False,altitude+distance+energy+no_fly_zone+ordering,,,proxy,random,,,random_0131,,witness plan did not satisfy constraints (likely distance); no impossibility proof,,UNKNOWN,True
+True,,,altitude+distance+energy+ordering,116.859825,116.859825,proxy,random,116.8598,116.8598,random_0132,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,altitude+distance+energy+ordering,117.196619,117.196619,proxy,random,117.1966,117.1966,random_0133,,verified witness plan exists,0.0,FEASIBLE,False
+,,False,altitude+distance+energy+no_fly_zone,,,proxy,random,,,random_0134,,witness plan did not satisfy constraints (likely distance); no impossibility proof,,UNKNOWN,True
+,False,,distance+no_fly_zone+ordering,,,proxy,random,,,random_0135,distance_lower_bound,straight-line lower bound 102.06 exceeds max_distance 73.5,,INFEASIBLE,False
+,,False,altitude+distance+no_fly_zone+ordering,,,proxy,random,,,random_0136,,witness plan did not satisfy constraints (likely distance); no impossibility proof,,UNKNOWN,True
+,False,,altitude+distance+energy+ordering,,,proxy,random,,,random_0137,cyclic_ordering,contradictory (cyclic) ordering constraints,,INFEASIBLE,False
+True,,,altitude+no_fly_zone,91.010134,91.182105,proxy,random,91.1821,91.0512,random_0138,,verified witness plan exists,0.00144,FEASIBLE,False
+,False,,distance+energy+no_fly_zone,,,physical,random,,,random_0139,energy_lower_bound,energy lower bound 8.59 exceeds max_energy 1.0,,INFEASIBLE,False
+True,,,distance+energy+no_fly_zone+ordering,146.396667,146.396667,proxy,random,146.3967,146.3967,random_0140,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,180.604318,181.168626,proxy,random,181.1686,180.8255,random_0141,,verified witness plan exists,0.0019,FEASIBLE,False
+,False,,altitude+distance+no_fly_zone,,,proxy,random,,,random_0142,distance_lower_bound,straight-line lower bound 139.41 exceeds max_distance 139.4,,INFEASIBLE,False
+,False,,altitude+energy+no_fly_zone+ordering,,,proxy,random,,,random_0143,point_in_zone,destination lies inside no-fly zone Z2,,INFEASIBLE,True
+,False,,altitude+distance+energy+no_fly_zone,,,proxy,random,,,random_0144,distance_lower_bound,straight-line lower bound 151.09 exceeds max_distance 126.8,,INFEASIBLE,False
+,False,,altitude+distance+no_fly_zone+ordering,,,physical,random,,,random_0145,distance_lower_bound,straight-line lower bound 134.17 exceeds max_distance 94.2,,INFEASIBLE,False
+True,,,altitude+distance+energy+ordering,177.828278,177.828278,proxy,random,177.8283,177.8283,random_0146,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,altitude+distance+no_fly_zone+ordering,154.198836,154.198836,proxy,random,154.1988,154.1988,random_0147,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,altitude+energy+no_fly_zone+ordering,144.135114,144.574971,proxy,random,144.575,144.575,random_0148,,verified witness plan exists,0.0,FEASIBLE,False
+,False,,altitude+distance+energy+no_fly_zone,,,proxy,random,,,random_0149,distance_lower_bound,straight-line lower bound 138.68 exceeds max_distance 115.3,,INFEASIBLE,False
+,False,,altitude+distance+energy+no_fly_zone+ordering,,,proxy,random,,,random_0150,point_in_zone,start lies inside no-fly zone Z6,,INFEASIBLE,False
+True,,,altitude+distance+no_fly_zone,181.920696,237.730357,proxy,random,237.7304,237.7304,random_0151,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,116.683289,116.683289,proxy,random,116.6833,116.6833,random_0152,,verified witness plan exists,0.0,FEASIBLE,False
+,,False,altitude+distance+energy+no_fly_zone+ordering,,,proxy,random,,,random_0153,,witness plan did not satisfy constraints (likely distance); no impossibility proof,,UNKNOWN,True
+,False,,altitude+distance+energy+no_fly_zone+ordering,,,proxy,random,,,random_0154,point_in_zone,required waypoint A lies inside no-fly zone Z2,,INFEASIBLE,False
+,False,,altitude+distance+no_fly_zone+ordering,,,proxy,random,,,random_0155,cyclic_ordering,contradictory (cyclic) ordering constraints,,INFEASIBLE,False
+,False,,altitude+distance+energy,,,physical,random,,,random_0156,energy_lower_bound,energy lower bound 8.15 exceeds max_energy 3.0,,INFEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone,117.64092,119.157367,proxy,random,119.1574,118.3257,random_0157,,verified witness plan exists,0.00703,FEASIBLE,False
+True,,,altitude+distance,136.130965,136.130965,proxy,random,136.131,136.131,random_0158,,verified witness plan exists,0.0,FEASIBLE,False
+,False,,altitude+distance+energy+no_fly_zone+ordering,,,proxy,random,,,random_0159,distance_lower_bound,straight-line lower bound 109.14 exceeds max_distance 109.1,,INFEASIBLE,True
+,False,,altitude+distance+energy+no_fly_zone+ordering,,,proxy,random,,,random_0160,distance_lower_bound,straight-line lower bound 123.13 exceeds max_distance 123.1,,INFEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,106.043695,106.043695,proxy,random,106.0437,106.0437,random_0161,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,altitude+energy+ordering,190.584741,190.584741,proxy,random,190.5847,190.5847,random_0162,,verified witness plan exists,0.0,FEASIBLE,False
+,False,,altitude+distance+no_fly_zone+ordering,,,physical,random,,,random_0163,distance_lower_bound,straight-line lower bound 84.84 exceeds max_distance 59.4,,INFEASIBLE,False
+,False,,altitude+distance+energy,,,physical,random,,,random_0164,energy_lower_bound,energy lower bound 4.43 exceeds max_energy 0.4,,INFEASIBLE,False
+True,,,altitude+distance+ordering,243.70229,243.70229,proxy,random,243.7023,243.7023,random_0165,,verified witness plan exists,0.0,FEASIBLE,False
+,False,,distance+energy+no_fly_zone+ordering,,,physical,random,,,random_0166,energy_lower_bound,energy lower bound 12.25 exceeds max_energy 1.0,,INFEASIBLE,False
+,,True,altitude+distance+energy+no_fly_zone+ordering,,,proxy,random,,,random_0167,,witness plan did not satisfy constraints (likely distance); no impossibility proof,,UNKNOWN,False
+True,,,altitude+energy+no_fly_zone,121.56112,121.56112,proxy,random,121.5611,121.5611,random_0168,,verified witness plan exists,0.0,FEASIBLE,False
+,False,,distance+energy+no_fly_zone+ordering,,,proxy,random,,,random_0169,cyclic_ordering,contradictory (cyclic) ordering constraints,,INFEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,144.490847,144.490847,proxy,random,144.4908,144.4908,random_0170,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone,162.563294,200.793563,proxy,random,200.7936,200.7936,random_0171,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,altitude+distance+no_fly_zone+ordering,82.910103,82.910103,proxy,random,82.9101,82.9101,random_0172,,verified witness plan exists,0.0,FEASIBLE,False
+,False,,altitude+distance+energy,,,physical,random,,,random_0173,energy_lower_bound,energy lower bound 4.13 exceeds max_energy 3.0,,INFEASIBLE,False
+True,,,altitude+distance+ordering,115.247376,115.247376,proxy,random,115.2474,115.2474,random_0174,,verified witness plan exists,0.0,FEASIBLE,False
+,,True,altitude+distance+energy+no_fly_zone,,,proxy,random,,,random_0175,,witness plan did not satisfy constraints (likely distance); no impossibility proof,,UNKNOWN,False
+,False,,altitude+distance+energy,,,proxy,random,,,random_0176,distance_lower_bound,straight-line lower bound 157.80 exceeds max_distance 125.8,,INFEASIBLE,True
+,,True,altitude+distance+energy+no_fly_zone+ordering,,,proxy,random,,,random_0177,,witness plan did not satisfy constraints (likely distance); no impossibility proof,,UNKNOWN,False
+,False,,distance+energy+no_fly_zone+ordering,,,physical,random,,,random_0178,energy_lower_bound,energy lower bound 9.39 exceeds max_energy 8.0,,INFEASIBLE,False
+True,,,distance+no_fly_zone,139.976174,220.559265,physical,random,220.5593,220.5593,random_0179,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,altitude+distance+energy+ordering,196.685672,196.685672,proxy,random,196.6857,196.6857,random_0180,,verified witness plan exists,0.0,FEASIBLE,False
+,,False,altitude+distance+energy+no_fly_zone+ordering,,,proxy,random,,,random_0181,,witness plan did not satisfy constraints (likely distance); no impossibility proof,,UNKNOWN,True
+True,,,altitude+ordering,249.000987,249.000987,proxy,random,249.001,249.001,random_0182,,verified witness plan exists,0.0,FEASIBLE,False
+,False,,altitude+distance+energy+ordering,,,physical,random,,,random_0183,energy_lower_bound,energy lower bound 11.19 exceeds max_energy 1.0,,INFEASIBLE,False
+True,,,altitude+no_fly_zone+ordering,109.728842,109.728842,proxy,random,109.7288,109.7288,random_0184,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,distance+energy+no_fly_zone+ordering,135.477238,135.477238,proxy,random,135.4772,135.4772,random_0185,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,altitude+distance+energy+ordering,147.160753,207.131349,proxy,random,207.1313,207.1313,random_0186,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,altitude+distance+ordering,191.544943,191.544943,proxy,random,191.5449,191.5449,random_0187,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,distance+energy+no_fly_zone,123.51038,123.51038,proxy,random,123.5104,123.5104,random_0188,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,altitude+distance+no_fly_zone+ordering,92.758565,92.758565,proxy,random,92.7586,92.7586,random_0189,,verified witness plan exists,0.0,FEASIBLE,False
+,False,,altitude+distance+energy+no_fly_zone+ordering,,,proxy,random,,,random_0190,distance_lower_bound,straight-line lower bound 162.64 exceeds max_distance 113.9,,INFEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,135.783141,201.879312,proxy,random,201.8793,201.8793,random_0191,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,110.050367,111.916048,proxy,random,111.916,111.7849,random_0192,,verified witness plan exists,0.00117,FEASIBLE,False
+,False,,altitude+distance+energy+ordering,,,proxy,random,,,random_0193,distance_lower_bound,straight-line lower bound 168.62 exceeds max_distance 163.4,,INFEASIBLE,True
+,False,,altitude+distance+energy+no_fly_zone+ordering,,,proxy,random,,,random_0194,distance_lower_bound,straight-line lower bound 114.01 exceeds max_distance 81.9,,INFEASIBLE,False
+True,,,altitude+energy,123.164965,161.261212,proxy,random,161.2612,161.2612,random_0195,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,altitude+energy+no_fly_zone+ordering,210.108893,210.108893,proxy,random,210.1089,210.1089,random_0196,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,altitude+distance+energy+ordering,99.302477,141.970857,proxy,random,141.9709,141.9709,random_0197,,verified witness plan exists,0.0,FEASIBLE,False
+,,False,altitude+distance+energy+no_fly_zone+ordering,,,proxy,random,,,random_0198,,witness plan did not satisfy constraints (likely distance); no impossibility proof,,UNKNOWN,True
+,,False,distance+energy+no_fly_zone+ordering,,,proxy,random,,,random_0199,,witness plan did not satisfy constraints (likely distance); no impossibility proof,,UNKNOWN,False
+True,,,altitude+distance+energy+ordering,135.816187,135.816187,proxy,random,135.8162,135.8162,random_0200,,verified witness plan exists,0.0,FEASIBLE,False
+,,False,altitude+distance+no_fly_zone+ordering,,,proxy,random,,,random_0201,,witness plan did not satisfy constraints (likely distance); no impossibility proof,,UNKNOWN,True
+,False,,distance+no_fly_zone,,,proxy,random,,,random_0202,distance_lower_bound,straight-line lower bound 83.19 exceeds max_distance 58.2,,INFEASIBLE,False
+,False,,altitude+distance+energy+no_fly_zone+ordering,,,proxy,random,,,random_0203,point_in_zone,destination lies inside no-fly zone Z1,,INFEASIBLE,False
+,False,,altitude+distance+energy+no_fly_zone+ordering,,,physical,random,,,random_0204,energy_lower_bound,energy lower bound 11.20 exceeds max_energy 3.0,,INFEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone,137.686905,137.686905,proxy,random,137.6869,137.6869,random_0205,,verified witness plan exists,0.0,FEASIBLE,False
+,False,,altitude+distance+energy+no_fly_zone,,,physical,random,,,random_0206,energy_lower_bound,energy lower bound 4.98 exceeds max_energy 1.0,,INFEASIBLE,False
+,False,,energy+no_fly_zone+ordering,,,physical,random,,,random_0207,energy_lower_bound,energy lower bound 3.35 exceeds max_energy 1.0,,INFEASIBLE,False
+,False,,altitude+distance+energy+no_fly_zone+ordering,,,physical,random,,,random_0208,point_in_zone,required waypoint A lies inside no-fly zone Z4,,INFEASIBLE,False
+,False,,altitude+distance+energy+no_fly_zone+ordering,,,proxy,random,,,random_0209,distance_lower_bound,straight-line lower bound 146.64 exceeds max_distance 118.9,,INFEASIBLE,True
+,False,,altitude+distance+no_fly_zone,,,proxy,random,,,random_0210,point_in_zone,required waypoint B lies inside no-fly zone Z4,,INFEASIBLE,False
+True,,,altitude+distance+energy+ordering,160.870698,160.870698,proxy,random,160.8707,160.8707,random_0211,,verified witness plan exists,0.0,FEASIBLE,False
+,False,,altitude+distance+energy+no_fly_zone+ordering,,,proxy,random,,,random_0212,distance_lower_bound,straight-line lower bound 133.51 exceeds max_distance 98.4,,INFEASIBLE,False
+True,,,altitude+distance+no_fly_zone+ordering,156.188921,223.714042,proxy,random,223.714,223.714,random_0213,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,altitude+distance+no_fly_zone+ordering,130.325938,130.744204,proxy,random,130.7442,130.4604,random_0214,,verified witness plan exists,0.00218,FEASIBLE,False
+,,False,altitude+no_fly_zone+ordering,,,physical,random,,,random_0215,,witness search found no route,,UNKNOWN,False
+True,,,altitude+energy+no_fly_zone+ordering,274.345562,274.345562,proxy,random,274.3456,274.3456,random_0216,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,93.481177,93.481177,proxy,random,93.4812,93.4812,random_0217,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,100.712213,144.778546,proxy,random,144.7785,144.7785,random_0218,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,171.665023,171.665023,proxy,random,171.665,171.665,random_0219,,verified witness plan exists,0.0,FEASIBLE,False
+,False,,distance+energy+no_fly_zone,,,proxy,random,,,random_0220,distance_lower_bound,straight-line lower bound 189.76 exceeds max_distance 153.6,,INFEASIBLE,False
+True,,,altitude+distance+no_fly_zone+ordering,182.432928,250.37212,physical,random,250.3721,250.3721,random_0221,,verified witness plan exists,0.0,FEASIBLE,False
+,False,,altitude+distance+no_fly_zone,,,physical,random,,,random_0222,point_in_zone,required waypoint A lies inside no-fly zone Z3,,INFEASIBLE,False
+,False,,altitude+distance+energy+no_fly_zone+ordering,,,proxy,random,,,random_0223,distance_lower_bound,straight-line lower bound 109.21 exceeds max_distance 76.4,,INFEASIBLE,False
+,False,,distance+energy+no_fly_zone+ordering,,,proxy,random,,,random_0224,point_in_zone,destination lies inside no-fly zone Z1,,INFEASIBLE,False
+,False,,altitude+distance+no_fly_zone+ordering,,,proxy,random,,,random_0225,point_in_zone,required waypoint B lies inside no-fly zone Z1,,INFEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone,129.155321,133.630983,proxy,random,133.631,133.1806,random_0226,,verified witness plan exists,0.00338,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,105.959723,173.341961,proxy,random,173.342,173.342,random_0227,,verified witness plan exists,0.0,FEASIBLE,False
+,False,,altitude+energy+no_fly_zone+ordering,,,proxy,random,,,random_0228,point_in_zone,required waypoint B lies inside no-fly zone Z1,,INFEASIBLE,False
+,False,,distance+energy+no_fly_zone+ordering,,,proxy,random,,,random_0229,distance_lower_bound,straight-line lower bound 92.03 exceeds max_distance 66.5,,INFEASIBLE,False
+,False,,altitude+distance+ordering,,,proxy,random,,,random_0230,distance_lower_bound,straight-line lower bound 116.58 exceeds max_distance 81.6,,INFEASIBLE,True
+True,,,altitude+distance+energy+no_fly_zone+ordering,102.32193,102.32193,proxy,random,102.3219,102.3219,random_0231,,verified witness plan exists,0.0,FEASIBLE,False
+,False,,altitude+distance+energy+no_fly_zone+ordering,,,physical,random,,,random_0232,point_in_zone,required waypoint C lies inside no-fly zone Z1,,INFEASIBLE,False
+,,False,altitude+distance+energy+no_fly_zone,,,proxy,random,,,random_0233,,witness plan did not satisfy constraints (likely distance); no impossibility proof,,UNKNOWN,True
+,False,,altitude+distance+energy+no_fly_zone+ordering,,,physical,random,,,random_0234,energy_lower_bound,energy lower bound 6.44 exceeds max_energy 3.0,,INFEASIBLE,False
+True,,,altitude+energy+no_fly_zone+ordering,100.990023,145.269489,proxy,random,145.2695,145.2695,random_0235,,verified witness plan exists,0.0,FEASIBLE,False
+,False,,altitude+distance+no_fly_zone,,,proxy,random,,,random_0236,distance_lower_bound,straight-line lower bound 141.35 exceeds max_distance 141.3,,INFEASIBLE,False
+True,,,distance+energy+no_fly_zone+ordering,135.975552,170.406798,proxy,random,170.4068,170.4068,random_0237,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,160.883298,161.140708,proxy,random,161.1407,161.1407,random_0238,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,altitude+energy,112.406977,164.693187,proxy,random,164.6932,164.6932,random_0239,,verified witness plan exists,0.0,FEASIBLE,False
+,False,,altitude+energy+no_fly_zone+ordering,,,physical,random,,,random_0240,energy_lower_bound,energy lower bound 4.81 exceeds max_energy 0.4,,INFEASIBLE,True
+,False,,altitude+distance+energy+no_fly_zone+ordering,,,physical,random,,,random_0241,energy_lower_bound,energy lower bound 3.72 exceeds max_energy 1.0,,INFEASIBLE,True
+,False,,altitude+distance+energy+no_fly_zone,,,proxy,random,,,random_0242,point_in_zone,destination lies inside no-fly zone Z5,,INFEASIBLE,True
+,False,,distance+energy+no_fly_zone+ordering,,,proxy,random,,,random_0243,distance_lower_bound,straight-line lower bound 118.24 exceeds max_distance 118.2,,INFEASIBLE,False
+,False,,distance+energy+no_fly_zone+ordering,,,proxy,random,,,random_0244,routed_distance_lower_bound,routed lower bound 107.33 exceeds max_distance 107.0,,INFEASIBLE,True
+True,,,altitude+distance+energy+no_fly_zone+ordering,118.966057,221.451042,proxy,random,221.451,221.451,random_0245,,verified witness plan exists,0.0,FEASIBLE,False
+,False,,distance+energy+no_fly_zone+ordering,,,proxy,random,,,random_0246,distance_lower_bound,straight-line lower bound 146.03 exceeds max_distance 146.0,,INFEASIBLE,False
+,False,,distance+energy+no_fly_zone+ordering,,,proxy,random,,,random_0247,distance_lower_bound,straight-line lower bound 143.00 exceeds max_distance 143.0,,INFEASIBLE,False
+True,,,energy+no_fly_zone+ordering,205.322802,205.735807,proxy,random,205.7358,205.7127,random_0248,,verified witness plan exists,0.00011,FEASIBLE,False
+True,,,distance+ordering,133.897072,195.690876,proxy,random,195.6909,195.6909,random_0249,,verified witness plan exists,0.0,FEASIBLE,False
+,False,,altitude+distance+no_fly_zone+ordering,,,physical,random,,,random_0250,distance_lower_bound,straight-line lower bound 187.00 exceeds max_distance 187.0,,INFEASIBLE,False
+,,True,altitude+distance+no_fly_zone+ordering,,,proxy,random,,,random_0251,,witness plan did not satisfy constraints (likely distance); no impossibility proof,,UNKNOWN,False
+,False,,altitude+distance+energy+no_fly_zone+ordering,,,proxy,random,,,random_0252,routed_distance_lower_bound,routed lower bound 96.57 exceeds max_distance 95.7,,INFEASIBLE,False
+,False,,altitude+distance+energy+no_fly_zone+ordering,,,physical,random,,,random_0253,energy_lower_bound,energy lower bound 8.19 exceeds max_energy 0.4,,INFEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,96.119427,96.119427,proxy,random,96.1194,96.1194,random_0254,,verified witness plan exists,0.0,FEASIBLE,False
+,,False,energy+no_fly_zone+ordering,,,proxy,random,,,random_0255,,witness plan did not satisfy constraints (likely distance); no impossibility proof,,UNKNOWN,True
+True,,,altitude+distance+energy+no_fly_zone+ordering,96.745145,96.745145,proxy,random,96.7451,96.7451,random_0256,,verified witness plan exists,0.0,FEASIBLE,False
+,,False,altitude+distance+energy+ordering,,,proxy,random,,,random_0257,,witness plan did not satisfy constraints (likely distance); no impossibility proof,,UNKNOWN,True
+True,,,no_fly_zone+ordering,104.784705,135.92604,proxy,random,135.926,135.926,random_0258,,verified witness plan exists,0.0,FEASIBLE,False
+,,False,distance+no_fly_zone,,,proxy,random,,,random_0259,,witness plan did not satisfy constraints (likely distance); no impossibility proof,,UNKNOWN,True
+True,,,altitude+distance+energy+no_fly_zone,155.412486,222.086522,proxy,random,222.0865,221.8993,random_0260,,verified witness plan exists,0.00084,FEASIBLE,False
+,,True,altitude+distance+no_fly_zone+ordering,,,physical,random,,,random_0261,,witness plan did not satisfy constraints (likely distance); no impossibility proof,,UNKNOWN,False
+True,,,distance+energy+no_fly_zone+ordering,209.84184,210.186525,proxy,random,210.1865,209.9942,random_0262,,verified witness plan exists,0.00092,FEASIBLE,False
+True,,,altitude+energy+ordering,84.435723,84.435723,proxy,random,84.4357,84.4357,random_0263,,verified witness plan exists,0.0,FEASIBLE,False
+,,False,altitude+energy+no_fly_zone+ordering,,,proxy,random,,,random_0264,,witness plan did not satisfy constraints (likely distance); no impossibility proof,,UNKNOWN,True
+True,,,altitude+distance+energy+no_fly_zone,169.855939,206.969354,proxy,random,206.9694,206.9694,random_0265,,verified witness plan exists,0.0,FEASIBLE,False
+,False,,energy+no_fly_zone,,,physical,random,,,random_0266,energy_lower_bound,energy lower bound 7.74 exceeds max_energy 1.0,,INFEASIBLE,False
+,,False,altitude+distance+no_fly_zone+ordering,,,proxy,random,,,random_0267,,witness plan did not satisfy constraints (likely distance); no impossibility proof,,UNKNOWN,True
+True,,,altitude+energy+no_fly_zone+ordering,93.507289,93.559932,proxy,random,93.5599,93.5599,random_0268,,verified witness plan exists,0.0,FEASIBLE,False
+,,False,altitude+distance+no_fly_zone,,,proxy,random,,,random_0269,,witness search found no route,,UNKNOWN,False
+,False,,altitude+distance+energy+no_fly_zone,,,physical,random,,,random_0270,energy_lower_bound,energy lower bound 6.07 exceeds max_energy 0.4,,INFEASIBLE,False
+True,,,altitude+distance+energy+ordering,225.652316,225.652316,proxy,random,225.6523,225.6523,random_0271,,verified witness plan exists,0.0,FEASIBLE,False
+,False,,altitude+distance+energy+no_fly_zone+ordering,,,proxy,random,,,random_0272,point_in_zone,required waypoint B lies inside no-fly zone Z1,,INFEASIBLE,False
+,False,,altitude+distance+energy+no_fly_zone+ordering,,,proxy,random,,,random_0273,point_in_zone,required waypoint A lies inside no-fly zone Z3,,INFEASIBLE,False
+,False,,altitude+distance+no_fly_zone+ordering,,,proxy,random,,,random_0274,point_in_zone,required waypoint C lies inside no-fly zone Z2,,INFEASIBLE,True
+,,True,altitude+distance+energy+no_fly_zone,,,proxy,random,,,random_0275,,witness plan did not satisfy constraints (likely distance); no impossibility proof,,UNKNOWN,False
+,False,,altitude+distance+energy+no_fly_zone+ordering,,,proxy,random,,,random_0276,distance_lower_bound,straight-line lower bound 113.32 exceeds max_distance 113.3,,INFEASIBLE,False
+,,True,altitude+distance+no_fly_zone+ordering,,,physical,random,,,random_0277,,witness plan did not satisfy constraints (likely distance); no impossibility proof,,UNKNOWN,False
+,,True,altitude+distance+energy+ordering,,,proxy,random,,,random_0278,,witness plan did not satisfy constraints (likely distance); no impossibility proof,,UNKNOWN,False
+True,,,altitude+distance+no_fly_zone,111.759408,112.201499,proxy,random,112.2015,112.2015,random_0279,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone,95.427374,159.85017,proxy,random,159.8502,159.8502,random_0280,,verified witness plan exists,0.0,FEASIBLE,False
+,False,,altitude+distance+no_fly_zone,,,proxy,random,,,random_0281,distance_lower_bound,straight-line lower bound 126.98 exceeds max_distance 92.4,,INFEASIBLE,True
+True,,,distance+energy+no_fly_zone+ordering,151.838569,176.145435,proxy,random,176.1454,175.9593,random_0282,,verified witness plan exists,0.00106,FEASIBLE,False
+,False,,altitude+distance+energy+no_fly_zone,,,physical,random,,,random_0283,energy_lower_bound,energy lower bound 3.51 exceeds max_energy 0.4,,INFEASIBLE,False
+True,,,distance+energy+no_fly_zone,151.396155,237.788755,proxy,random,237.7888,237.7888,random_0284,,verified witness plan exists,0.0,FEASIBLE,False
+,False,,altitude+distance+energy+no_fly_zone+ordering,,,proxy,random,,,random_0285,distance_lower_bound,straight-line lower bound 222.10 exceeds max_distance 161.8,,INFEASIBLE,False
+True,,,altitude+energy+no_fly_zone+ordering,219.44402,219.44402,proxy,random,219.444,219.444,random_0286,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,131.157882,131.157882,proxy,random,131.1579,131.1579,random_0287,,verified witness plan exists,0.0,FEASIBLE,False
+,False,,altitude+distance+energy+no_fly_zone+ordering,,,physical,random,,,random_0288,point_in_zone,required waypoint B lies inside no-fly zone Z2,,INFEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,88.529834,88.529834,proxy,random,88.5298,88.5298,random_0289,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,150.104727,150.104727,proxy,random,150.1047,150.1047,random_0290,,verified witness plan exists,0.0,FEASIBLE,False
+,False,,altitude+distance+energy+no_fly_zone+ordering,,,proxy,random,,,random_0291,distance_lower_bound,straight-line lower bound 169.05 exceeds max_distance 121.8,,INFEASIBLE,False
+True,,,altitude+distance+energy+no_fly_zone+ordering,158.481834,195.293763,proxy,random,195.2938,195.2938,random_0292,,verified witness plan exists,0.0,FEASIBLE,False
+True,,,distance,149.280171,228.975631,proxy,random,228.9756,228.9756,random_0293,,verified witness plan exists,0.0,FEASIBLE,False
+,False,,distance+energy+no_fly_zone+ordering,,,proxy,random,,,random_0294,point_in_zone,start lies inside no-fly zone Z4,,INFEASIBLE,False
+,,False,altitude+energy+no_fly_zone,,,proxy,random,,,random_0295,,witness plan did not satisfy constraints (likely distance); no impossibility proof,,UNKNOWN,True
+True,,,distance+energy+no_fly_zone+ordering,139.793253,139.793253,proxy,random,139.7933,139.7933,random_0296,,verified witness plan exists,0.0,FEASIBLE,False
+,False,,altitude+distance+energy+no_fly_zone+ordering,,,physical,random,,,random_0297,point_in_zone,required waypoint A lies inside no-fly zone Z5,,INFEASIBLE,True
+,,False,altitude+distance+energy+no_fly_zone+ordering,,,proxy,random,,,random_0298,,witness plan did not satisfy constraints (likely distance); no impossibility proof,,UNKNOWN,False
+,False,,altitude+energy+no_fly_zone,,,physical,random,,,random_0299,energy_lower_bound,energy lower bound 5.85 exceeds max_energy 1.0,,INFEASIBLE,False

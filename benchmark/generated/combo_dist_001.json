@@ -1,0 +1,72 @@
+{
+ "scenario_id": "combo_dist_001",
+ "difficulty": "combo",
+ "base_seed": 2024,
+ "attempt": 0,
+ "mission": {
+  "mission_id": "combo_dist_001",
+  "description": "Route START(13.8,25.6) -> DEST(86.7,35.9) via A at (26.3, 62.5), B at (27.3, 58.6), C at (51.9, 55.9). Total length <= 117.6 units.",
+  "start": [
+   13.8,
+   25.6
+  ],
+  "destination": [
+   86.7,
+   35.9
+  ],
+  "required_waypoints": [
+   {
+    "id": "A",
+    "x": 26.3,
+    "y": 62.5
+   },
+   {
+    "id": "B",
+    "x": 27.3,
+    "y": 58.6
+   },
+   {
+    "id": "C",
+    "x": 51.9,
+    "y": 55.9
+   }
+  ],
+  "min_altitude": 0.0,
+  "max_altitude": 1000.0,
+  "max_distance": 117.6,
+  "no_fly_zones": [],
+  "ordering": [],
+  "position_tolerance": 1.0,
+  "start_altitude": 0.0,
+  "max_energy": null,
+  "energy_k_v": 1.0,
+  "energy_k_wp": 0.0,
+  "speed_h": 10.0,
+  "speed_v": 2.0,
+  "active": [
+   "distance"
+  ]
+ },
+ "metadata": {
+  "n_zones": 0,
+  "n_obstacles": 0,
+  "zone_density": 0.0,
+  "distance_slack": 1.09,
+  "energy_slack": null,
+  "altitude_band_width": null,
+  "n_required": 3,
+  "feasibility": "FEASIBLE",
+  "witness_distance": 107.871,
+  "witness_energy": 107.871,
+  "lower_bound": 107.871,
+  "infeasible_kind": null,
+  "source": "synthetic",
+  "nl_style": "terse",
+  "n_polygon_zones": 0,
+  "active": [
+   "distance"
+  ],
+  "n_active": 1,
+  "ordering_conflicts_with_route": false
+ }
+}

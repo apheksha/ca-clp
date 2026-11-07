@@ -1,0 +1,62 @@
+[
+ {
+  "sweep": "map_update_delay_s",
+  "value": 0.0,
+  "episodes": 56,
+  "affected": 54,
+  "classical_success": 0.625,
+  "classical_recovered_affected": 0.6111111111111112,
+  "classical_intrusion": 0.25,
+  "stale_success": 0.03571428571428571,
+  "stale_intrusion": 0.7857142857142857,
+  "mean_detection_delay_s": 0.24254545454545454
+ },
+ {
+  "sweep": "map_update_delay_s",
+  "value": 5.0,
+  "episodes": 56,
+  "affected": 54,
+  "classical_success": 0.6607142857142857,
+  "classical_recovered_affected": 0.6481481481481481,
+  "classical_intrusion": 0.19642857142857142,
+  "stale_success": 0.03571428571428571,
+  "stale_intrusion": 0.7857142857142857,
+  "mean_detection_delay_s": 5.169818181818182
+ },
+ {
+  "sweep": "map_update_delay_s",
+  "value": 15.0,
+  "episodes": 56,
+  "affected": 54,
+  "classical_success": 0.6607142857142857,
+  "classical_recovered_affected": 0.6481481481481481,
+  "classical_intrusion": 0.19642857142857142,
+  "stale_success": 0.03571428571428571,
+  "stale_intrusion": 0.7857142857142857,
+  "mean_detection_delay_s": 14.975849056603774
+ },
+ {
+  "sweep": "map_update_delay_s",
+  "value": 30.0,
+  "episodes": 56,
+  "affected": 54,
+  "classical_success": 0.6428571428571429,
+  "classical_recovered_affected": 0.6296296296296297,
+  "classical_intrusion": 0.16071428571428573,
+  "stale_success": 0.03571428571428571,
+  "stale_intrusion": 0.7857142857142857,
+  "mean_detection_delay_s": 29.431836734693878
+ },
+ {
+  "sweep": "map_update_delay_s",
+  "value": 60.0,
+  "episodes": 56,
+  "affected": 54,
+  "classical_success": 0.5714285714285714,
+  "classical_recovered_affected": 0.5555555555555556,
+  "classical_intrusion": 0.19642857142857142,
+  "stale_success": 0.03571428571428571,
+  "stale_intrusion": 0.7857142857142857,
+  "mean_detection_delay_s": 56.63591836734694
+ }
+]

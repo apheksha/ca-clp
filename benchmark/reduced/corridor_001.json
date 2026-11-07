@@ -1,0 +1,165 @@
+{
+ "scenario_id": "corridor_001",
+ "difficulty": "corridor",
+ "base_seed": 2024,
+ "attempt": 1,
+ "mission": {
+  "mission_id": "corridor_001",
+  "description": "Route START(6.1,42.1) -> DEST(89.1,58.1) via A at (34.1, 62.5), B at (65.5, 50.5). Order: visit A before B. Altitude 43-68 m at all waypoints. No entry to or crossing of Z1, Z2, Z3. Total length <= 139.1 units.",
+  "start": [
+   6.1,
+   42.1
+  ],
+  "destination": [
+   89.1,
+   58.1
+  ],
+  "required_waypoints": [
+   {
+    "id": "A",
+    "x": 34.1,
+    "y": 62.5
+   },
+   {
+    "id": "B",
+    "x": 65.5,
+    "y": 50.5
+   }
+  ],
+  "min_altitude": 43.0,
+  "max_altitude": 68.0,
+  "max_distance": 139.1,
+  "no_fly_zones": [
+   {
+    "id": "Z1",
+    "kind": "polygon",
+    "center": null,
+    "radius": null,
+    "vertices": [
+     [
+      47.0,
+      0.0
+     ],
+     [
+      53.0,
+      0.0
+     ],
+     [
+      53.0,
+      20.7
+     ],
+     [
+      47.0,
+      20.7
+     ]
+    ],
+    "description": "wall segment south",
+    "category": "nfz"
+   },
+   {
+    "id": "Z2",
+    "kind": "polygon",
+    "center": null,
+    "radius": null,
+    "vertices": [
+     [
+      47.0,
+      34.5
+     ],
+     [
+      53.0,
+      34.5
+     ],
+     [
+      53.0,
+      100.0
+     ],
+     [
+      47.0,
+      100.0
+     ]
+    ],
+    "description": "wall segment north",
+    "category": "nfz"
+   },
+   {
+    "id": "Z3",
+    "kind": "polygon",
+    "center": null,
+    "radius": null,
+    "vertices": [
+     [
+      71.6,
+      45.3
+     ],
+     [
+      83.6,
+      45.3
+     ],
+     [
+      83.6,
+      49.3
+     ],
+     [
+      75.6,
+      49.3
+     ],
+     [
+      75.6,
+      59.3
+     ],
+     [
+      71.6,
+      59.3
+     ]
+    ],
+    "description": "concave L-shaped zone",
+    "category": "nfz"
+   }
+  ],
+  "ordering": [
+   [
+    "A",
+    "B"
+   ]
+  ],
+  "position_tolerance": 1.0,
+  "start_altitude": 0.0,
+  "max_energy": null,
+  "energy_k_v": 0.5,
+  "energy_k_wp": 0.0,
+  "speed_h": 10.0,
+  "speed_v": 2.0,
+  "active": [
+   "altitude",
+   "no_fly_zone",
+   "distance",
+   "ordering"
+  ]
+ },
+ "metadata": {
+  "n_zones": 3,
+  "zone_density": 0.0605,
+  "distance_slack": 1.139,
+  "altitude_band_width": 25.0,
+  "n_required": 2,
+  "feasibility": "FEASIBLE",
+  "witness_distance": 122.132,
+  "lower_bound": 93.052,
+  "infeasible_kind": null,
+  "source": "synthetic",
+  "nl_style": "auto",
+  "n_polygon_zones": 3,
+  "gap_width": 13.83,
+  "active": [
+   "altitude",
+   "no_fly_zone",
+   "distance",
+   "ordering"
+  ],
+  "n_active": 4,
+  "n_obstacles": 0,
+  "witness_energy": null,
+  "energy_slack": null
+ }
+}

@@ -1,0 +1,72 @@
+{
+ "scenario_id": "combo_en_001",
+ "difficulty": "combo",
+ "base_seed": 2024,
+ "attempt": 0,
+ "mission": {
+  "mission_id": "combo_en_001",
+  "description": "Route START(7.7,41.4) -> DEST(93.4,88.2) via A at (63.2, 61.0), B at (34.2, 49.5), C at (58.4, 74.8). Battery: 175.9 energy units, where energy = route length + 1 x total climb (so low altitudes save battery).",
+  "start": [
+   7.7,
+   41.4
+  ],
+  "destination": [
+   93.4,
+   88.2
+  ],
+  "required_waypoints": [
+   {
+    "id": "A",
+    "x": 63.2,
+    "y": 61.0
+   },
+   {
+    "id": "B",
+    "x": 34.2,
+    "y": 49.5
+   },
+   {
+    "id": "C",
+    "x": 58.4,
+    "y": 74.8
+   }
+  ],
+  "min_altitude": 0.0,
+  "max_altitude": 1000.0,
+  "max_distance": 1000000000.0,
+  "no_fly_zones": [],
+  "ordering": [],
+  "position_tolerance": 1.0,
+  "start_altitude": 0.0,
+  "max_energy": 175.9,
+  "energy_k_v": 1.0,
+  "energy_k_wp": 0.0,
+  "speed_h": 10.0,
+  "speed_v": 2.0,
+  "active": [
+   "energy"
+  ]
+ },
+ "metadata": {
+  "n_zones": 0,
+  "n_obstacles": 0,
+  "zone_density": 0.0,
+  "distance_slack": null,
+  "energy_slack": 1.082,
+  "altitude_band_width": null,
+  "n_required": 3,
+  "feasibility": "FEASIBLE",
+  "witness_distance": 162.544,
+  "witness_energy": 162.544,
+  "lower_bound": 162.544,
+  "infeasible_kind": null,
+  "source": "synthetic",
+  "nl_style": "terse",
+  "n_polygon_zones": 0,
+  "active": [
+   "energy"
+  ],
+  "n_active": 1,
+  "ordering_conflicts_with_route": false
+ }
+}

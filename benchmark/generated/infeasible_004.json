@@ -1,0 +1,127 @@
+{
+ "scenario_id": "infeasible_004",
+ "difficulty": "infeasible",
+ "base_seed": 2024,
+ "attempt": 0,
+ "mission": {
+  "mission_id": "infeasible_004",
+  "description": "Route START(8.0,15.9) -> DEST(92.2,34.6) via A at (45.8, 68.9), B at (41.2, 78.9), C at (64.2, 44.0). Order: visit A before B; visit B before C. Altitude 33-73 m at all waypoints. No entry to or crossing of Z1, Z2, Z3. Total length <= 196.4 units. Battery: 276.7 energy units, where energy = route length + 1 x total climb (so low altitudes save battery).",
+  "start": [
+   8.0,
+   15.9
+  ],
+  "destination": [
+   92.2,
+   34.6
+  ],
+  "required_waypoints": [
+   {
+    "id": "A",
+    "x": 45.8,
+    "y": 68.9
+   },
+   {
+    "id": "B",
+    "x": 41.2,
+    "y": 78.9
+   },
+   {
+    "id": "C",
+    "x": 64.2,
+    "y": 44.0
+   }
+  ],
+  "min_altitude": 33.0,
+  "max_altitude": 73.0,
+  "max_distance": 196.4,
+  "no_fly_zones": [
+   {
+    "id": "Z1",
+    "kind": "circle",
+    "center": [
+     45.8,
+     68.9
+    ],
+    "radius": 5.1,
+    "vertices": null,
+    "description": "restricted area 1",
+    "category": "nfz"
+   },
+   {
+    "id": "Z2",
+    "kind": "circle",
+    "center": [
+     17.7,
+     32.3
+    ],
+    "radius": 6.1,
+    "vertices": null,
+    "description": "restricted area 2",
+    "category": "nfz"
+   },
+   {
+    "id": "Z3",
+    "kind": "circle",
+    "center": [
+     81.4,
+     36.0
+    ],
+    "radius": 5.3,
+    "vertices": null,
+    "description": "restricted area 3",
+    "category": "nfz"
+   }
+  ],
+  "ordering": [
+   [
+    "A",
+    "B"
+   ],
+   [
+    "B",
+    "C"
+   ]
+  ],
+  "position_tolerance": 1.0,
+  "start_altitude": 0.0,
+  "max_energy": 276.7,
+  "energy_k_v": 1.0,
+  "energy_k_wp": 0.0,
+  "speed_h": 10.0,
+  "speed_v": 2.0,
+  "active": [
+   "altitude",
+   "no_fly_zone",
+   "distance",
+   "ordering",
+   "energy"
+  ]
+ },
+ "metadata": {
+  "n_zones": 3,
+  "n_obstacles": 0,
+  "zone_density": 0.0287,
+  "distance_slack": 1.336,
+  "energy_slack": 1.537,
+  "altitude_band_width": 40.0,
+  "n_required": 3,
+  "feasibility": "INFEASIBLE",
+  "witness_distance": 147.034,
+  "witness_energy": 180.034,
+  "lower_bound": 142.657,
+  "infeasible_kind": "required_in_zone",
+  "source": "synthetic",
+  "nl_style": "terse",
+  "n_polygon_zones": 0,
+  "active": [
+   "altitude",
+   "no_fly_zone",
+   "distance",
+   "ordering",
+   "energy"
+  ],
+  "n_active": 5,
+  "ordering_conflicts_with_route": false,
+  "infeasible_reason": "required waypoint A lies inside no-fly zone Z1"
+ }
+}

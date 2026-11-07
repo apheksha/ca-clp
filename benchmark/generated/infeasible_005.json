@@ -1,0 +1,175 @@
+{
+ "scenario_id": "infeasible_005",
+ "difficulty": "infeasible",
+ "base_seed": 2024,
+ "attempt": 0,
+ "mission": {
+  "mission_id": "infeasible_005",
+  "description": "The drone leaves its base at (6.8, 59.9) and has to end up at (91.9, 34.9). On the way it must stop at A at (25.5, 81.4), B at (49.5, 73.5), C at (65.5, 38.6); visit A before B; visit B before C. Keep it no lower than 45 m and no higher than 88 m. The restricted areas and obstacles (Z1, Z2 (obstacle), Z3, Z4 (obstacle)) are off limits, and that includes cutting across a corner of one on the way between two stops. The whole trip may not be longer than 101 units. The battery only allows 232.9 energy units, where energy = route length + 1 x total climb (so low altitudes save battery).",
+  "start": [
+   6.8,
+   59.9
+  ],
+  "destination": [
+   91.9,
+   34.9
+  ],
+  "required_waypoints": [
+   {
+    "id": "A",
+    "x": 25.5,
+    "y": 81.4
+   },
+   {
+    "id": "B",
+    "x": 49.5,
+    "y": 73.5
+   },
+   {
+    "id": "C",
+    "x": 65.5,
+    "y": 38.6
+   }
+  ],
+  "min_altitude": 45.0,
+  "max_altitude": 88.0,
+  "max_distance": 101.0,
+  "no_fly_zones": [
+   {
+    "id": "Z1",
+    "kind": "circle",
+    "center": [
+     38.9,
+     80.6
+    ],
+    "radius": 7.3,
+    "vertices": null,
+    "description": "restricted area 1",
+    "category": "nfz"
+   },
+   {
+    "id": "Z2",
+    "kind": "polygon",
+    "center": null,
+    "radius": null,
+    "vertices": [
+     [
+      21.35,
+      76.46
+     ],
+     [
+      19.34,
+      79.85
+     ],
+     [
+      14.44,
+      79.72
+     ],
+     [
+      12.12,
+      75.34
+     ],
+     [
+      15.44,
+      70.34
+     ],
+     [
+      20.76,
+      71.74
+     ]
+    ],
+    "description": "radio tower",
+    "category": "obstacle"
+   },
+   {
+    "id": "Z3",
+    "kind": "polygon",
+    "center": null,
+    "radius": null,
+    "vertices": [
+     [
+      86.02,
+      35.26
+     ],
+     [
+      78.96,
+      41.28
+     ],
+     [
+      74.71,
+      35.72
+     ],
+     [
+      81.38,
+      30.18
+     ]
+    ],
+    "description": "restricted area 3",
+    "category": "nfz"
+   },
+   {
+    "id": "Z4",
+    "kind": "circle",
+    "center": [
+     62.2,
+     50.6
+    ],
+    "radius": 6.2,
+    "vertices": null,
+    "description": "building",
+    "category": "obstacle"
+   }
+  ],
+  "ordering": [
+   [
+    "A",
+    "B"
+   ],
+   [
+    "B",
+    "C"
+   ]
+  ],
+  "position_tolerance": 1.0,
+  "start_altitude": 0.0,
+  "max_energy": 232.9,
+  "energy_k_v": 1.0,
+  "energy_k_wp": 0.0,
+  "speed_h": 10.0,
+  "speed_v": 2.0,
+  "active": [
+   "altitude",
+   "no_fly_zone",
+   "distance",
+   "ordering",
+   "energy"
+  ]
+ },
+ "metadata": {
+  "n_zones": 4,
+  "n_obstacles": 2,
+  "zone_density": 0.0415,
+  "distance_slack": 1.209,
+  "energy_slack": 1.371,
+  "altitude_band_width": 43.0,
+  "n_required": 3,
+  "feasibility": "INFEASIBLE",
+  "witness_distance": 124.876,
+  "witness_energy": 169.876,
+  "lower_bound": 118.812,
+  "infeasible_kind": "distance_below_bound",
+  "source": "synthetic",
+  "nl_style": "narrative",
+  "n_polygon_zones": 2,
+  "active": [
+   "altitude",
+   "no_fly_zone",
+   "distance",
+   "ordering",
+   "energy"
+  ],
+  "n_active": 5,
+  "ordering_conflicts_with_route": false,
+  "infeasible_reason": "straight-line lower bound 118.81 exceeds max_distance 101.0"
+ }
+}

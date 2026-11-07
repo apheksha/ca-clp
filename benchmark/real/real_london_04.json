@@ -1,0 +1,143 @@
+{
+ "scenario_id": "real_london_04",
+ "difficulty": "real_medium",
+ "mission": {
+  "mission_id": "real_london_04",
+  "start": [
+   -15251.1,
+   -16835.5
+  ],
+  "destination": [
+   11286.4,
+   21619.7
+  ],
+  "required_waypoints": [
+   {
+    "id": "A",
+    "x": -23726.0,
+    "y": -7060.9
+   },
+   {
+    "id": "B",
+    "x": -16590.2,
+    "y": 19374.2
+   },
+   {
+    "id": "C",
+    "x": -1725.7,
+    "y": 22861.7
+   }
+  ],
+  "min_altitude": 30.0,
+  "max_altitude": 100.0,
+  "max_distance": 82394.0,
+  "ordering": [
+   [
+    "A",
+    "B"
+   ],
+   [
+    "B",
+    "C"
+   ]
+  ],
+  "start_altitude": 0.0,
+  "max_energy": 90430.0,
+  "energy_k_v": 30.0,
+  "energy_k_wp": 0.0,
+  "active": [
+   "altitude",
+   "no_fly_zone",
+   "distance",
+   "ordering",
+   "energy"
+  ],
+  "no_fly_zones": [
+   {
+    "id": "Z1",
+    "kind": "circle",
+    "center": [
+     -11640.6,
+     5893.5
+    ],
+    "radius": 5000.0,
+    "description": "RAF Northolt (EGWU, medium_airport) protection radius 5000 m",
+    "category": "nfz"
+   },
+   {
+    "id": "Z2",
+    "kind": "circle",
+    "center": [
+     -14530.0,
+     -3252.7
+    ],
+    "radius": 8000.0,
+    "description": "London Heathrow Airport (EGLL, large_airport) protection radius 8000 m",
+    "category": "nfz"
+   },
+   {
+    "id": "Z3",
+    "kind": "circle",
+    "center": [
+     21131.5,
+     589.2
+    ],
+    "radius": 5000.0,
+    "description": "London City Airport (EGLC, medium_airport) protection radius 5000 m",
+    "category": "nfz"
+   },
+   {
+    "id": "Z4",
+    "kind": "circle",
+    "center": [
+     19554.8,
+     -18814.3
+    ],
+    "radius": 5000.0,
+    "description": "London Biggin Hill Airport (EGKB, medium_airport) protection radius 5000 m",
+    "category": "nfz"
+   }
+  ],
+  "description": "Route START(-15251,-16836) -> DEST(11286,21620) via A (Bishopsgate House Heliport) at (-23726, -7061), B (New Model Farm Airstrip) at (-16590, 19374), C (Hertfordshire Microlight Club London Colney Airstrip) at (-1726, 22862). Order: visit A before B; visit B before C. Altitude 30-100 m at all waypoints. No entry to or crossing of Z1 [RAF Northolt (EGWU, medium_airport) protection radius 5000 m], Z2 [London Heathrow Airport (EGLL, large_airport) protection radius 8000 m], Z3 [London City Airport (EGLC, medium_airport) protection radius 5000 m], Z4 [London Biggin Hill Airport (EGKB, medium_airport) protection radius 5000 m]. Total length <= 82394 meters. Battery: 90430 energy units, where energy = route length + 30 x total climb (so low altitudes save battery). (START is Brooklands Aerodrome; DEST is Dysons Osiers Airstrip.) Coordinates are meters east/north of the region center."
+ },
+ "metadata": {
+  "source": "ourairports",
+  "region": "london",
+  "region_center": [
+   51.5,
+   -0.25
+  ],
+  "airports_csv_sha256": "fe7f0d9dc2646e41b0cc520f1733d99b9c76a6b26a3e6a55f66fa89e62083ad5",
+  "n_zones": 4,
+  "zone_density": 0.1544,
+  "distance_slack": 1.2,
+  "altitude_band_width": 70.0,
+  "n_required": 3,
+  "feasibility": "FEASIBLE",
+  "witness_distance": 68661.4,
+  "lower_bound": 68657.7,
+  "infeasible_kind": null,
+  "n_polygon_zones": 0,
+  "active": [
+   "altitude",
+   "no_fly_zone",
+   "distance",
+   "ordering",
+   "energy"
+  ],
+  "n_active": 5,
+  "n_obstacles": 0,
+  "witness_energy": null,
+  "energy_slack": 1.3,
+  "nl_style": "terse",
+  "site_names": {
+   "A": "Bishopsgate House Heliport",
+   "B": "New Model Farm Airstrip",
+   "C": "Hertfordshire Microlight Club London Colney Airstrip",
+   "START": "Brooklands Aerodrome",
+   "DEST": "Dysons Osiers Airstrip"
+  },
+  "n_blocked_legs": 1,
+  "assumptions": "zone radii by airport type, altitude band <=120 m AGL, equirectangular projection"
+ }
+}

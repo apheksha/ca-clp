@@ -1,0 +1,29 @@
+{
+ "random_scale_100": {
+  "n_random_cases": 3000,
+  "false_negatives": 0,
+  "false_positives_beyond_grazing": 0,
+  "scale": 100.0,
+  "samples_per_segment": 4000
+ },
+ "random_scale_1e5": {
+  "n_random_cases": 1000,
+  "false_negatives": 0,
+  "false_positives_beyond_grazing": 0,
+  "scale": 100000.0,
+  "samples_per_segment": 4000
+ },
+ "adversarial": {
+  "n_adversarial_cases": 39,
+  "failures": [],
+  "tolerance_abs": 1e-09,
+  "decisive_offset_note": "offsets >= 1e-6 (scaled by coordinate magnitude/100) are decided correctly up to 1e5 coordinate scale; offsets below ~1e-11*scale are below float64 resolution and are resolved by the closed-set convention (touch => intersect)"
+ },
+ "exact_crosscheck": {
+  "n_cases": 3000,
+  "float_missed_exact_intersection": 0,
+  "float_conservative_within_tolerance": 89,
+  "scale": 100.0
+ },
+ "ok": true
+}

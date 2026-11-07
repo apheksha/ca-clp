@@ -1,0 +1,3 @@
+source,n,parsed_rate,parsed_lo,parsed_hi,all_fields_correct_rate,all_fields_correct_lo,all_fields_correct_hi,end_to_end_success_rate,end_to_end_success_lo,end_to_end_success_hi
+ourairports,53,1.0,0.9324156955469234,1.0,0.33962264150943394,0.22686862857429074,0.4740546388917903,1.0,0.9324156955469234,1.0
+synthetic,112,1.0,0.9668374746205164,1.0,0.7946428571428571,0.7106617796256579,0.8590817322042891,1.0,0.9668374746205164,1.0

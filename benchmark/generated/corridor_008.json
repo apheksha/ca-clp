@@ -1,0 +1,165 @@
+{
+ "scenario_id": "corridor_008",
+ "difficulty": "corridor",
+ "base_seed": 2024,
+ "attempt": 0,
+ "mission": {
+  "mission_id": "corridor_008",
+  "description": "The drone leaves its base at (10.1, 28.3) and has to end up at (93.4, 68.1). On the way it must stop at A at (30.8, 42.6), B at (61.7, 67.3); visit A before B. Keep it no lower than 38 m and no higher than 63 m. The restricted areas and obstacles (Z1, Z2, Z3) are off limits, and that includes cutting across a corner of one on the way between two stops. The whole trip may not be longer than 135.9 units.",
+  "start": [
+   10.1,
+   28.3
+  ],
+  "destination": [
+   93.4,
+   68.1
+  ],
+  "required_waypoints": [
+   {
+    "id": "A",
+    "x": 30.8,
+    "y": 42.6
+   },
+   {
+    "id": "B",
+    "x": 61.7,
+    "y": 67.3
+   }
+  ],
+  "min_altitude": 38.0,
+  "max_altitude": 63.0,
+  "max_distance": 135.9,
+  "no_fly_zones": [
+   {
+    "id": "Z1",
+    "kind": "polygon",
+    "center": null,
+    "radius": null,
+    "vertices": [
+     [
+      47.0,
+      0.0
+     ],
+     [
+      53.0,
+      0.0
+     ],
+     [
+      53.0,
+      23.8
+     ],
+     [
+      47.0,
+      23.8
+     ]
+    ],
+    "description": "wall segment south",
+    "category": "nfz"
+   },
+   {
+    "id": "Z2",
+    "kind": "polygon",
+    "center": null,
+    "radius": null,
+    "vertices": [
+     [
+      47.0,
+      33.6
+     ],
+     [
+      53.0,
+      33.6
+     ],
+     [
+      53.0,
+      100.0
+     ],
+     [
+      47.0,
+      100.0
+     ]
+    ],
+    "description": "wall segment north",
+    "category": "nfz"
+   },
+   {
+    "id": "Z3",
+    "kind": "polygon",
+    "center": null,
+    "radius": null,
+    "vertices": [
+     [
+      72.4,
+      74.4
+     ],
+     [
+      84.4,
+      74.4
+     ],
+     [
+      84.4,
+      78.4
+     ],
+     [
+      76.4,
+      78.4
+     ],
+     [
+      76.4,
+      88.4
+     ],
+     [
+      72.4,
+      88.4
+     ]
+    ],
+    "description": "concave L-shaped zone",
+    "category": "nfz"
+   }
+  ],
+  "ordering": [
+   [
+    "A",
+    "B"
+   ]
+  ],
+  "position_tolerance": 1.0,
+  "start_altitude": 0.0,
+  "max_energy": null,
+  "energy_k_v": 0.5,
+  "energy_k_wp": 0.0,
+  "speed_h": 10.0,
+  "speed_v": 2.0,
+  "active": [
+   "altitude",
+   "no_fly_zone",
+   "distance",
+   "ordering"
+  ]
+ },
+ "metadata": {
+  "n_zones": 3,
+  "zone_density": 0.0629,
+  "distance_slack": 1.158,
+  "altitude_band_width": 25.0,
+  "n_required": 2,
+  "feasibility": "FEASIBLE",
+  "witness_distance": 117.365,
+  "lower_bound": 96.428,
+  "infeasible_kind": null,
+  "source": "synthetic",
+  "nl_style": "auto",
+  "n_polygon_zones": 3,
+  "gap_width": 9.84,
+  "active": [
+   "altitude",
+   "no_fly_zone",
+   "distance",
+   "ordering"
+  ],
+  "n_active": 4,
+  "n_obstacles": 0,
+  "witness_energy": null,
+  "energy_slack": null
+ }
+}

@@ -1,0 +1,25 @@
+\# Settings for run_free.py (all free tier, one Gemini API key from https://aistudio.google.com/apikey in the file .env:  GEMINI_API_KEY=...)
+# Change nothing here unless the preflight tells you to.
+
+# The model of the paper's main experiments. Keep it: every new result is compared with the runs that used this model.
+main_model: {provider: gemini, model: gemini-3.5-flash-lite}
+
+# Extra model on the 53 airport-anchored missions (answers "only one model was tested"): conditions A, C_full, C_prescriptive, G1 (<= 371 calls).
+# "auto-gemma" = the largest open-weights Gemma model your key can use; "auto-flash" = the newest Gemini Flash (not Lite).
+# The ids are resolved ONCE in the preflight and stored in outputs/free_run/state.json, so they never change between sessions.
+# You may write an exact id instead of auto-..., e.g. {provider: gemini, model: gemma-4-31b-it}. Remove a line to skip that model.
+second_models:          # ONE extra model (its own free quota, so it does not slow the main stages); add the second line back only if you have time
+  - {provider: groq, model: openai/gpt-oss-120b, label: gpt-oss-120b}     # needs GROQ_API_KEY in .env (free at https://console.groq.com)
+#  - {provider: gemini, model: auto-gemma, label: open-weights model}   # Gemma on the free tier was overloaded / could not return plans (7 Nov)
+#  - {provider: gemini, model: auto-flash, label: larger model}
+
+# Optional non-Google model (needs GROQ_API_KEY from https://console.groq.com, free). Its free tier allows about 200,000 tokens a day,
+# i.e. only ~50 calls a day for these prompts, so it would take about a week; it is OFF by default.
+groq_model: null          # e.g. {provider: groq, model: openai/gpt-oss-120b, label: non-Google model}
+
+# Stages in order. Each one is skipped when it is already complete, so running the command again simply continues.
+stages: [preflight, tempcheck, spec, dynamic, bengaluru, dynamic_synthetic, second_models, spec_second, paper]   # spec_second: the text-only test with the extra model (165 calls)
+
+# When a daily free quota runs out: wait for it and continue (true), or stop and tell you when to run the command again (false).
+wait_for_quota: true
+max_wait_hours: 72        # give up waiting after this long (the command can always be started again later)

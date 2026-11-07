@@ -1,0 +1,46 @@
+{
+ "provider": "gemini",
+ "model": "gemini-3.5-flash-lite",
+ "is_mock": false,
+ "scenario_dirs": [
+  "benchmark/real",
+  "benchmark/generated"
+ ],
+ "n_scenarios": 165,
+ "system_prompt": "You convert a UAV mission written in plain English into a structured specification.\nCopy numbers exactly as written. Never invent a value: if the text does not state something, use null (or an empty list).\nReply with ONE JSON object and nothing else.",
+ "temperature": 0.0,
+ "max_tokens": 4000,
+ "env": {
+  "python": "3.11.13 (main, Sep 13 2025, 19:09:42) [Clang 15.0.0 (clang-1500.3.9.4)]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "packages": {
+   "numpy": "1.26.4",
+   "pandas": "2.3.2",
+   "scipy": "1.16.2",
+   "matplotlib": "3.10.6",
+   "PyYAML": "6.0.2",
+   "pydantic": "2.11.9",
+   "shapely": "2.1.2",
+   "streamlit": "1.51.0",
+   "pytest": "9.0.2"
+  },
+  "git_commit": null,
+  "git_dirty": null,
+  "code_sha256": "0d5badb03b84354f8f67fd42edf56a306c811d91dae132579e5a4737a01a975e",
+  "n_files": 97
+ },
+ "started": "2026-11-06T21:58:40+0530",
+ "sessions": [
+  {
+   "started": "2026-11-06T21:58:40+0530",
+   "finished": "2026-11-06T22:33:10+0530",
+   "calls": 165,
+   "stopped_reason": null
+  }
+ ],
+ "note": "one call per mission; end_to_end_success = oracle witness planned on the EXTRACTED mission is valid and mission-preserving for the TRUE mission",
+ "stop": {
+  "kind": "none",
+  "message": null
+ }
+}

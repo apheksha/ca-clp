@@ -1,0 +1,217 @@
+{
+ "n_missions": 471,
+ "n_stored": 171,
+ "n_random": 300,
+ "status_counts": {
+  "FEASIBLE": 285,
+  "INFEASIBLE": 137,
+  "UNKNOWN": 49
+ },
+ "S3_violations_lower_bound_above_witness": [],
+ "bracket_ratio_ub_over_lb": {
+  "n": 285,
+  "median_rel_gap": 0.005023557755197805,
+  "max_rel_gap": 0.8614640813051406
+ },
+ "by_energy_model": {
+  "proxy": {
+   "FEASIBLE": 281,
+   "INFEASIBLE": 86,
+   "UNKNOWN": 39
+  },
+  "physical": {
+   "FEASIBLE": 4,
+   "INFEASIBLE": 51,
+   "UNKNOWN": 10
+  }
+ },
+ "with_terrain": {
+  "FEASIBLE": 0,
+  "INFEASIBLE": 28,
+  "UNKNOWN": 25
+ },
+ "by_active_family_set": {
+  "altitude+energy": {
+   "FEASIBLE": 5,
+   "INFEASIBLE": 0,
+   "UNKNOWN": 0
+  },
+  "altitude+distance+energy+no_fly_zone+ordering": {
+   "FEASIBLE": 125,
+   "INFEASIBLE": 56,
+   "UNKNOWN": 12
+  },
+  "altitude+distance+no_fly_zone+ordering": {
+   "FEASIBLE": 40,
+   "INFEASIBLE": 9,
+   "UNKNOWN": 9
+  },
+  "altitude+distance+no_fly_zone": {
+   "FEASIBLE": 9,
+   "INFEASIBLE": 8,
+   "UNKNOWN": 1
+  },
+  "altitude+no_fly_zone": {
+   "FEASIBLE": 4,
+   "INFEASIBLE": 0,
+   "UNKNOWN": 1
+  },
+  "altitude": {
+   "FEASIBLE": 3,
+   "INFEASIBLE": 0,
+   "UNKNOWN": 0
+  },
+  "distance+energy": {
+   "FEASIBLE": 3,
+   "INFEASIBLE": 0,
+   "UNKNOWN": 0
+  },
+  "distance": {
+   "FEASIBLE": 4,
+   "INFEASIBLE": 0,
+   "UNKNOWN": 0
+  },
+  "energy": {
+   "FEASIBLE": 3,
+   "INFEASIBLE": 0,
+   "UNKNOWN": 0
+  },
+  "distance+energy+no_fly_zone": {
+   "FEASIBLE": 7,
+   "INFEASIBLE": 2,
+   "UNKNOWN": 2
+  },
+  "distance+no_fly_zone": {
+   "FEASIBLE": 5,
+   "INFEASIBLE": 1,
+   "UNKNOWN": 1
+  },
+  "no_fly_zone": {
+   "FEASIBLE": 3,
+   "INFEASIBLE": 0,
+   "UNKNOWN": 0
+  },
+  "distance+ordering": {
+   "FEASIBLE": 4,
+   "INFEASIBLE": 1,
+   "UNKNOWN": 0
+  },
+  "ordering": {
+   "FEASIBLE": 3,
+   "INFEASIBLE": 0,
+   "UNKNOWN": 0
+  },
+  "altitude+distance+energy": {
+   "FEASIBLE": 3,
+   "INFEASIBLE": 5,
+   "UNKNOWN": 1
+  },
+  "altitude+energy+no_fly_zone+ordering": {
+   "FEASIBLE": 12,
+   "INFEASIBLE": 5,
+   "UNKNOWN": 5
+  },
+  "distance+energy+ordering": {
+   "FEASIBLE": 1,
+   "INFEASIBLE": 3,
+   "UNKNOWN": 0
+  },
+  "altitude+distance+energy+ordering": {
+   "FEASIBLE": 13,
+   "INFEASIBLE": 8,
+   "UNKNOWN": 2
+  },
+  "altitude+distance+energy+no_fly_zone": {
+   "FEASIBLE": 10,
+   "INFEASIBLE": 12,
+   "UNKNOWN": 7
+  },
+  "altitude+distance+ordering": {
+   "FEASIBLE": 4,
+   "INFEASIBLE": 4,
+   "UNKNOWN": 1
+  },
+  "distance+energy+no_fly_zone+ordering": {
+   "FEASIBLE": 10,
+   "INFEASIBLE": 14,
+   "UNKNOWN": 2
+  },
+  "distance+no_fly_zone+ordering": {
+   "FEASIBLE": 1,
+   "INFEASIBLE": 3,
+   "UNKNOWN": 1
+  },
+  "altitude+energy+ordering": {
+   "FEASIBLE": 3,
+   "INFEASIBLE": 1,
+   "UNKNOWN": 1
+  },
+  "energy+no_fly_zone": {
+   "FEASIBLE": 2,
+   "INFEASIBLE": 2,
+   "UNKNOWN": 0
+  },
+  "energy+no_fly_zone+ordering": {
+   "FEASIBLE": 1,
+   "INFEASIBLE": 2,
+   "UNKNOWN": 1
+  },
+  "altitude+no_fly_zone+ordering": {
+   "FEASIBLE": 2,
+   "INFEASIBLE": 0,
+   "UNKNOWN": 1
+  },
+  "altitude+energy+no_fly_zone": {
+   "FEASIBLE": 2,
+   "INFEASIBLE": 1,
+   "UNKNOWN": 1
+  },
+  "altitude+distance": {
+   "FEASIBLE": 1,
+   "INFEASIBLE": 0,
+   "UNKNOWN": 0
+  },
+  "altitude+ordering": {
+   "FEASIBLE": 1,
+   "INFEASIBLE": 0,
+   "UNKNOWN": 0
+  },
+  "no_fly_zone+ordering": {
+   "FEASIBLE": 1,
+   "INFEASIBLE": 0,
+   "UNKNOWN": 0
+  }
+ },
+ "S1_violations_witness_fails_verifier": [],
+ "S2_violations_infeasible_but_solution_found": [],
+ "unknown_rate": 0.1040339702760085,
+ "unknown_but_independent_solver_succeeds": [
+  "random_0041",
+  "random_0045",
+  "random_0104",
+  "random_0167",
+  "random_0175",
+  "random_0177",
+  "random_0251",
+  "random_0261",
+  "random_0275",
+  "random_0277",
+  "random_0278"
+ ],
+ "approximation_n12_vs_n96": {
+  "n": 285,
+  "median": 0.00042,
+  "max": 0.00948,
+  "theoretical_wrapped_part_bound": 0.0115,
+  "circle_sides_production": 12
+ },
+ "proof_kinds": {
+  "point_in_zone": 38,
+  "routed_energy_lower_bound": 1,
+  "distance_lower_bound": 54,
+  "energy_lower_bound": 36,
+  "routed_distance_lower_bound": 2,
+  "cyclic_ordering": 6
+ },
+ "claim": "FEASIBLE and INFEASIBLE are sound on all tested missions iff both violation lists are empty; completeness is empirical (UNKNOWN rate)."
+}

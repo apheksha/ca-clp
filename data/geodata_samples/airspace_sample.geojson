@@ -1,0 +1,173 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "CTR TEST",
+    "lowerLimit": {
+     "value": 0,
+     "unit": "ft",
+     "referenceDatum": "GND"
+    },
+    "upperLimit": {
+     "value": 3500,
+     "unit": "ft",
+     "referenceDatum": "MSL"
+    }
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.466721,
+       47.477517
+      ],
+      [
+       8.493344,
+       47.477517
+      ],
+      [
+       8.493344,
+       47.491007
+      ],
+      [
+       8.480033,
+       47.491007
+      ],
+      [
+       8.480033,
+       47.504497
+      ],
+      [
+       8.466721,
+       47.504497
+      ],
+      [
+       8.466721,
+       47.477517
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "RESTRICTED TEST",
+    "radius_m": 450,
+    "lower_m": 0,
+    "upper_m": 5000
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.515974,
+     47.507195
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "TMA HIGH",
+    "lowerLimit": {
+     "value": 95,
+     "unit": "FL",
+     "referenceDatum": "STD"
+    },
+    "upperLimit": {
+     "value": 195,
+     "unit": "FL",
+     "referenceDatum": "STD"
+    }
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.460065,
+       47.51349
+      ],
+      [
+       8.539935,
+       47.51349
+      ],
+      [
+       8.539935,
+       47.52698
+      ],
+      [
+       8.460065,
+       47.52698
+      ],
+      [
+       8.460065,
+       47.51349
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "HOLE TEST",
+    "lower_m": 0,
+    "upper_m": 5000
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.503993,
+       47.474819
+      ],
+      [
+       8.529286,
+       47.474819
+      ],
+      [
+       8.529286,
+       47.48741
+      ],
+      [
+       8.503993,
+       47.48741
+      ],
+      [
+       8.503993,
+       47.474819
+      ]
+     ],
+     [
+      [
+       8.510649,
+       47.478416
+      ],
+      [
+       8.519967,
+       47.478416
+      ],
+      [
+       8.519967,
+       47.483812
+      ],
+      [
+       8.510649,
+       47.483812
+      ],
+      [
+       8.510649,
+       47.478416
+      ]
+     ]
+    ]
+   }
+  }
+ ],
+ "note": "SYNTHETIC test fixture, not real airspace"
+}

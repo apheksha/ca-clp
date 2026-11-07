@@ -1,0 +1,45 @@
+# REDUCED design for the ICITIIT deadline (free tiers / slow local model). Use with benchmark/reduced (python scripts/make_reduced_benchmark.py).
+# Multi-seed experimentation enabled across seeds 0-4 for statistical inference.
+# D_resample samples at 0.7 (it must, otherwise 'fresh' plans are identical).
+seeds: [0, 1, 2, 3, 4]
+planner: {temperature: 0.0, normalize_format: true}
+conditions:
+  A_llm_only:        {kind: llm_only}                                                          # descriptive baseline (unverified release; 100% release rate)
+  G_direct_patch:    {kind: direct_patch, feedback_level: prescriptive, max_iterations: 3, feasibility_precheck: true}   # LLM-free control: apply verifier detours programmatically
+  E_classical:       {kind: classical}                                                         # non-LLM reference (visibility-graph planner)
+  F_astar:           {kind: astar}                                                             # grid A* reference
+  D_resample:        {kind: resample, max_iterations: 3, temperature: 0.7}                    # compute-matched: verifier + fresh samples, NO feedback
+  C_full:            {kind: closed_loop, feedback_level: evidence,  repair_mode: targeted,   regression_guard: true, max_iterations: 3, feasibility_precheck: true}
+  X_binary_feedback: {kind: closed_loop, feedback_level: binary,    repair_mode: regenerate, regression_guard: true, max_iterations: 3, feasibility_precheck: true}
+  X_evidence_regen:  {kind: closed_loop, feedback_level: evidence,  repair_mode: regenerate, regression_guard: true, max_iterations: 3, feasibility_precheck: true}  # NOTE: Decouples C_full vs X_binary_feedback confound
+  C_prescriptive:    {kind: closed_loop, feedback_level: prescriptive, repair_mode: targeted, regression_guard: true, max_iterations: 3, feasibility_precheck: true}  # evidence + concrete detour coordinates
+pairs:
+  # Factor 1 (prescriptive coordinates): does telling the model WHERE to go fix geometric repair?
+  - [C_prescriptive, C_full]
+  - [C_prescriptive, D_resample]
+  # Baseline checks
+  - [C_full, A_llm_only]
+  - [C_full, D_resample]
+  # Confound isolation:
+  # - [C_full, X_evidence_regen] isolates repair_mode (targeted vs regenerate) with feedback_level held constant (evidence)
+  - [C_full, X_evidence_regen]
+  # - [X_evidence_regen, X_binary_feedback] isolates feedback content (evidence vs binary) with repair_mode held constant (regenerate)
+  - [X_evidence_regen, X_binary_feedback]
+  # Combined comparison:
+  - [C_full, X_binary_feedback]
+
+# Objective 4: Dynamic experiments across all 8 conditions and multiple progress stages
+dynamic:
+  conditions: [A_llm_only, E_classical, F_astar, D_resample, C_full, C_prescriptive, X_binary_feedback, X_evidence_regen]
+  n_per_difficulty: 2
+  progress: [0.35, 0.65]
+  changes: [add_zone, enlarge_zone, tighten_distance]
+  require_triggered: true
+  seeds: [0, 1, 2, 3, 4]
+dynamic_pairs:
+  - [C_prescriptive, C_full]
+  - [C_full, D_resample]
+  - [C_full, A_llm_only]
+  - [C_full, X_evidence_regen]
+  - [X_evidence_regen, X_binary_feedback]
+  - [C_full, X_binary_feedback]

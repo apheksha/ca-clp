@@ -1,0 +1,90 @@
+{
+ "run": "dyn-real_20261025-141536_7aae72_seed0-only",
+ "n_cases": 81,
+ "n_truly_affected": 34,
+ "n_not_affected_but_counted": 47,
+ "id_bug_present_in_log": true,
+ "not_affected_by_change": {
+  "add_zone": [
+   0,
+   27
+  ],
+  "enlarge_zone": [
+   20,
+   26
+  ],
+  "reduce_energy": [
+   0,
+   1
+  ],
+  "tighten_distance": [
+   27,
+   27
+  ]
+ },
+ "feasible_after_change": {
+  "FEASIBLE": 80,
+  "UNKNOWN": 1
+ },
+ "selection": {
+  "source_missions": [
+   "real_chicago_00",
+   "real_chicago_01",
+   "real_chicago_02",
+   "real_chicago_03",
+   "real_chicago_04",
+   "real_chicago_05",
+   "real_dubai_00",
+   "real_dubai_01",
+   "real_dubai_02",
+   "real_dubai_03",
+   "real_dubai_04",
+   "real_dubai_05",
+   "real_frankfurt_00",
+   "real_frankfurt_01",
+   "real_frankfurt_02"
+  ],
+  "n_source_missions": 15,
+  "difficulty_counts_cases": {
+   "real_easy": 20,
+   "real_medium": 30,
+   "real_hard": 31
+  },
+  "selection_mode_in_manifest": "first (legacy default)",
+  "n_per_difficulty": 5,
+  "stopped_reason": "provider error: HTTP 429: daily quota appears exhausted ([{\"error\": {\"code\": 429, \"message\": \"you exceeded your current quota, please check your plan and billing details. for more information on this error, head to: https://ai.google.dev/gemini-api/docs/rat). Wait for the reset, then continue with --resume.",
+  "static_success_selected_vs_rest": {
+   "A_llm_only": {
+    "static_success_selected": 0.0,
+    "n_selected_runs": 15,
+    "static_success_not_selected": 0.02631578947368421,
+    "n_not_selected_runs": 38
+   },
+   "C_full": {
+    "static_success_selected": 0.3333333333333333,
+    "n_selected_runs": 15,
+    "static_success_not_selected": 0.5789473684210527,
+    "n_not_selected_runs": 38
+   },
+   "C_prescriptive": {
+    "static_success_selected": 1.0,
+    "n_selected_runs": 15,
+    "static_success_not_selected": 1.0,
+    "n_not_selected_runs": 38
+   },
+   "X_binary_feedback": {
+    "static_success_selected": 0.13333333333333333,
+    "n_selected_runs": 15,
+    "static_success_not_selected": 0.18421052631578946,
+    "n_not_selected_runs": 38
+   },
+   "D_resample": {
+    "static_success_selected": 0.0,
+    "n_selected_runs": 15,
+    "static_success_not_selected": 0.07894736842105263,
+    "n_not_selected_runs": 38
+   }
+  }
+ },
+ "caveat": "first repair prompt of LLM conditions listed a spurious MISSION_ID_MISMATCH in these logs; final success is unaffected (the parser assigns the id)"
+}

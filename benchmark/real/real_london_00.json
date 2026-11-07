@@ -1,0 +1,133 @@
+{
+ "scenario_id": "real_london_00",
+ "difficulty": "real_easy",
+ "mission": {
+  "mission_id": "real_london_00",
+  "start": [
+   -29304.1,
+   4555.1
+  ],
+  "destination": [
+   10937.3,
+   -3577.0
+  ],
+  "required_waypoints": [
+   {
+    "id": "A",
+    "x": -18208.9,
+    "y": 9818.4
+   },
+   {
+    "id": "B",
+    "x": 5805.5,
+    "y": -23237.0
+   }
+  ],
+  "min_altitude": 20.0,
+  "max_altitude": 120.0,
+  "max_distance": 110674.0,
+  "ordering": [
+   [
+    "A",
+    "B"
+   ]
+  ],
+  "start_altitude": 0.0,
+  "max_energy": null,
+  "energy_k_v": 0.5,
+  "energy_k_wp": 0.0,
+  "active": [
+   "altitude",
+   "no_fly_zone",
+   "distance",
+   "ordering",
+   "energy"
+  ],
+  "no_fly_zones": [
+   {
+    "id": "Z1",
+    "kind": "circle",
+    "center": [
+     -11640.6,
+     5893.5
+    ],
+    "radius": 5000.0,
+    "description": "RAF Northolt (EGWU, medium_airport) protection radius 5000 m",
+    "category": "nfz"
+   },
+   {
+    "id": "Z2",
+    "kind": "circle",
+    "center": [
+     -14530.0,
+     -3252.7
+    ],
+    "radius": 8000.0,
+    "description": "London Heathrow Airport (EGLL, large_airport) protection radius 8000 m",
+    "category": "nfz"
+   },
+   {
+    "id": "Z3",
+    "kind": "circle",
+    "center": [
+     21131.5,
+     589.2
+    ],
+    "radius": 5000.0,
+    "description": "London City Airport (EGLC, medium_airport) protection radius 5000 m",
+    "category": "nfz"
+   },
+   {
+    "id": "Z4",
+    "kind": "circle",
+    "center": [
+     19554.8,
+     -18814.3
+    ],
+    "radius": 5000.0,
+    "description": "London Biggin Hill Airport (EGKB, medium_airport) protection radius 5000 m",
+    "category": "nfz"
+   }
+  ],
+  "description": "Fly from the base at (-29304, 4555) to the destination at (10937, -3577). The route must pass through the required points A (Denham Aerodrome) at (-18209, 9818), B (Chipstead Private Airstrip) at (5806, -23237); visit A before B. Maintain an altitude between 20 and 120 meters at every waypoint. Avoid all restricted zones and obstacles (Z1 [RAF Northolt (EGWU, medium_airport) protection radius 5000 m], Z2 [London Heathrow Airport (EGLL, large_airport) protection radius 8000 m], Z3 [London City Airport (EGLC, medium_airport) protection radius 5000 m], Z4 [London Biggin Hill Airport (EGKB, medium_airport) protection radius 5000 m]), including the straight paths between waypoints. Keep the total horizontal route length at or below 110674 meters. (START is Windsor/Ascot Heliport; DEST is King's College Hospital Helipad.) Coordinates are meters east/north of the region center."
+ },
+ "metadata": {
+  "source": "ourairports",
+  "region": "london",
+  "region_center": [
+   51.5,
+   -0.25
+  ],
+  "airports_csv_sha256": "fe7f0d9dc2646e41b0cc520f1733d99b9c76a6b26a3e6a55f66fa89e62083ad5",
+  "n_zones": 4,
+  "zone_density": 0.1544,
+  "distance_slack": 1.4,
+  "altitude_band_width": 100.0,
+  "n_required": 2,
+  "feasibility": "FEASIBLE",
+  "witness_distance": 79052.6,
+  "lower_bound": 73456.7,
+  "infeasible_kind": null,
+  "n_polygon_zones": 0,
+  "active": [
+   "altitude",
+   "no_fly_zone",
+   "distance",
+   "ordering",
+   "energy"
+  ],
+  "n_active": 5,
+  "n_obstacles": 0,
+  "witness_energy": null,
+  "energy_slack": null,
+  "nl_style": "formal",
+  "site_names": {
+   "A": "Denham Aerodrome",
+   "B": "Chipstead Private Airstrip",
+   "START": "Windsor/Ascot Heliport",
+   "DEST": "King's College Hospital Helipad"
+  },
+  "n_blocked_legs": 2,
+  "assumptions": "zone radii by airport type, altitude band <=120 m AGL, equirectangular projection"
+ }
+}

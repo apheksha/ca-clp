@@ -1,0 +1,23 @@
+# Model capability / cost metadata used by src/planner/model_registry.py.
+# Providers change limits, model ids and prices often. NOTHING here is verified against a provider's current documentation: fill in / correct the values you rely on.
+# Unknown models fall back to the provider defaults and are flagged `capabilities_unknown: true` in the run manifest.
+# usd_per_mtok_* = USD per million tokens (null = free tier / unknown -> cost reported as null, never as 0).
+providers:
+  gemini:     {supports_temperature: true, supports_seed: false, rpm: 8,  key_env: GEMINI_API_KEY,     max_output_tokens: 8192}
+  groq:       {supports_temperature: true, supports_seed: true,  rpm: 2,  key_env: GROQ_API_KEY,       max_output_tokens: 8192}
+  openrouter: {supports_temperature: true, supports_seed: false, rpm: 10, key_env: OPENROUTER_API_KEY, max_output_tokens: 8192}
+  grok:       {supports_temperature: true, supports_seed: false, rpm: 10, key_env: XAI_API_KEY,        max_output_tokens: 8192}
+  cohere:     {supports_temperature: true, supports_seed: false, rpm: 20, key_env: COHERE_API_KEY,     max_output_tokens: 4096}
+  requesty:   {supports_temperature: true, supports_seed: false, rpm: 3,  key_env: REQUESTY_API_KEY,   max_output_tokens: 16000, min_temperature: 0.1, min_max_tokens: 16000}
+  ollama:     {supports_temperature: true, supports_seed: true,  rpm: 0,  key_env: null,               max_output_tokens: 4096}
+  anthropic:  {supports_temperature: true, supports_seed: false, rpm: 0,  key_env: ANTHROPIC_API_KEY,  max_output_tokens: 8192}
+  openai:     {supports_temperature: true, supports_seed: true,  rpm: 0,  key_env: OPENAI_API_KEY,     max_output_tokens: 8192}
+  mock:       {supports_temperature: true, supports_seed: true,  rpm: 0,  key_env: null,               max_output_tokens: 100000}
+  follower:   {supports_temperature: true, supports_seed: true,  rpm: 0,  key_env: null,               max_output_tokens: 100000}
+  none:       {supports_temperature: true, supports_seed: true,  rpm: 0,  key_env: null,               max_output_tokens: 0, notes: "no language model: model-free conditions only (E_classical, F_astar, G_direct_*, dynamic A_llm_only)"}
+models:
+  # Example entries (edit): per-model overrides of the provider defaults.
+  - {provider: gemini, model: gemini-3.5-flash-lite, usd_per_mtok_in: null, usd_per_mtok_out: null, context_window: null,
+     notes: "temperature handling of the OpenAI-compatible endpoint NOT verified: run `python run.py tempcheck`", fallbacks: []}
+  - {provider: requesty, model: mistral/leanstral-1-5, reasoning_model: true, min_temperature: 0.1, min_max_tokens: 16000, fallbacks: []}
+  - {provider: openai, model: o-series-example, supports_temperature: false, notes: "reasoning models reject a temperature parameter: it is omitted and the omission is recorded", fallbacks: []}

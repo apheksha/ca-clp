@@ -1,0 +1,135 @@
+{
+ "scenario_id": "combo_alt-nfz-dist_002",
+ "difficulty": "combo",
+ "base_seed": 2024,
+ "attempt": 0,
+ "mission": {
+  "mission_id": "combo_alt-nfz-dist_002",
+  "description": "The drone leaves its base at (14.1, 21.5) and has to end up at (93.1, 26.8). On the way it must stop at A at (35.0, 71.6), B at (55.2, 34.6), C at (67.0, 72.7). Keep it no lower than 35 m and no higher than 62 m. The restricted areas and obstacles (Z1 (obstacle), Z2, Z3 (obstacle)) are off limits, and that includes cutting across a corner of one on the way between two stops. The whole trip may not be longer than 219.1 units.",
+  "start": [
+   14.1,
+   21.5
+  ],
+  "destination": [
+   93.1,
+   26.8
+  ],
+  "required_waypoints": [
+   {
+    "id": "A",
+    "x": 35.0,
+    "y": 71.6
+   },
+   {
+    "id": "B",
+    "x": 55.2,
+    "y": 34.6
+   },
+   {
+    "id": "C",
+    "x": 67.0,
+    "y": 72.7
+   }
+  ],
+  "min_altitude": 35.0,
+  "max_altitude": 62.0,
+  "max_distance": 219.1,
+  "no_fly_zones": [
+   {
+    "id": "Z1",
+    "kind": "circle",
+    "center": [
+     45.1,
+     49.0
+    ],
+    "radius": 6.0,
+    "vertices": null,
+    "description": "radio tower",
+    "category": "obstacle"
+   },
+   {
+    "id": "Z2",
+    "kind": "polygon",
+    "center": null,
+    "radius": null,
+    "vertices": [
+     [
+      36.1,
+      56.78
+     ],
+     [
+      33.91,
+      60.13
+     ],
+     [
+      27.92,
+      60.47
+     ],
+     [
+      25.32,
+      56.45
+     ],
+     [
+      27.32,
+      52.15
+     ],
+     [
+      32.25,
+      51.06
+     ]
+    ],
+    "description": "restricted area 2",
+    "category": "nfz"
+   },
+   {
+    "id": "Z3",
+    "kind": "circle",
+    "center": [
+     78.7,
+     50.5
+    ],
+    "radius": 6.4,
+    "vertices": null,
+    "description": "building",
+    "category": "obstacle"
+   }
+  ],
+  "ordering": [],
+  "position_tolerance": 1.0,
+  "start_altitude": 0.0,
+  "max_energy": null,
+  "energy_k_v": 1.0,
+  "energy_k_wp": 0.0,
+  "speed_h": 10.0,
+  "speed_v": 2.0,
+  "active": [
+   "altitude",
+   "no_fly_zone",
+   "distance"
+  ]
+ },
+ "metadata": {
+  "n_zones": 3,
+  "n_obstacles": 2,
+  "zone_density": 0.0312,
+  "distance_slack": 1.139,
+  "energy_slack": null,
+  "altitude_band_width": 27.0,
+  "n_required": 3,
+  "feasibility": "FEASIBLE",
+  "witness_distance": 192.32,
+  "witness_energy": 227.32,
+  "lower_bound": 189.127,
+  "infeasible_kind": null,
+  "source": "synthetic",
+  "nl_style": "narrative",
+  "n_polygon_zones": 1,
+  "active": [
+   "altitude",
+   "no_fly_zone",
+   "distance"
+  ],
+  "n_active": 3,
+  "ordering_conflicts_with_route": false
+ }
+}

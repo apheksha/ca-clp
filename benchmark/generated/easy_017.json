@@ -1,0 +1,103 @@
+{
+ "scenario_id": "easy_017",
+ "difficulty": "easy",
+ "base_seed": 2024,
+ "attempt": 0,
+ "mission": {
+  "mission_id": "easy_017",
+  "description": "The drone leaves its base at (12.7, 57.4) and has to end up at (90.0, 80.0). On the way it must stop at A at (57.5, 19.6), B at (57.7, 40.7); visit A before B. Keep it no lower than 39 m and no higher than 95 m. The restricted areas and obstacles (Z1, Z2) are off limits, and that includes cutting across a corner of one on the way between two stops. The whole trip may not be longer than 203.3 units.",
+  "start": [
+   12.7,
+   57.4
+  ],
+  "destination": [
+   90.0,
+   80.0
+  ],
+  "required_waypoints": [
+   {
+    "id": "A",
+    "x": 57.5,
+    "y": 19.6
+   },
+   {
+    "id": "B",
+    "x": 57.7,
+    "y": 40.7
+   }
+  ],
+  "min_altitude": 39.0,
+  "max_altitude": 95.0,
+  "max_distance": 203.3,
+  "no_fly_zones": [
+   {
+    "id": "Z1",
+    "kind": "circle",
+    "center": [
+     59.5,
+     31.2
+    ],
+    "radius": 5.1,
+    "vertices": null,
+    "description": "restricted area 1",
+    "category": "nfz"
+   },
+   {
+    "id": "Z2",
+    "kind": "circle",
+    "center": [
+     46.6,
+     26.0
+    ],
+    "radius": 6.1,
+    "vertices": null,
+    "description": "restricted area 2",
+    "category": "nfz"
+   }
+  ],
+  "ordering": [
+   [
+    "A",
+    "B"
+   ]
+  ],
+  "position_tolerance": 1.0,
+  "start_altitude": 0.0,
+  "max_energy": null,
+  "energy_k_v": 1.0,
+  "energy_k_wp": 0.0,
+  "speed_h": 10.0,
+  "speed_v": 2.0,
+  "active": [
+   "altitude",
+   "no_fly_zone",
+   "distance",
+   "ordering"
+  ]
+ },
+ "metadata": {
+  "n_zones": 2,
+  "n_obstacles": 0,
+  "zone_density": 0.0199,
+  "distance_slack": 1.528,
+  "energy_slack": null,
+  "altitude_band_width": 56.0,
+  "n_required": 2,
+  "feasibility": "FEASIBLE",
+  "witness_distance": 133.059,
+  "witness_energy": 172.059,
+  "lower_bound": 130.588,
+  "infeasible_kind": null,
+  "source": "synthetic",
+  "nl_style": "narrative",
+  "n_polygon_zones": 0,
+  "active": [
+   "altitude",
+   "no_fly_zone",
+   "distance",
+   "ordering"
+  ],
+  "n_active": 4,
+  "ordering_conflicts_with_route": false
+ }
+}
